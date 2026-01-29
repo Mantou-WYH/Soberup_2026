@@ -1,0 +1,79 @@
+@echo off
+chcp 936 >nul
+setlocal enabledelayedexpansion
+
+echo =================================
+echo AURIX Project Rename Tool
+echo =================================
+echo.
+
+if not exist ".project" (
+    echo ERROR: .project file not found!
+    pause
+    exit /b 1
+)
+
+echo Reading project name...
+for /f "tokens=3 delims=<>" %%a in ('type ".project" ^| findstr /n "^" ^| findstr "^3:"') do (
+    set "old_name=%%a"
+)
+
+if "%old_name%"=="" (
+    echo ERROR: Cannot extract project name from .project file!
+    pause
+    exit /b 1
+)
+
+echo Current project name: %old_name%
+echo.
+set /p "new_name=Enter new project name: "
+
+if "%new_name%"=="" (
+    echo ERROR: Project name cannot be empty!
+    pause
+    exit /b 1
+)
+
+copy ".project" ".project.bak" >nul
+echo Backup created: .project.bak
+
+echo Updating .project file...
+(
+    for /f "usebackq delims=" %%i in (".project") do (
+        set "line=%%i"
+        set "line=!line:%old_name%=%new_name%!"
+        echo !line!
+    )
+) > ".project.tmp"
+
+move /y ".project.tmp" ".project" >nul
+
+if exist ".cproject" (
+    echo Updating .cproject file...
+    copy ".cproject" ".cproject.bak" >nul
+    (
+        for /f "usebackq delims=" %%i in (".cproject") do (
+            set "line=%%i"
+            set "line=!line:%old_name%=%new_name%!"
+            echo !line!
+        )
+    ) > ".cproject.tmp"
+    move /y ".cproject.tmp" ".cproject" >nul
+) else (
+    echo Warning: .cproject file not found, skipping...
+)
+
+del ".project.tmp" 2>nul
+del ".cproject.tmp" 2>nul
+
+echo.
+echo =================================
+echo Rename completed!
+echo From: %old_name%
+echo To: %new_name%
+echo =================================
+echo.
+echo Note: Backup file .project.bak created
+if exist ".cproject.bak" echo Note: Backup file .cproject.bak created
+echo.
+pause
