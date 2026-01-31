@@ -3,7 +3,9 @@
  * 创建时间: 2026年1月30日 下午8:26:19
  * 描述: 初步图像处理
  **************************************************************/
-#include "zf_common_headfile.h"
+#include "zf_device_mt9v03x.h"
+#include "stdio.h"
+#include "stdint.h"
 
 IFX_ALIGN(4) uint8      mt9v03x_image_bin[MT9V03X_H][MT9V03X_W];
 
@@ -16,7 +18,7 @@ inline uint8_t safe_access_binimg(int x, int y) {
     }
 }
 
-inline uint8_t safe_access_img(int x, int y) {
+inline uint8 safe_access_img(int x, int y) {
     if (x >= 0 && x < MT9V03X_W && y >= 0 && y < MT9V03X_H) {
         return mt9v03x_image[y][x];
     } else {
@@ -37,59 +39,86 @@ void binarization(int thres){
  * @param step 采样步长，默认2（隔点采样）。增大可提升速度，但会降低精度
  * @return uint8_t 计算得到的最佳阈值
  */
-uint8_t otsuThreshold_optimized(uint8_t step = 2)
+uint8 otsuThreshold_fast()   // 注意计算阈值的一定要是原图像
 {
-    const int GrayScale = 256;
-    uint32_t pixelCount[GrayScale] = {0}; // 灰度直方图
-    uint32_t gray_sum = 0;
-    uint8_t min_gray = 255;
-    uint8_t max_gray = 0;
+    #define GrayScale 256
 
-    // 1. 统计灰度直方图（使用安全访问并下采样）
-    for (int y = 0; y < MT9V03X_H; y += step) {
-        for (int x = 0; x < MT9V03X_W; x += step) {
-            uint8_t pixel_value = safe_access_img(x, y);
+    int Pixel_Max = 0;
+    int Pixel_Min = 255;
+    uint16 width = MT9V03X_W;
+    uint16 height = MT9V03X_H;
+    int pixelCount[GrayScale];  // 各像素GrayScale的个数pixelCount 一维数组
+    float pixelPro[GrayScale];  // 各像素GrayScale所占百分比pixelPro 一维数组
+    int i, j, pixelSum = width * height / 4;  // pixelSum是获取总的图像像素个数的1/4，相应下面轮询时高和宽都是以2为单位自增
+    uint8 threshold = 0;
+
+    // 清零
+    for (i = 0; i < GrayScale; i++)
+    {
+        pixelCount[i] = 0;
+        pixelPro[i] = 0;
+    }
+
+    uint32 gray_sum = 0;  // 每次执行到这会将gray_sum清零
+    // 统计灰度级中每个像素在整幅图像中的个数
+    for (i = 0; i < height; i += 2)   // 高
+    {
+        for (j = 0; j < width; j += 2)    // 宽
+        {
+            // 使用 safe_access_img 函数来安全访问图像数据
+            uint8 pixel_value = safe_access_img(j, i);
             pixelCount[pixel_value]++;
             gray_sum += pixel_value;
-            if (pixel_value < min_gray) min_gray = pixel_value;
-            if (pixel_value > max_gray) max_gray = pixel_value;
+            if (pixel_value > Pixel_Max)
+                Pixel_Max = pixel_value;
+            if (pixel_value < Pixel_Min)
+                Pixel_Min = pixel_value;
         }
     }
 
-    uint32_t total_pixels = (MT9V03X_H * MT9V03X_W) / (step * step);
-    uint32_t total_sum = gray_sum;
+    // 计算每个像素值的点在整幅图像中的比例
+    for (i = Pixel_Min; i < Pixel_Max; i++)
+    {
+        pixelPro[i] = (float)pixelCount[i] / pixelSum;
+    }
 
-    uint64_t best_sigma = 0; // 类间方差
-    uint8_t best_thresh = (min_gray + max_gray) / 2; // 初始阈值取中值
+    // 遍历灰度级[0,255]
+    float w0, w1, u0tmp, u1tmp, u0, u1, u, deltaTmp, deltaMax = 0;
 
-    uint32_t w0 = 0;   // 背景像素数累积
-    uint32_t sum0 = 0; // 背景灰度值累积
+    w0 = w1 = u0tmp = u1tmp = u0 = u1 = u = deltaTmp = 0;
+    for (j = Pixel_Min; j < Pixel_Max; j++)
+    {
 
-    // 2. 遍历实际灰度范围，寻找最佳阈值
-    for (uint16_t t = min_gray; t <= max_gray; t++) {
-        w0 += pixelCount[t];
-        if (w0 == 0) continue; // 避免除零
+        w0 += pixelPro[j];  // 背景部分每个灰度值的像素点所占比例之和   即背景部分的比例
+        u0tmp += j * pixelPro[j];  // 背景部分 每个灰度值的点的比例 *灰度值
 
-        sum0 += (uint32_t)t * pixelCount[t];
+        w1 = 1 - w0;
+        u1tmp = gray_sum / pixelSum - u0tmp;
 
-        uint32_t w1 = total_pixels - w0; // 前景像素数
-        if (w1 == 0) break; // 所有像素已归为背景，终止循环
-
-        uint32_t sum1 = total_sum - sum0; // 前景灰度值总和
-
-        // 3. 整数计算类间方差（放大10000倍保持精度）
-        uint32_t u0 = (sum0 * 10000) / w0; // 背景平均灰度（放大后）
-        uint32_t u1 = (sum1 * 10000) / w1; // 前景平均灰度（放大后）
-
-        int32_t diff = (int32_t)u0 - (int32_t)u1;
-        uint64_t sigma = (uint64_t)w0 * w1 * diff * diff;
-
-        // 4. 更新最佳阈值
-        if (sigma > best_sigma) {
-            best_sigma = sigma;
-            best_thresh = t;
+        u0 = u0tmp / w0;              // 背景平均灰度
+        u1 = u1tmp / w1;              // 前景平均灰度
+        u = u0tmp + u1tmp;            // 全局平均灰度
+        deltaTmp = (float)(w0 * w1 * (u0 - u1) * (u0 - u1));
+        if (deltaTmp > deltaMax)
+        {
+            deltaMax = deltaTmp;
+            threshold = (uint8)j;
+        }
+        if (deltaTmp < deltaMax)
+        {
+            break;
         }
     }
 
-    return best_thresh;
+    if (threshold < 90)
+    {
+        threshold = 90;
+    }
+    if (threshold > 130)
+    {
+        threshold = 130;
+    }
+
+    return threshold;
 }
+
