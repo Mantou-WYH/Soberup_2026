@@ -3,7 +3,7 @@
 * 2026-1-29       Mantou            base of all
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
-#pragma section all "cpu0_dsram"
+#pragma section all "cpu0_disarm"
 
 // **************************** ´úÂëÇøÓò ****************************
 int core0_main(void)
