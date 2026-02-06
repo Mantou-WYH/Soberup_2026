@@ -65,7 +65,7 @@
 #error "暂不支持硬件IIC通讯"
 #endif
 
-#define DL1B_XS_PIN                 ( P20_10 )
+#define DL1B_XS_PIN                 ( P20_2 )
 
 #define DL1B_INT_ENABLE             ( 0 )                                       // 是否启用 INT 引脚 启用则会自动更新数据
 #if DL1B_INT_ENABLE

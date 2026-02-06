@@ -215,7 +215,9 @@ uint8 imu660ra_init (void)
 {
     uint8 return_state = 0;
     system_delay_ms(20);                                                        // 等待设备上电成功
+
 #if IMU660RA_USE_SOFT_IIC
+    gpio_init(IMU660RA_CS_PIN, GPO, GPIO_LOW, GPO_PUSH_PULL);                  // 配置 IMU660RA 的CS端口
     soft_iic_init(&imu660ra_iic_struct, IMU660RA_DEV_ADDR, IMU660RA_SOFT_IIC_DELAY, IMU660RA_SCL_PIN, IMU660RA_SDA_PIN);        // 配置 IMU660RA 的 IIC 端口
 
 #else

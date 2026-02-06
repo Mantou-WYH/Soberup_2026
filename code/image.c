@@ -9,8 +9,7 @@
 
 IFX_ALIGN(4) uint8      mt9v03x_image_bin[MT9V03X_H][MT9V03X_W];
 
-// 安全访问图像像素，越界时返回0
-inline uint8_t safe_access_binimg(int x, int y) {
+uint8_t safe_access_binimg(int x, int y) {
     if (x >= 0 && x < MT9V03X_W && y >= 0 && y < MT9V03X_H) {
         return mt9v03x_image_bin[y][x];
     } else {
@@ -18,7 +17,7 @@ inline uint8_t safe_access_binimg(int x, int y) {
     }
 }
 
-inline uint8 safe_access_img(int x, int y) {
+uint8 safe_access_img(int x, int y) {
     if (x >= 0 && x < MT9V03X_W && y >= 0 && y < MT9V03X_H) {
         return mt9v03x_image[y][x];
     } else {
@@ -29,7 +28,7 @@ inline uint8 safe_access_img(int x, int y) {
 void binarization(int thres){
   for(int y=0; y<MT9V03X_H; y++){
     for(int x=0; x<MT9V03X_W; x++){
-        mt9v03x_image_bin[y][x] = safe_access_img(x,y)>thres ? 255 : 0;
+        mt9v03x_image_bin[y][x] = safe_access_binimg(x,y)>thres ? 255 : 0;
     }
   }
 }
@@ -66,7 +65,7 @@ uint8 otsuThreshold_fast()   // 注意计算阈值的一定要是原图像
         for (j = 0; j < width; j += 2)    // 宽
         {
             // 使用 safe_access_img 函数来安全访问图像数据
-            uint8 pixel_value = safe_access_img(j, i);
+            uint8 pixel_value = safe_access_binimg(j, i);
             pixelCount[pixel_value]++;
             gray_sum += pixel_value;
             if (pixel_value > Pixel_Max)

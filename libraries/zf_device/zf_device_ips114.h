@@ -156,7 +156,7 @@ void    ips114_init                     (void);                                 
 // 使用示例     ips114_displayimage03x(mt9v03x_image[0], MT9V03X_W, MT9V03X_H);
 // 备注信息     拓展的一键显示函数，默认无缩放，从屏幕坐标起始点开始显示
 //-------------------------------------------------------------------------------------------------------------------
-#define ips114_displayimage03x(p, width, height)        (ips114_show_gray_image(0, 0, (p), MT9V03X_W, MT9V03X_H, (width), (height), 0))
+#define ips114_displayimage03x(p, width, height)        (ips114_show_gray_image(0, 0, (p), MT9V03X_1_W, MT9V03X_1_H, (width), (height), 0))
 
 //-------------------------------------------------------------------------------------------------------------------
 // 函数简介     IPS114 显示凌瞳图像

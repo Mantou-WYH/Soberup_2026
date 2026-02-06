@@ -60,15 +60,15 @@
 #define OV7725_COF_UART_RX      (UART1_TX_P02_2)                                // 小钻风 UART-RX 引脚 要接在单片机 TX 上
 
 #define OV7725_COF_IIC_DELAY    (640 )                                          // 小钻风 IIC 延时
-#define OV7725_COF_IIC_SCL      (P02_3)                                         // 小钻风 IIC-SCL 引脚
-#define OV7725_COF_IIC_SDA      (P02_2)                                         // 小钻风 IIC-SDA 引脚
+#define OV7725_COF_IIC_SCL      (P33_13)                                         // 小钻风 IIC-SCL 引脚
+#define OV7725_COF_IIC_SDA      (P32_4)                                          // 小钻风 IIC-SDA 引脚
 
-#define OV7725_DMA_CH           (IfxDma_ChannelId_5)                            // ERU触发DMA通道禁止随意修改
+#define OV7725_DMA_CH           (IfxDma_ChannelId_7)                            // ERU触发DMA通道禁止随意修改
 
-#define OV7725_PCLK_PIN         (ERU_CH2_REQ14_P02_1)                           // GPIO触发TIM引脚禁止随意修改
+#define OV7725_PCLK_PIN         (ERU_CH1_REQ10_P14_3)                           // GPIO触发TIM引脚禁止随意修改
 
-#define OV7725_VSYNC_PIN        (ERU_CH3_REQ6_P02_0 )                           // 场中断引脚
-#define OV7725_VSYNC_PORT_PIN   (P02_0 )                                        // 场中断引脚
+#define OV7725_VSYNC_PIN        (ERU_CH4_REQ8_P33_7 )                           // 场中断引脚
+#define OV7725_VSYNC_PORT_PIN   (P33_7 )                                        // 场中断引脚
 
 #define OV7725_DATA_PIN         (P00_0 )                                        // 数据引脚 这里是 只能是 GPIOx0 或者 GPIOx8 开始 连续八个引脚例如 F0-F7
 #define OV7725_DATA_ADD         get_port_in_addr(OV7725_DATA_PIN)

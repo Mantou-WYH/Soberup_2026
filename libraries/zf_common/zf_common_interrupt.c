@@ -43,7 +43,7 @@
 // 函数简介     全局中断使能
 // 参数说明     void
 // 返回参数     void
-// 使用示例     interrupt_global_enable(1);
+// 使用示例     interrupt_global_enable(0);
 // 备注信息
 //-------------------------------------------------------------------------------------------------------------------
 void interrupt_global_enable (uint32 primask)

@@ -39,9 +39,10 @@
 #include "zf_driver_gpio.h"
 #include "zf_driver_dma.h"
 #include "zf_driver_exti.h"
-#include "zf_device_mt9v03x.h"
+#include "zf_device_mt9v03x_double.h"
 #include "zf_device_ov7725.h"
 #include "zf_device_scc8660.h"
+#include "isr_config.h"
 #include "zf_device_camera.h"
 
 
@@ -107,11 +108,10 @@ void camera_fifo_init (void)
 
 //-------------------------------------------------------------------------------------------------------------------
 // 函数简介       摄像头采集初始化
-// 参数说明       image_size      图像的大小
-// @return      void
-// 参数说明       image_size      图像的大小
-// 参数说明       data_addr       数据来源外设地址
-// 参数说明       buffer_addr     图像缓冲区地址
+// 参数说明       source_addr          数据来源外设地址
+// 参数说明       destination_addr     图像缓冲区地址
+// 参数说明       image_size           图像的大小
+// 返回参数       uint8                DMA 链表数量
 // @return      void
 // Sample usage:                camera_init();
 //-------------------------------------------------------------------------------------------------------------------
@@ -135,19 +135,33 @@ uint8 camera_init (uint8 *source_addr, uint8 *destination_addr, uint32 image_siz
                                      image_size);
             exti_init(OV7725_VSYNC_PIN, EXTI_TRIGGER_FALLING);                  //初始化场中断，并设置为下降沿触发中断
             break;
-        case CAMERA_GRAYSCALE:                                                  // 总钻风
+        case CAMERA_GRAYSCALE_1:                                                // 总钻风 1
             for(num = 0; num < 8; num ++)
             {
-                gpio_init((gpio_pin_enum)(MT9V03X_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
+                gpio_init((gpio_pin_enum)(MT9V03X_1_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
             }
-            link_list_num = dma_init(MT9V03X_DMA_CH,
+            link_list_num = dma_init(MT9V03X_1_DMA_CH,
                                      source_addr,
                                      destination_addr,
-                                     MT9V03X_PCLK_PIN,
+                                     MT9V03X_1_PCLK_PIN,
                                      EXTI_TRIGGER_RISING,
                                      image_size);                               // 如果超频到300M 倒数第二个参数请设置为FALLING
 
-            exti_init(MT9V03X_VSYNC_PIN, EXTI_TRIGGER_FALLING);                 // 初始化场中断，并设置为下降沿触发中断
+            exti_init(MT9V03X_1_VSYNC_PIN, EXTI_TRIGGER_BOTH);                  // 初始化场中断，并设置为下降沿触发中断
+            break;
+        case CAMERA_GRAYSCALE_2:                                                // 总钻风 2
+            for(num = 0; num < 8; num ++)
+            {
+                gpio_init((gpio_pin_enum)(MT9V03X_2_DATA_PIN + num), GPI, GPIO_LOW, GPI_FLOATING_IN);
+            }
+            link_list_num = dma_init_2(MT9V03X_2_DMA_CH,
+                                     source_addr,
+                                     destination_addr,
+                                     MT9V03X_2_PCLK_PIN,
+                                     EXTI_TRIGGER_RISING,
+                                     image_size);                               // 如果超频到300M 倒数第二个参数请设置为FALLING
+
+            exti_init(MT9V03X_2_VSYNC_PIN, EXTI_TRIGGER_BOTH);                  // 初始化场中断，并设置为下降沿触发中断
             break;
         case CAMERA_COLOR:                                                      // 凌瞳
             for(num=0; num<8; num++)
@@ -167,5 +181,7 @@ uint8 camera_init (uint8 *source_addr, uint8 *destination_addr, uint32 image_siz
         default:
             break;
     }
+
+
     return link_list_num;
 }

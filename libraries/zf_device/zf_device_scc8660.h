@@ -60,12 +60,12 @@
 #define SCC8660_COF_UART_RX     (UART1_TX_P02_2)                                // 凌瞳 UART-RX 引脚 要接在单片机 TX 上
 
 #define SCC8660_COF_IIC_DELAY   (800)                                           // 凌瞳 IIC 延时
-#define SCC8660_COF_IIC_SCL     (P02_3)                                         // 凌瞳 IIC-SCL 引脚
-#define SCC8660_COF_IIC_SDA     (P02_2)                                         // 凌瞳 IIC-SDA 引脚
+#define SCC8660_COF_IIC_SCL     (P33_13)                                        // 凌瞳 IIC-SCL 引脚
+#define SCC8660_COF_IIC_SDA     (P32_4)                                         // 凌瞳 IIC-SDA 引脚
 
-#define SCC8660_DMA_CH          (IfxDma_ChannelId_5)
-#define SCC8660_PCLK_PIN        (ERU_CH2_REQ14_P02_1)                           // PCLK 触发信号 TIM_ETR 引脚禁止随意修改
-#define SCC8660_VSYNC_PIN       (ERU_CH3_REQ6_P02_0 )                           // 场中断引脚
+#define SCC8660_DMA_CH          (IfxDma_ChannelId_7)
+#define SCC8660_PCLK_PIN        (ERU_CH1_REQ10_P14_3)                           // PCLK 触发信号 TIM_ETR 引脚禁止随意修改
+#define SCC8660_VSYNC_PIN       (ERU_CH4_REQ8_P33_7 )                           // 场中断引脚
 #define SCC8660_DATA_PIN        (P00_0)                                         // 数据引脚 这里是 只能是 GPIOx0 或者 GPIOx8 开始 连续八个引脚例如 F0-F7
 #define SCC8660_DATA_ADD        (get_port_in_addr(SCC8660_DATA_PIN))
 

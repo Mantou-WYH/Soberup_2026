@@ -82,7 +82,7 @@
 #define IMU660RX_CS_PIN             (P20_13)                                       // CS 片选引脚
 #define IMU660RX_CS(x)              ((x) ? (gpio_high(IMU660RX_CS_PIN)) : (gpio_low(IMU660RX_CS_PIN)))
 
-#define IMU660RX_TIMEOUT_COUNT      (0x00FF)                                    // IMU660 超时计数
+#define IMU660RX_TIMEOUT_COUNT      (0x0FFF)                                    // IMU660 超时计数
 
 //================================================定义 IMU660RX 内部地址================================================
 #define IMU660RX_DEV_ADDR           (0x6B)                                      // SA0接地：0x6B SA0上拉：0x69 模块默认上拉

@@ -58,6 +58,7 @@
 #include "zf_driver_uart.h"
 #include "zf_device_camera.h"
 #include "zf_device_type.h"
+#include "isr_config.h"
 #include "zf_device_ov7725.h"
 
 vuint8 ov7725_finish_flag = 0;

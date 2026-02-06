@@ -40,9 +40,15 @@
 static void type_default_callback(void);
 
 camera_type_enum    camera_type                     = NO_CAMERE;                    // 摄像头类型变量
-callback_function   camera_uart_handler             = type_default_callback;        // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
-callback_function   camera_vsync_handler            = type_default_callback;        // 场中断函数指针，根据初始化时设置的函数进行跳转
-callback_function   camera_dma_handler              = type_default_callback;        // DMA完成中断函数指针，根据初始化时设置的函数进行跳转
+
+callback_function   camera_uart_handler_1           = type_default_callback;        // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
+callback_function   camera_vsync_handler_1          = type_default_callback;        // 场中断函数指针，根据初始化时设置的函数进行跳转
+callback_function   camera_dma_handler_1            = type_default_callback;        // DMA完成中断函数指针，根据初始化时设置的函数进行跳转
+
+callback_function   camera_uart_handler_2           = type_default_callback;        // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
+callback_function   camera_vsync_handler_2          = type_default_callback;        // 场中断函数指针，根据初始化时设置的函数进行跳转
+callback_function   camera_dma_handler_2            = type_default_callback;        // DMA完成中断函数指针，根据初始化时设置的函数进行跳转
+
 
 wireless_type_enum  wireless_type                   = NO_WIRELESS;
 callback_function   wireless_module_uart_handler    = type_default_callback;        // 无线串口接收中断函数指针，根据初始化时设置的函数进行跳转
@@ -73,10 +79,20 @@ static void type_default_callback (void)
 //-------------------------------------------------------------------------------------------------------------------
 void  set_camera_type (camera_type_enum type_set, callback_function vsync_callback, callback_function dma_callback, callback_function uart_callback)
 {
-    camera_type = type_set;
-    camera_uart_handler = ((uart_callback == NULL) ? (type_default_callback) : (uart_callback));
-    camera_vsync_handler = ((vsync_callback == NULL) ? (type_default_callback) : (vsync_callback));
-    camera_dma_handler = ((dma_callback == NULL) ? (type_default_callback) : (dma_callback));
+    camera_type           = type_set;
+
+    if(type_set == CAMERA_GRAYSCALE_2 || type_set == CAMERA_GRAYSCALE_SINGLE)
+    {
+        camera_uart_handler_2   = ((uart_callback  == NULL) ? (type_default_callback) : (uart_callback));
+        camera_vsync_handler_2  = ((vsync_callback == NULL) ? (type_default_callback) : (vsync_callback));
+        camera_dma_handler_2    = ((dma_callback   == NULL) ? (type_default_callback) : (dma_callback));
+    }
+    else
+    {
+        camera_uart_handler_1   = ((uart_callback  == NULL) ? (type_default_callback) : (uart_callback));
+        camera_vsync_handler_1  = ((vsync_callback == NULL) ? (type_default_callback) : (vsync_callback));
+        camera_dma_handler_1    = ((dma_callback   == NULL) ? (type_default_callback) : (dma_callback));
+    }
 }
 
 //-------------------------------------------------------------------------------------------------------------------

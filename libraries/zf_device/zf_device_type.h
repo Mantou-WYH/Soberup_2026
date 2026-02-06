@@ -46,7 +46,9 @@ typedef enum
     NO_CAMERE = 0,                                                              // 无摄像头
     CAMERA_BIN_IIC,                                                             // 小钻风 IIC 版本
     CAMERA_BIN_UART,                                                            // 小钻风 UART 版本
-    CAMERA_GRAYSCALE,                                                           // 总钻风
+    CAMERA_GRAYSCALE_SINGLE,                                                    // 总钻风 单摄 版本
+    CAMERA_GRAYSCALE_1,                                                         // 总钻风 1
+    CAMERA_GRAYSCALE_2,                                                         // 总钻风 2
     CAMERA_COLOR,                                                               // 凌瞳
 }camera_type_enum;
 
@@ -74,20 +76,27 @@ typedef void (*callback_function)(void);
 
 extern wireless_type_enum wireless_type;
 extern callback_function wireless_module_uart_handler;                          // 无线串口接收中断函数指针，根据初始化时设置的函数进行跳转
-
-extern camera_type_enum camera_type;
-extern callback_function camera_dma_handler;                                    // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
-extern callback_function camera_vsync_handler;                                  // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
-extern callback_function camera_uart_handler;                                   // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
 extern callback_function wireless_module_spi_handler;                           // WIFI SPI GPIO中断函数指针，根据初始化时设置的函数进行跳转
 
-extern tof_type_enum     tof_type;                                              // ToF 模块 类型
-extern callback_function tof_module_exti_handler;                               // ToF 模块 INT 更新中断
+extern camera_type_enum    camera_type                ;                         // 摄像头类型变量
+
+extern callback_function   camera_uart_handler_1      ;                         // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
+extern callback_function   camera_vsync_handler_1     ;                         // 场中断函数指针，根据初始化时设置的函数进行跳转
+extern callback_function   camera_dma_handler_1       ;                         // DMA完成中断函数指针，根据初始化时设置的函数进行跳转
+
+extern callback_function   camera_uart_handler_2      ;                         // 串口通讯中断函数指针，根据初始化时设置的函数进行跳转
+extern callback_function   camera_vsync_handler_2     ;                         // 场中断函数指针，根据初始化时设置的函数进行跳转
+extern callback_function   camera_dma_handler_2       ;                         // DMA完成中断函数指针，根据初始化时设置的函数进行跳转
+
+
+extern tof_type_enum       tof_type;                                              // ToF 模块 类型
+extern callback_function   tof_module_exti_handler;                               // ToF 模块 INT 更新中断
 //===========================================声明 回调函数指针及外设 类型==============================================
 
 
 //=============================================声明 中断回调 基础函数================================================
 void   set_camera_type          (camera_type_enum type_set, callback_function vsync_callback, callback_function dma_callback, callback_function uart_callback);
+void   set_camera_type_2        (camera_type_enum type_set, callback_function vsync_callback, callback_function dma_callback, callback_function uart_callback);
 void   set_wireless_type        (wireless_type_enum type_set, callback_function wireless_callback);
 void   set_tof_type             (tof_type_enum type_set, callback_function exti_callback);
 //=============================================声明 中断回调 基础函数================================================

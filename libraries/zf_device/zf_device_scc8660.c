@@ -60,7 +60,7 @@
 #include "zf_device_camera.h"
 #include "zf_device_type.h"
 #include "zf_device_config.h"
-
+#include "isr_config.h"
 #include "zf_device_scc8660.h"
 
 vuint8 scc8660_finish_flag = 0;                                                 // 一场图像采集完成标志位
