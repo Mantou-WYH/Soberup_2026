@@ -3,14 +3,14 @@
  * 创建时间: 2026年1月30日 下午8:26:19
  * 描述: 初步图像处理
  **************************************************************/
-#include "zf_device_mt9v03x.h"
+#include "zf_device_mt9v03x_double.h"
 #include "stdio.h"
 #include "stdint.h"
 
-IFX_ALIGN(4) uint8      mt9v03x_image_bin[MT9V03X_H][MT9V03X_W];
+uint8      mt9v03x_image_bin[MT9V03X_1_H][MT9V03X_1_W];
 
-uint8_t safe_access_binimg(int x, int y) {
-    if (x >= 0 && x < MT9V03X_W && y >= 0 && y < MT9V03X_H) {
+uint8 safe_access_binimg(int x, int y) {
+    if (x >= 0 && x < MT9V03X_1_W && y >= 0 && y < MT9V03X_1_H) {
         return mt9v03x_image_bin[y][x];
     } else {
         return 0;
@@ -18,17 +18,17 @@ uint8_t safe_access_binimg(int x, int y) {
 }
 
 uint8 safe_access_img(int x, int y) {
-    if (x >= 0 && x < MT9V03X_W && y >= 0 && y < MT9V03X_H) {
-        return mt9v03x_image[y][x];
+    if (x >= 0 && x < MT9V03X_1_W && y >= 0 && y < MT9V03X_1_H) {
+        return mt9v03x_image_1[y][x];
     } else {
         return 0;
     }
 }
 
 void binarization(int thres){
-  for(int y=0; y<MT9V03X_H; y++){
-    for(int x=0; x<MT9V03X_W; x++){
-        mt9v03x_image_bin[y][x] = safe_access_binimg(x,y)>thres ? 255 : 0;
+  for(int y=0; y<MT9V03X_1_H; y++){
+    for(int x=0; x<MT9V03X_1_W; x++){
+        mt9v03x_image_bin[y][x] = safe_access_img(x,y)>thres ? 255 : 0;
     }
   }
 }
@@ -38,14 +38,14 @@ void binarization(int thres){
  * @param step 采样步长，默认2（隔点采样）。增大可提升速度，但会降低精度
  * @return uint8_t 计算得到的最佳阈值
  */
-uint8 otsuThreshold_fast()   // 注意计算阈值的一定要是原图像
+uint8 otsuThreshold_fast(void)   // 注意计算阈值的一定要是原图像
 {
     #define GrayScale 256
 
     int Pixel_Max = 0;
     int Pixel_Min = 255;
-    uint16 width = MT9V03X_W;
-    uint16 height = MT9V03X_H;
+    uint16 width = MT9V03X_1_W;
+    uint16 height = MT9V03X_1_H;
     int pixelCount[GrayScale];  // 各像素GrayScale的个数pixelCount 一维数组
     float pixelPro[GrayScale];  // 各像素GrayScale所占百分比pixelPro 一维数组
     int i, j, pixelSum = width * height / 4;  // pixelSum是获取总的图像像素个数的1/4，相应下面轮询时高和宽都是以2为单位自增

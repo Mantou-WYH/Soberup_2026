@@ -326,3 +326,11 @@ isr.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_ass
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant.h" :
 isr.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant_interface.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant_interface.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\image.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\image.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\maze.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\maze.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\line.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\line.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\tool.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\tool.h" :

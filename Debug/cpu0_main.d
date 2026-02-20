@@ -324,3 +324,11 @@ cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfr
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant.h" :
 cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant_interface.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant_interface.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\image.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\image.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\maze.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\maze.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\line.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\line.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\tool.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\tool.h" :

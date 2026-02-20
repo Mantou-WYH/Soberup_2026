@@ -33,6 +33,7 @@
 * 2022-09-15       pudding            first version
 ********************************************************************************************************************/
 #include "zf_common_headfile.h"
+
 #pragma section all "cpu0_dsram"
 // 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
 // *************************** 例程硬件连接说明 ***************************
@@ -60,98 +61,43 @@
 // **************************** 代码区域 ****************************
 #define IPS200_TYPE     (IPS200_TYPE_SPI)                                 // 并口两寸屏 这里宏定义填写 IPS200_TYPE_PARALLEL8
                                                                                 // SPI 两寸屏 这里宏定义填写 IPS200_TYPE_SPI
-
+#include "image.h"
 int core0_main(void)
 {
     clock_init();                   // 获取时钟频率<务必保留>
     debug_init();                   // 初始化默认调试串口
     // 此处编写用户代码 例如外设初始化代码等
 
-    uint16_t data[128];
-    int16_t data_index = 0;
-    for( ; 64 > data_index; data_index ++)
-        data[data_index] = data_index;
-    for(data_index = 64; 128 > data_index; data_index ++)
-        data[data_index] = 128 - data_index;
-
-    ips200_set_dir(IPS200_PORTAIT);
-    ips200_set_color(RGB565_RED, RGB565_BLACK);
     ips200_init(IPS200_TYPE);
+    ips200_show_string(0, 0, "mt9v03x init.");
+    while(1)
+    {
+        if(mt9v03x_double_init(mt9v03x_1))
+            ips200_show_string(0, 80, "mt9v03x reinit.");
+        else
+            break;
+        system_delay_ms(500);                                                   // 短延时快速闪灯表示异常
+    }
+    ips200_show_string(0, 16, "init success.");
+
 
     // 此处编写用户代码 例如外设初始化代码等
-	cpu_wait_event_ready();         // 等待所有核心初始化完毕
-	while (TRUE)
-	{
+    cpu_wait_event_ready();         // 等待所有核心初始化完毕
+    while (TRUE)
+    {
         // 此处编写需要循环执行的代码
 
-        ips200_clear();
-        ips200_show_rgb565_image(0, 120, (const uint16 *)gImage_seekfree_logo, 240, 80, 240, 80, 0);    // 显示一个RGB565色彩图片 原图240*80 显示240*80 低位在前
-        system_delay_ms(1500);
-
-        ips200_full(RGB565_GRAY);
-        ips200_show_string( 0 , 16*7,   "SEEKFREE");                            // 显示字符串
-        ips200_show_chinese(80, 16*7,   16, (const uint8 *)chinese_test, 4, RGB565_BLUE);               // 显示汉字
-
-        // 显示的 flaot 数据 最多显示 8bit 位整数 最多显示 6bit 位小数
-        ips200_show_float(  0 , 16*8,   -13.141592,     1, 6);                  // 显示 float 数据 1bit 整数 6bit 小数 应当显示 -3.141592 总共会有 9 个字符的显示占位
-        ips200_show_float(  80, 16*8,   13.141592,      8, 4);                  // 显示 float 数据 8bit 整数 4bit 小数 应当显示 13.1415 总共会有 14 个字符的显示占位 后面会有 5 个字符的空白占位
-
-        ips200_show_int(    0 , 16*9,   -127,           2);                     // 显示 int8 数据
-        ips200_show_uint(   80, 16*9,   255,            4);                     // 显示 uint8 数据
-
-        ips200_show_int(    0 , 16*10,  -32768,         4);                     // 显示 int16 数据
-        ips200_show_uint(   80, 16*10,  65535,          6);                     // 显示 uint16 数据
-
-        ips200_show_int(    0 , 16*11,  -2147483648,    8);                     // 显示 int32 数据 8bit 整数 应当显示 -47483648
-        ips200_show_uint(   80, 16*11,  4294967295,     8);                     // 显示 uint32 数据 10bit 整数 应当显示 4294967295
-
-        system_delay_ms(1000);
-
-        ips200_full(RGB565_GRAY);
-        ips200_show_wave(88, 144, data, 128, 64,  64, 32);                      // 显示一个三角波形 波形宽度 128 波形最大值 64 显示宽度 64 显示最大值 32
-        system_delay_ms(1000);
-        ips200_full(RGB565_GRAY);
-        ips200_show_wave(56, 128, data, 128, 64, 128, 64);                      // 显示一个三角波形 波形宽度 128 波形最大值 64 显示宽度 128 显示最大值 64
-        system_delay_ms(1000);
-
-        // 使用画线函数 从顶上两个角画射线
-        ips200_clear();
-        for(data_index = 0; 240 > data_index; data_index += 10)
+        if(mt9v03x_finish_flag_1)
         {
-            ips200_draw_line(0, 0, data_index, 320 - 1, RGB565_66CCFF);
-            system_delay_ms(20);
-        }
-        ips200_draw_line(0, 0, 240 - 1, 320 - 1, RGB565_66CCFF);
-        for(data_index = 310; 0 <= data_index; data_index -= 10)
-        {
-            ips200_draw_line(0, 0, 240 - 1, data_index, RGB565_66CCFF);
-            system_delay_ms(20);
+            binarization(otsuThreshold_fast()-50);
+            ips200_displayimage03x((const uint8 *)mt9v03x_image_bin, MT9V03X_1_W, MT9V03X_1_H);                       // 显示原始图像
+//            ips200_show_gray_image(0, 0, (const uint8 *)mt9v03x_image_1, MT9V03X_1_W, MT9V03X_1_H, 240, 180, 64);     // 显示二值化图像
+            mt9v03x_finish_flag_1 = 0;
         }
 
-        ips200_draw_line(240 - 1, 0, 239, 320 - 1, RGB565_66CCFF);
-        for(data_index = 230; 0 <= data_index; data_index -= 10)
-        {
-            ips200_draw_line(240 - 1, 0, data_index, 320 - 1, RGB565_66CCFF);
-            system_delay_ms(20);
-        }
-        ips200_draw_line(240 - 1, 0, 0, 320 - 1, RGB565_66CCFF);
-        for(data_index = 310; 0 <= data_index; data_index -= 10)
-        {
-            ips200_draw_line(240 - 1, 0, 0, data_index, RGB565_66CCFF);
-            system_delay_ms(20);
-        }
-        system_delay_ms(1000);
-
-        ips200_full(RGB565_RED);
-        system_delay_ms(500);
-        ips200_full(RGB565_GREEN);
-        system_delay_ms(500);
-        ips200_full(RGB565_BLUE);
-        system_delay_ms(500);
-        ips200_full(RGB565_WHITE);
-        system_delay_ms(500);
 
         // 此处编写需要循环执行的代码
+
 	}
 }
 

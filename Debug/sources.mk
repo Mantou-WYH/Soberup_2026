@@ -24,6 +24,7 @@ SECONDARY_SIZE :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+code \
 libraries/infineon_libraries/Infra/Platform/Tricore/Compilers \
 libraries/infineon_libraries/Service/CpuGeneric/If \
 libraries/infineon_libraries/Service/CpuGeneric/StdIf \

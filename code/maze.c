@@ -5,7 +5,7 @@
  **************************************************************/
 #include "stdio.h"
 #include "image.h"
-#include "zf_device_mt9v03x.h"
+#include "zf_device_mt9v03x_double.h"
 #include "string.h"
 #include "maze.h"
 
@@ -27,8 +27,9 @@ const int dir_frontright[4][2] ={{1,  -1},
 
 Point Side_L[200],Side_R[200],StarM;
 Point Max_Lx,Max_Ly,Max_Rx,Max_Ry;
-uint8_t visited[MT9V03X_H][MT9V03X_W];
+uint8_t visited[MT9V03X_1_H][MT9V03X_1_W];
 int L_point,R_point;
+uint8_t touch = 0;
 
 typedef struct {
     int fx;
@@ -41,17 +42,15 @@ typedef struct {
 }maze;
 
 void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
-    Max_Lx.x = MT9V03X_W - 1;
+    Max_Lx.x = MT9V03X_1_W - 1;
     Max_Rx.x = 0;
-    Max_Ly.y = MT9V03X_H - 1;
-    Max_Ry.y = MT9V03X_H - 1;
+    Max_Ly.y = MT9V03X_1_H - 1;
+    Max_Ry.y = MT9V03X_1_H - 1;
 
     maze L_maze = {0}, R_maze = {0};
     L_maze.step = 0;
     R_maze.step = 0;
-    uint8_t L_stop = 0;
-    uint8_t R_stop = 0;
-    uint8_t touch = 0;
+
 
     memset(visited, 0, sizeof(visited));
     visited[L.y][L.x] = 1;
@@ -63,10 +62,10 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
 
     while (L_maze.step + *Lnum < MAX_step &&
            R_maze.step + *Rnum < MAX_step &&
-           L.y >= SAFE_MARGIN_Y && L.y < MT9V03X_H &&
-           R.y >= SAFE_MARGIN_Y && R.y < MT9V03X_H &&
-           L.x > 0 && L.x < MT9V03X_W - 1 &&
-           R.x > 0 && R.x < MT9V03X_W - 1 &&
+           L.y >= SAFE_MARGIN_Y && L.y < MT9V03X_1_H &&
+           R.y >= SAFE_MARGIN_Y && R.y < MT9V03X_1_H &&
+           L.x > 0 && L.x < MT9V03X_1_W - 1 &&
+           R.x > 0 && R.x < MT9V03X_1_W - 1 &&
            L_maze.turn < 4 && R_maze.turn < 4) {
 
         // ========== 左手移动 ==========
@@ -106,12 +105,8 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
             Max_Ly.x = L.x;
         }
         if (visited[L.y][L.x] == 1) {
-            if (touch == 1) {
-                touch = 0;
-                break;
-            } else {
-                touch++;
-            }
+            touch = 1;
+            break;
         } else {
             visited[L.y][L.x] = 1;
         }
@@ -153,12 +148,8 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
             Max_Ry.x = R.x;
         }
         if (visited[R.y][R.x] == 1) {
-            if (touch == 1) {
-                touch = 0;
+            touch = 1;
                 break;
-            } else {
-                touch++;
-            }
         } else {
             visited[R.y][R.x] = 1;
         }
@@ -168,13 +159,13 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
     *Rnum += R_maze.step;
 }
 
-uint8_t First_Line_M(int n,int y){ //最长白列为起始点
+uint8_t First_Line_M(uint8_t n,uint8_t y){ //最长白列为起始点
     int sum = 0;
     int sum_max = 0;
-    StarM.x = MT9V03X_W / 2;  // 默认取图像中心x坐标
+    StarM.x = MT9V03X_1_W / 2;  // 默认取图像中心x坐标
     StarM.y = y;   // 默认取最底部y坐标
 
-    for(int i=0;i<MT9V03X_W-1;i++){
+    for(int i=0;i<MT9V03X_1_W-1;i++){
         for(int j=y;j>0;j--){
             if(safe_access_binimg(i, j) == 0) break;
             sum++;
@@ -199,7 +190,7 @@ uint8_t First_Line_M(int n,int y){ //最长白列为起始点
 
 
 
-    for(uint16_t i=StarM.x;i>2;i--){
+    for(int i=StarM.x;i>2;i--){
         if(safe_access_binimg(i-1,StarM.y)==0){
             if(safe_access_binimg(i-2,StarM.y)==0){
                 Side_L[n].x = i;
@@ -208,7 +199,7 @@ uint8_t First_Line_M(int n,int y){ //最长白列为起始点
         }
     }
 
-    for(uint16_t i=StarM.x;i<MT9V03X_W-2;i++){
+    for(int i=StarM.x;i<MT9V03X_1_W-2;i++){
         if(safe_access_binimg(i+1,StarM.y)==0){
             if(safe_access_binimg(i+2,StarM.y)==0){
                 Side_R[n].x = i;
@@ -232,14 +223,14 @@ uint8_t First_Line_M(int n,int y){ //最长白列为起始点
  * @return: 0 = 成功；-1 = 未找到有效边界
  */
 int find_line_edges_at_row(int y, Point *L, Point *R) {
-    if (y < 0 || y >= MT9V03X_H) {
+    if (y < 0 || y >= MT9V03X_1_H) {
         return -1;
     }
 
     int found_L = 0, found_R = 0;
 
     // ====== 寻找左侧 L：从左到右找 [黑, 黑, 白, 白] ======
-    for (int x = 2; x < MT9V03X_W - 2; x++) {
+    for (int x = 2; x < MT9V03X_1_W - 2; x++) {
         uint8_t p0 = safe_access_binimg(x - 2, y); // 黑
         uint8_t p1 = safe_access_binimg(x - 1, y); // 黑
         uint8_t p2 = safe_access_binimg(x,     y); // 白
@@ -254,7 +245,7 @@ int find_line_edges_at_row(int y, Point *L, Point *R) {
     }
 
     // ====== 寻找右侧 R：从右到左找 [白, 白, 黑, 黑] ======
-    for (int x = MT9V03X_W - 3; x >= 2; x--) {
+    for (int x = MT9V03X_1_W - 3; x >= 2; x--) {
         uint8_t p0 = safe_access_binimg(x - 1, y); // 白
         uint8_t p1 = safe_access_binimg(x,     y); // 白
         uint8_t p2 = safe_access_binimg(x + 1, y); // 黑
@@ -276,3 +267,85 @@ int find_line_edges_at_row(int y, Point *L, Point *R) {
     }
 }
 
+/*************************
+ *
+
+******************************/
+void search_line_main(void) {
+    uint8_t y = MT9V03X_1_H - 1;  // 初始扫描行号，默认为图像最底部
+    int MAX_step = 150;        // 最大搜索步数
+
+    int Lnum = 0, Rnum = 0;
+
+    uint8_t start_found = First_Line_M(0, y);
+    if (!start_found) {
+        // 未能找到有效的起始点，直接返回
+        return;
+    }
+
+    Point current_L = Side_L[0];
+    Point current_R = Side_R[0];
+
+    // 更新当前数量
+    Lnum = 1;
+    Rnum = 1;
+
+    // 循环处理
+    int step_count = 0;
+    while (step_count < MAX_step) {
+        // 重置touch标志
+        touch = 0;
+
+        // 调用 findline_twoside 处理左右边线
+
+        findline_twoside(current_L, current_R, &Lnum, &Rnum, MAX_step);
+
+        // 检查touch标志是否被设置，如果是则寻找新的起始点
+        if (touch) {
+            // 获取当前行号（使用最新点所在的行）
+            int current_row = (Lnum > 0) ? Side_L[Lnum - 1].y : y;
+
+            Point new_L, new_R;
+            if (find_line_edges_at_row(current_row, &new_L, &new_R) == 0) {
+                // 更新当前左右边线的起始点
+                current_L = new_L;
+                current_R = new_R;
+
+                // 添加新的起始点到数组中
+                Side_L[Lnum].x = new_L.x;
+                Side_L[Lnum].y = new_L.y;
+                Lnum++;
+
+                Side_R[Rnum].x = new_R.x;
+                Side_R[Rnum].y = new_R.y;
+                Rnum++;
+
+                // 重置touch标志，以便继续处理
+                touch = 0;
+            } else {
+                // 如果无法找到新的边界点，结束循环
+                break;
+            }
+        }
+
+        // 增加步数
+        step_count++;
+
+        // 检查是否达到最大步数或其它结束条件
+        if (Lnum >= MAX_step || Rnum >= MAX_step) {
+            break;
+        }
+
+        // 更新当前左右边线的最新点作为下次循环的起始点
+        if (Lnum > 0 && Rnum > 0) {
+            current_L = Side_L[Lnum - 1];
+            current_R = Side_R[Rnum - 1];
+        } else {
+            // 如果其中一个数组为空，结束循环
+            break;
+        }
+    }
+
+    // 结果已存储在全局变量 Side_L、Side_R 中
+    // Lnum 和 Rnum 分别记录了左边线和右边线的点数
+}

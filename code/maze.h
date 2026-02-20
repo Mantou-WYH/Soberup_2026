@@ -6,9 +6,13 @@
 #define SAFE_MARGIN_Y 20
 
 typedef struct {
-    uint16_t x;
-    uint16_t y;
+    int x;
+    int y;
 } Point;
+
+extern Point Side_L[200],Side_R[200],StarM;
+extern int L_point,R_point;
+extern Point Max_Lx,Max_Ly,Max_Rx,Max_Ry;
 
 
 #endif /* CODE_MAZE_H_ */
