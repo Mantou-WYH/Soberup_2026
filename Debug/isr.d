@@ -334,3 +334,7 @@ isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\line.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\line.h" :
 isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\tool.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\tool.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h" :

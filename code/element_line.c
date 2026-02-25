@@ -8,8 +8,7 @@
 #include "maze.h"
 #include "zf_device_ips200.h"
 
-int element_line_L=0,element_line_R=0,element_line_U=0,element_line_B=0,element_line_M=0;
-int circle_l=0,circle_r=0;
+int element_line_L=0,element_line_R=0,element_line_U=0,element_line_B=0;
 
 Point L_edge[10],R_edge[10],U_edge[10],B_edge[10],M_edge[10];
 
@@ -139,14 +138,6 @@ int element_B(){
     return count;
 }
 
-int element_M(){
-    int count = 0;
-    for(int i=-5;i<=5;i++){
-        count = line_H(MT9V03X_1_W/2+i*5,count,M_edge);
-    }
-    return count;
-}
-
 void show_element_line(){
     //ips200_show_int(0,140,element_line_M,2);
     ips200_show_int(0,160,element_line_L,2);
@@ -160,7 +151,6 @@ void element_update(){
     element_line_R = element_R();
     element_line_U = element_U();
     element_line_B = element_B();
-    element_line_M = element_M();
     //show_element_line();
     //show_element_first_point();
     //show_circie_line();

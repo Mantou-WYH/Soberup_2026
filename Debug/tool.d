@@ -332,3 +332,7 @@ tool.o :	"E:\\smart_car 2026\\Soberup_2026\\code\line.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\line.h" :
 tool.o :	"E:\\smart_car 2026\\Soberup_2026\\code\tool.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\tool.h" :
+tool.o :	"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h" :
+tool.o :	"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h" :

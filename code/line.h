@@ -2,6 +2,8 @@
 #define CODE_LINE_H_
 
 #define M_PI 3.14159
+extern int fork_num;
+
 void caculate_error();
 int return_error();
 

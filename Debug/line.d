@@ -50,3 +50,5 @@ line.o :	..\code\tool.h
 ..\code\tool.h :
 line.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_ips200.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_ips200.h" :
+line.o :	..\code\state_control.h
+..\code\state_control.h :

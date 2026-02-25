@@ -9,11 +9,13 @@
 #include "line.h"
 #include "tool.h"
 #include "zf_device_ips200.h"
+#include "state_control.h"
 
 int error=0;
 
 Point target_L,target_R,target_M;
-
+int fork_seq[20] = {0};
+int fork_num = 0;
 
 //-------------------------------------------------------------------------------------------------------------------
 //  函数简介     计算 某个点与底边中点的连线 与 中点法线的夹角
@@ -108,23 +110,15 @@ void caculate_error(){
     int L_result = get_angle(L.x,L.y);
     int R_result = get_angle(R.x,R.y);
 
-    /*
-    if(current_state== open_run){
-        error = 0;
-    }else if(current_circle_state==R_run){
-        error = R_result;
-    }else if(current_circle_state==L_run){
-        error = L_result;
-    }else if(current_circle_state==L_out){
-        error = R_result;
-    }else if(current_circle_state==R_out){
-        error = L_result;
+    if(car_state == fork){
+        if(fork_seq[fork_num]==0){
+            error = L_result;
+        }else{
+            error = R_result;
+        }
     }else{
         error = M_result;
     }
-    */
-
-    error = M_result;
 }
 
 int return_error(){

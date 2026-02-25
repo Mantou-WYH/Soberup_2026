@@ -122,6 +122,8 @@
 #include "maze.h"
 #include "line.h"
 #include "tool.h"
+#include "element_line.h"
+#include "state_control.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif
