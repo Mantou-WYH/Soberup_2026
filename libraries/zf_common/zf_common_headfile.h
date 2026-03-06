@@ -124,6 +124,9 @@
 #include "tool.h"
 #include "element_line.h"
 #include "state_control.h"
+#include "encoder.h"
+#include "motor.h"
+#include "initialize.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif

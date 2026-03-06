@@ -35,54 +35,20 @@
 #include "zf_common_headfile.h"
 
 #pragma section all "cpu0_dsram"
-// 将本语句与#pragma section all restore语句之间的全局变量都放在CPU0的RAM中
-// *************************** 例程硬件连接说明 ***************************
-//      模块管脚            单片机管脚
-//      BL                  查看 zf_device_ips200_parallel8.h 中 IPS200_BL_PIN 宏定义  默认 P15_3
-//      CS                  查看 zf_device_ips200_parallel8.h 中 IPS200_CS_PIN 宏定义  默认 P15_5
-//      RST                 查看 zf_device_ips200_parallel8.h 中 IPS200_RST_PIN 宏定义 默认 P15_1
-//      RS                  查看 zf_device_ips200_parallel8.h 中 IPS200_RS_PIN 宏定义  默认 P15_0
-//      WR                  查看 zf_device_ips200_parallel8.h 中 IPS200_WR_PIN 宏定义  默认 P15_2
-//      RD                  查看 zf_device_ips200_parallel8.h 中 IPS200_RD_PIN 宏定义  默认 P15_4
-//      D0-D7               查看 zf_device_ips200_parallel8.h 中 IPS200_Dx_PIN 宏定义  默认 P11_9/P11_10/P11_11/P11_12/P13_0/P13_1/P13_2/P13_3
-//      GND                 核心板电源地 GND
-//      3V3                 核心板 3V3 电源
-
-
-
-// *************************** 例程测试说明 ***************************
-// 1.核心板烧录本例程 插在主板上 2寸IPS 显示模块插在主板的屏幕接口排座上 请注意引脚对应 不要插错
-// 2.电池供电 上电后 2寸IPS 屏幕亮起 显示字符数字浮点数和波形图
-// 3.判断屏幕为SPI屏幕或者并口屏幕: 查看屏幕背面的PCB丝印，如果带有SPI字样就为SPI屏幕，否则为并口屏幕
-//   例程文件夹下有不同类型2寸屏幕的区别示意图 "SPI和并口2寸屏幕区别.png"
-//   修改下方的IPS200_TYPE宏定义来适配对应屏幕的驱动
-// 如果发现现象与说明严重不符 请参照本文件最下方 例程常见问题说明 进行排查
-
 // **************************** 代码区域 ****************************
-#define IPS200_TYPE     (IPS200_TYPE_SPI)                                 // 并口两寸屏 这里宏定义填写 IPS200_TYPE_PARALLEL8
-                                                                                // SPI 两寸屏 这里宏定义填写 IPS200_TYPE_SPI
-#include "image.h"
+
 int core0_main(void)
 {
     clock_init();                   // 获取时钟频率<务必保留>
     debug_init();                   // 初始化默认调试串口
     // 此处编写用户代码 例如外设初始化代码等
+    init_mian();
 
-    ips200_init(IPS200_TYPE);
-    ips200_show_string(0, 0, "mt9v03x init.");
-    while(1)
-    {
-        if(mt9v03x_double_init(mt9v03x_1))
-            ips200_show_string(0, 80, "mt9v03x reinit.");
-        else
-            break;
-        system_delay_ms(500);                                                   // 短延时快速闪灯表示异常
-    }
-    ips200_show_string(0, 16, "init success.");
 
 
     // 此处编写用户代码 例如外设初始化代码等
     cpu_wait_event_ready();         // 等待所有核心初始化完毕
+
     while (TRUE)
     {
         // 此处编写需要循环执行的代码
@@ -94,7 +60,6 @@ int core0_main(void)
 //            ips200_show_gray_image(0, 0, (const uint8 *)mt9v03x_image_1, MT9V03X_1_W, MT9V03X_1_H, 240, 180, 64);     // 显示二值化图像
             mt9v03x_finish_flag_1 = 0;
         }
-
 
         // 此处编写需要循环执行的代码
 

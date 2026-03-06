@@ -336,3 +336,9 @@ cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\element_line.h" :
 cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\state_control.h" :
+cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\encoder.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\encoder.h" :
+cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\motor.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\motor.h" :
+cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\initialize.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\initialize.h" :

@@ -1,0 +1,644 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc23480a --dep-file=encoder.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/encoder.src ../code/encoder.c"
+	.compiler_name		"ctc"
+	;source	'../code/encoder.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.encoder.Encoder_Init',code,cluster('Encoder_Init')
+	.sect	'.text.encoder.Encoder_Init'
+	.align	2
+	
+	.global	Encoder_Init
+; Function Encoder_Init
+.L5:
+Encoder_Init:	.type	func
+	mov	d4,#2
+.L52:
+	mov	d5,#3
+.L53:
+	mov	d6,#4
+	call	encoder_dir_init
+.L54:
+	mov	d4,#4
+.L55:
+	mov	d5,#6
+.L56:
+	mov	d6,#7
+	call	encoder_dir_init
+.L57:
+	ret
+.L29:
+	
+__Encoder_Init_function_end:
+	.size	Encoder_Init,__Encoder_Init_function_end-Encoder_Init
+.L18:
+	; End of function
+	
+	.sdecl	'.text.encoder.Get_Encoder_L',code,cluster('Get_Encoder_L')
+	.sect	'.text.encoder.Get_Encoder_L'
+	.align	2
+	
+	.global	Get_Encoder_L
+; Function Get_Encoder_L
+.L7:
+Get_Encoder_L:	.type	func
+	mov	d4,#2
+	call	encoder_get_count
+.L36:
+	mov	d15,d2
+.L38:
+	mov	d4,#2
+	call	encoder_clear_count
+.L37:
+	movh.a	a15,#@his(_999001_filtered_right)
+	lea	a15,[a15]@los(_999001_filtered_right)
+.L78:
+	itof	d15,d15
+.L39:
+	mov.u	d0,#39322
+	addih	d0,d0,#15897
+.L79:
+	movh.a	a2,#@his(_999001_filtered_right)
+	lea	a2,[a2]@los(_999001_filtered_right)
+	ld.w	d1,[a2]
+.L80:
+	mov.u	d2,#39322
+	addih	d2,d2,#16217
+.L81:
+	mul.f	d1,d1,d2
+.L82:
+	madd.f	d15,d1,d15,d0
+.L83:
+	st.w	[a15],d15
+.L84:
+	movh.a	a15,#@his(_999001_filtered_right)
+	lea	a15,[a15]@los(_999001_filtered_right)
+	ld.w	d15,[a15]
+.L85:
+	movh	d0,#16128
+.L86:
+	add.f	d15,d15,d0
+.L87:
+	ftoiz	d2,d15
+.L88:
+	j	.L2
+.L2:
+	ret
+.L34:
+	
+__Get_Encoder_L_function_end:
+	.size	Get_Encoder_L,__Get_Encoder_L_function_end-Get_Encoder_L
+.L28:
+	; End of function
+	
+	.sdecl	'.text.encoder.Get_Encoder_R',code,cluster('Get_Encoder_R')
+	.sect	'.text.encoder.Get_Encoder_R'
+	.align	2
+	
+	.global	Get_Encoder_R
+; Function Get_Encoder_R
+.L9:
+Get_Encoder_R:	.type	func
+	mov	d4,#4
+	call	encoder_get_count
+.L40:
+	mov	d15,d2
+.L42:
+	mov	d4,#4
+	call	encoder_clear_count
+.L41:
+	movh.a	a15,#@his(_999002_filtered_left)
+	lea	a15,[a15]@los(_999002_filtered_left)
+.L62:
+	itof	d15,d15
+.L43:
+	mov.u	d0,#39322
+	addih	d0,d0,#15897
+.L63:
+	movh.a	a2,#@his(_999002_filtered_left)
+	lea	a2,[a2]@los(_999002_filtered_left)
+	ld.w	d1,[a2]
+.L64:
+	mov.u	d2,#39322
+	addih	d2,d2,#16217
+.L65:
+	mul.f	d1,d1,d2
+.L66:
+	madd.f	d15,d1,d15,d0
+.L67:
+	st.w	[a15],d15
+.L68:
+	movh.a	a15,#@his(_999002_filtered_left)
+	lea	a15,[a15]@los(_999002_filtered_left)
+	ld.w	d15,[a15]
+.L69:
+	movh	d0,#16128
+.L70:
+	add.f	d15,d15,d0
+.L71:
+	ftoiz	d2,d15
+.L72:
+	rsub	d2,#0
+.L73:
+	j	.L3
+.L3:
+	ret
+.L31:
+	
+__Get_Encoder_R_function_end:
+	.size	Get_Encoder_R,__Get_Encoder_R_function_end-Get_Encoder_R
+.L23:
+	; End of function
+	
+	.sdecl	'.data.encoder._999001_filtered_right',data,cluster('_999001_filtered_right')
+	.sect	'.data.encoder._999001_filtered_right'
+	.align	2
+_999001_filtered_right:	.type	object
+	.size	_999001_filtered_right,4
+	.space	4
+	.sdecl	'.data.encoder._999002_filtered_left',data,cluster('_999002_filtered_left')
+	.sect	'.data.encoder._999002_filtered_left'
+	.align	2
+_999002_filtered_left:	.type	object
+	.size	_999002_filtered_left,4
+	.space	4
+	.calls	'Encoder_Init','encoder_dir_init'
+	.calls	'Get_Encoder_L','encoder_get_count'
+	.calls	'Get_Encoder_L','encoder_clear_count'
+	.calls	'Get_Encoder_R','encoder_get_count'
+	.calls	'Get_Encoder_R','encoder_clear_count'
+	.calls	'Encoder_Init','',0
+	.calls	'Get_Encoder_L','',0
+	.extern	encoder_get_count
+	.extern	encoder_clear_count
+	.extern	encoder_dir_init
+	.calls	'Get_Encoder_R','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L11:
+	.word	1431
+	.half	3
+	.word	.L12
+	.byte	4
+.L10:
+	.byte	1
+	.byte	'../code/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L13
+.L30:
+	.byte	2
+	.byte	'int',0,4,5
+.L32:
+	.byte	2
+	.byte	'float',0,4,4,2
+	.byte	'short int',0,2,5,3,1,75,9,1,4
+	.byte	'TIM2_ENCODER',0,0,4
+	.byte	'TIM3_ENCODER',0,1,4
+	.byte	'TIM4_ENCODER',0,2,4
+	.byte	'TIM5_ENCODER',0,3,4
+	.byte	'TIM6_ENCODER',0,4,0,5
+	.byte	'encoder_get_count',0,1,85,7
+	.word	167
+	.byte	1,1,1,1,6
+	.byte	'encoder_n',0,1,85,49
+	.word	180
+	.byte	0,7
+	.byte	'encoder_clear_count',0,1,86,7,1,1,1,1,6
+	.byte	'encoder_n',0,1,86,49
+	.word	180
+	.byte	0,3,1,42,9,1,4
+	.byte	'TIM2_ENCODER_CH1_P00_7',0,0,4
+	.byte	'TIM2_ENCODER_CH1_P33_7',0,1,4
+	.byte	'TIM3_ENCODER_CH1_P02_6',0,2,4
+	.byte	'TIM4_ENCODER_CH1_P02_8',0,3,4
+	.byte	'TIM5_ENCODER_CH1_P21_7',0,4,4
+	.byte	'TIM5_ENCODER_CH1_P10_3',0,5,4
+	.byte	'TIM6_ENCODER_CH1_P20_3',0,6,4
+	.byte	'TIM6_ENCODER_CH1_P10_2',0,7,0,3,1,59,9,1,4
+	.byte	'TIM2_ENCODER_CH2_P00_8',0,0,4
+	.byte	'TIM2_ENCODER_CH2_P33_6',0,1,4
+	.byte	'TIM3_ENCODER_CH2_P02_7',0,2,4
+	.byte	'TIM4_ENCODER_CH2_P00_9',0,3,4
+	.byte	'TIM4_ENCODER_CH2_P33_5',0,4,4
+	.byte	'TIM5_ENCODER_CH2_P21_6',0,5,4
+	.byte	'TIM5_ENCODER_CH2_P10_1',0,6,4
+	.byte	'TIM6_ENCODER_CH2_P20_0',0,7,0,7
+	.byte	'encoder_dir_init',0,1,89,7,1,1,1,1,6
+	.byte	'encoder_n',0,1,89,49
+	.word	180
+	.byte	6
+	.byte	'ch1_pin',0,1,89,82
+	.word	357
+	.byte	6
+	.byte	'ch2_pin',0,1,89,113
+	.word	563
+	.byte	0,8
+	.byte	'__wchar_t',0,2,1,1
+	.word	167
+	.byte	2
+	.byte	'unsigned int',0,4,7,8
+	.byte	'__size_t',0,2,1,1
+	.word	863
+	.byte	8
+	.byte	'__ptrdiff_t',0,2,1,1
+	.word	151
+	.byte	9,1,10
+	.word	916
+	.byte	8
+	.byte	'__codeptr',0,2,1,1
+	.word	918
+	.byte	8
+	.byte	'__intptr_t',0,2,1,1
+	.word	151
+	.byte	8
+	.byte	'__uintptr_t',0,2,1,1
+	.word	863
+	.byte	2
+	.byte	'unsigned short int',0,2,7,8
+	.byte	'_iob_flag_t',0,3,82,25
+	.word	980
+	.byte	2
+	.byte	'unsigned char',0,1,8,8
+	.byte	'uint8',0,4,105,29
+	.word	1022
+	.byte	8
+	.byte	'uint16',0,4,109,29
+	.word	980
+	.byte	2
+	.byte	'unsigned long int',0,4,7,8
+	.byte	'uint32',0,4,113,29
+	.word	1068
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,8
+	.byte	'uint64',0,4,118,29
+	.word	1104
+	.byte	8
+	.byte	'sint16',0,4,126,29
+	.word	167
+	.byte	2
+	.byte	'long int',0,4,5,8
+	.byte	'sint32',0,4,131,1,29
+	.word	1160
+	.byte	2
+	.byte	'long long int',0,8,5,8
+	.byte	'sint64',0,4,138,1,29
+	.word	1188
+	.byte	8
+	.byte	'float32',0,4,167,1,29
+	.word	158
+	.byte	11
+	.byte	'void',0,10
+	.word	1238
+	.byte	8
+	.byte	'pvoid',0,5,57,28
+	.word	1244
+	.byte	8
+	.byte	'Ifx_TickTime',0,5,79,28
+	.word	1188
+	.byte	2
+	.byte	'char',0,1,6,8
+	.byte	'int8',0,6,54,29
+	.word	1284
+	.byte	8
+	.byte	'int16',0,6,55,29
+	.word	167
+	.byte	8
+	.byte	'int32',0,6,56,29
+	.word	151
+	.byte	8
+	.byte	'int64',0,6,57,29
+	.word	1188
+	.byte	8
+	.byte	'encoder_channel1_enum',0,1,56,2
+	.word	357
+	.byte	8
+	.byte	'encoder_channel2_enum',0,1,73,2
+	.word	563
+	.byte	8
+	.byte	'encoder_index_enum',0,1,82,2
+	.word	180
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L12:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,4,1,58,15,59,15,57,15,11,15
+	.byte	0,0,4,40,0,3,8,28,13,0,0,5,46,1,3,8,58,15,59,15,57,15,73,19,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,7,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,8,22,0,3,8,58,15,59,15
+	.byte	57,15,73,19,0,0,9,21,0,54,15,0,0,10,15,0,73,19,0,0,11,59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L13:
+	.word	.L45-.L44
+.L44:
+	.half	3
+	.word	.L47-.L46
+.L46:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver',0
+	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common',0,0
+	.byte	'zf_driver_encoder.h',0,1,0,0
+	.byte	'../code/encoder.c',0,0,0,0
+	.byte	'stdio.h',0,2,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'ifx_types.h',0,3,0,0
+	.byte	'zf_common_typedef.h',0,4,0,0,0
+.L47:
+.L45:
+	.sdecl	'.debug_info',debug,cluster('Encoder_Init')
+	.sect	'.debug_info'
+.L14:
+	.word	199
+	.half	3
+	.word	.L15
+	.byte	4,1
+	.byte	'../code/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L17,.L16
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Encoder_Init',0,1,9,6,1,1,1
+	.word	.L5,.L29,.L4
+	.byte	4
+	.word	.L5,.L29
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Encoder_Init')
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Encoder_Init')
+	.sect	'.debug_line'
+.L16:
+	.word	.L49-.L48
+.L48:
+	.half	3
+	.word	.L51-.L50
+.L50:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/encoder.c',0,0,0,0,0
+.L51:
+	.byte	5,22,7,0,5,2
+	.word	.L5
+	.byte	3,9,1,5,33,9
+	.half	.L52-.L5
+	.byte	1,5,46,9
+	.half	.L53-.L52
+	.byte	1,5,22,9
+	.half	.L54-.L53
+	.byte	3,1,1,5,33,9
+	.half	.L55-.L54
+	.byte	1,5,46,9
+	.half	.L56-.L55
+	.byte	1,5,1,9
+	.half	.L57-.L56
+	.byte	3,1,1,7,9
+	.half	.L18-.L57
+	.byte	0,1,1
+.L49:
+	.sdecl	'.debug_ranges',debug,cluster('Encoder_Init')
+	.sect	'.debug_ranges'
+.L17:
+	.word	-1,.L5,0,.L18-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_info'
+.L19:
+	.word	248
+	.half	3
+	.word	.L20
+	.byte	4,1
+	.byte	'../code/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L22,.L21
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Get_Encoder_R',0,1,30,5
+	.word	.L30
+	.byte	1,1
+	.word	.L9,.L31,.L8
+	.byte	4
+	.word	.L9,.L31
+	.byte	5
+	.byte	'filtered_left',0,1,31,18
+	.word	.L32
+	.byte	5,3
+	.word	_999002_filtered_left
+	.byte	6
+	.byte	'raw',0,1,34,9
+	.word	.L30,.L33
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_abbrev'
+.L20:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_line'
+.L21:
+	.word	.L59-.L58
+.L58:
+	.half	3
+	.word	.L61-.L60
+.L60:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/encoder.c',0,0,0,0,0
+.L61:
+	.byte	5,34,7,0,5,2
+	.word	.L9
+	.byte	3,34,1,5,9,9
+	.half	.L40-.L9
+	.byte	1,5,25,9
+	.half	.L42-.L40
+	.byte	3,1,1,5,5,9
+	.half	.L41-.L42
+	.byte	3,3,1,5,36,9
+	.half	.L62-.L41
+	.byte	1,5,21,9
+	.half	.L43-.L62
+	.byte	1,5,63,9
+	.half	.L63-.L43
+	.byte	1,5,45,9
+	.half	.L64-.L63
+	.byte	1,5,63,9
+	.half	.L65-.L64
+	.byte	1,5,40,9
+	.half	.L66-.L65
+	.byte	1,5,19,9
+	.half	.L67-.L66
+	.byte	1,9
+	.half	.L68-.L67
+	.byte	3,3,1,5,35,9
+	.half	.L69-.L68
+	.byte	1,5,33,9
+	.half	.L70-.L69
+	.byte	1,5,13,9
+	.half	.L71-.L70
+	.byte	1,5,12,9
+	.half	.L72-.L71
+	.byte	1,5,5,9
+	.half	.L73-.L72
+	.byte	1,5,1,9
+	.half	.L3-.L73
+	.byte	3,1,1,7,9
+	.half	.L23-.L3
+	.byte	0,1,1
+.L59:
+	.sdecl	'.debug_ranges',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_ranges'
+.L22:
+	.word	-1,.L9,0,.L23-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_info'
+.L24:
+	.word	249
+	.half	3
+	.word	.L25
+	.byte	4,1
+	.byte	'../code/encoder.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L27,.L26
+	.byte	2
+	.word	.L10
+	.byte	3
+	.byte	'Get_Encoder_L',0,1,15,5
+	.word	.L30
+	.byte	1,1
+	.word	.L7,.L34,.L6
+	.byte	4
+	.word	.L7,.L34
+	.byte	5
+	.byte	'filtered_right',0,1,16,18
+	.word	.L32
+	.byte	5,3
+	.word	_999001_filtered_right
+	.byte	6
+	.byte	'raw',0,1,19,9
+	.word	.L30,.L35
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_abbrev'
+.L25:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,6,52,0
+	.byte	3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_line'
+.L26:
+	.word	.L75-.L74
+.L74:
+	.half	3
+	.word	.L77-.L76
+.L76:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/encoder.c',0,0,0,0,0
+.L77:
+	.byte	5,34,7,0,5,2
+	.word	.L7
+	.byte	3,19,1,5,9,9
+	.half	.L36-.L7
+	.byte	1,5,25,9
+	.half	.L38-.L36
+	.byte	3,1,1,5,5,9
+	.half	.L37-.L38
+	.byte	3,3,1,5,37,9
+	.half	.L78-.L37
+	.byte	1,5,22,9
+	.half	.L39-.L78
+	.byte	1,5,64,9
+	.half	.L79-.L39
+	.byte	1,5,46,9
+	.half	.L80-.L79
+	.byte	1,5,64,9
+	.half	.L81-.L80
+	.byte	1,5,41,9
+	.half	.L82-.L81
+	.byte	1,5,20,9
+	.half	.L83-.L82
+	.byte	1,5,18,9
+	.half	.L84-.L83
+	.byte	3,3,1,5,35,9
+	.half	.L85-.L84
+	.byte	1,5,33,9
+	.half	.L86-.L85
+	.byte	1,5,12,9
+	.half	.L87-.L86
+	.byte	1,5,5,9
+	.half	.L88-.L87
+	.byte	1,5,1,9
+	.half	.L2-.L88
+	.byte	3,1,1,7,9
+	.half	.L28-.L2
+	.byte	0,1,1
+.L75:
+	.sdecl	'.debug_ranges',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_ranges'
+.L27:
+	.word	-1,.L7,0,.L28-.L7,0,0
+	.sdecl	'.debug_loc',debug,cluster('Encoder_Init')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L29-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L34-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L35:
+	.word	-1,.L7,.L36-.L7,.L37-.L7
+	.half	1
+	.byte	82
+	.word	.L38-.L7,.L39-.L7
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_loc'
+.L8:
+	.word	-1,.L9,0,.L31-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L33:
+	.word	-1,.L9,.L40-.L9,.L41-.L9
+	.half	1
+	.byte	82
+	.word	.L42-.L9,.L43-.L9
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L89:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Encoder_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L89,.L5,.L29-.L5
+	.sdecl	'.debug_frame',debug,cluster('Get_Encoder_L')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L89,.L7,.L34-.L7
+	.sdecl	'.debug_frame',debug,cluster('Get_Encoder_R')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L89,.L9,.L31-.L9
+	; Module end

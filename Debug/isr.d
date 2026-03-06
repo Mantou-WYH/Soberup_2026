@@ -338,3 +338,9 @@ isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\element_line.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\element_line.h" :
 isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\state_control.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\state_control.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\encoder.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\encoder.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\motor.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\motor.h" :
+isr.o :	"E:\\smart_car 2026\\Soberup_2026\\code\initialize.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\initialize.h" :
