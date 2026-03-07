@@ -5,6 +5,7 @@
  **************************************************************/
 #include "zf_common_headfile.h"
 
+
 void init_mian(void){
     ips200_init(IPS200_TYPE_SPI);
     ips200_show_string(0, 0, "mt9v03x init.");
@@ -19,5 +20,8 @@ void init_mian(void){
     ips200_show_string(0, 16, "init success.");
     Motor_Init();
     Encoder_Init();
+    voltage_detect_init();
+    LED_init();
+
     pit_ms_init(CCU60_CH0,5);
 }

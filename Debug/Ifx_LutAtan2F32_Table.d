@@ -4,21 +4,21 @@ Ifx_LutAtan2F32_Table.o :	..\libraries\infineon_libraries\Service\CpuGeneric\Sys
 ..\libraries\infineon_libraries\Service\CpuGeneric\SysSe\Math\Ifx_LutAtan2F32.h :
 Ifx_LutAtan2F32_Table.o :	..\libraries\infineon_libraries\Service\CpuGeneric\SysSe\Math\Ifx_Lut.h
 ..\libraries\infineon_libraries\Service\CpuGeneric\SysSe\Math\Ifx_Lut.h :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
-"E:\infineon\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
-Ifx_LutAtan2F32_Table.o :	"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
-"E:\\soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_Intrinsics.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_Types.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\Compilers.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Configurations\Ifx_Cfg.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\Infra\\Platform\Tricore\Compilers\CompilerTasking.h" :
+Ifx_LutAtan2F32_Table.o :	"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h"
+"D:\AURIX-Studio-1.10.2\tools\Compilers\Tasking_1.1r8\ctc\include\stddef.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Platform_Types.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\Ifx_TypesTasking.h" :
+Ifx_LutAtan2F32_Table.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\Cpu\Std\IfxCpu_IntrinsicsTasking.h" :

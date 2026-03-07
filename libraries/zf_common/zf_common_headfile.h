@@ -127,6 +127,8 @@
 #include "encoder.h"
 #include "motor.h"
 #include "initialize.h"
+#include "battery_detect.h"
+#include "LED.h"
 //=====================================================”√ªß≤„======================================================
 
 #endif

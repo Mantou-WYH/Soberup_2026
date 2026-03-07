@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc6308a --dep-file=Ifx_LutAtan2F32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\soberup_2026 -IE:\\\\soberup_2026\\\\code -IE:\\\\soberup_2026\\\\libraries -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\soberup_2026\\\\libraries\\\\zf_common -IE:\\\\soberup_2026\\\\libraries\\\\zf_components -IE:\\\\soberup_2026\\\\libraries\\\\zf_device -IE:\\\\soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c"
+	.compiler_invocation	"ctc -f cc18224a --dep-file=Ifx_LutAtan2F32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c"
 	.compiler_name		"ctc"
 	;source	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c'
 
@@ -677,7 +677,7 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
 .L63:
-	.word	1115
+	.word	1130
 	.half	3
 	.word	.L64
 	.byte	4
@@ -685,41 +685,41 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.byte	1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\soberup_2026\\Debug\\',0,12,1
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
 	.word	.L65
 	.byte	2,1,1,3
-	.word	198
+	.word	213
 	.byte	4
 	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
 	.byte	'fun',0,1,61,43
-	.word	201
+	.word	216
 	.byte	6,0,7
 	.byte	'__fract',0,4,128,1
 .L84:
 	.byte	7
 	.byte	'float',0,4,4,8
 	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
-	.word	246
+	.word	261
 	.byte	1,1,5
 	.byte	'a',0,1,152,2,44
-	.word	258
+	.word	273
 	.byte	6,0,7
 	.byte	'unsigned long long int',0,8,7,9
 	.byte	'void',0,3
-	.word	338
+	.word	353
 	.byte	8
 	.byte	'__ld64',0,3,2,135,1,19
-	.word	312
+	.word	327
 	.byte	1,1,5
 	.byte	'addr',0,2,135,1,32
-	.word	344
+	.word	359
 	.byte	6,0,4
 	.byte	'__st64',0,3,2,143,1,17,1,1,5
 	.byte	'addr',0,2,143,1,30
-	.word	344
+	.word	359
 	.byte	5
 	.byte	'value',0,2,143,1,43
-	.word	312
+	.word	327
 	.byte	6,0
 .L82:
 	.byte	7
@@ -727,120 +727,120 @@ __Ifx_LutAtan2F32_float32_function_end:
 .L90:
 	.byte	8
 	.byte	'Ifx_LutAtan2F32_fxpAnglePrivate',0,3,3,66,29
-	.word	430
+	.word	445
 	.byte	1,1
 .L92:
 	.byte	5
 	.byte	'valf',0,3,66,69
-	.word	258
+	.word	273
 .L94:
 	.byte	6,0
 .L115:
 	.byte	8
 	.byte	'Ifx_LutAtan2F32_float32Private',0,3,3,81,20
-	.word	258
+	.word	273
 	.byte	1,1
 .L117:
 	.byte	5
 	.byte	'val',0,3,81,59
-	.word	258
+	.word	273
 .L119:
 	.byte	6,0,10
-	.word	206
+	.word	221
 	.byte	11
-	.word	232
+	.word	247
 	.byte	6,0,10
-	.word	267
+	.word	282
 	.byte	11
-	.word	299
+	.word	314
 	.byte	6,0,10
-	.word	349
+	.word	364
 	.byte	11
-	.word	368
+	.word	383
 	.byte	6,0,10
-	.word	384
-	.byte	11
 	.word	399
 	.byte	11
-	.word	413
+	.word	414
+	.byte	11
+	.word	428
 	.byte	6,0
 .L95:
 	.byte	7
 	.byte	'unsigned long int',0,4,7,10
-	.word	442
+	.word	457
 	.byte	11
-	.word	485
-	.byte	6,0,10
 	.word	500
+	.byte	6,0,10
+	.word	515
 	.byte	11
-	.word	542
+	.word	557
 	.byte	6,0,7
 	.byte	'short int',0,2,5,12
 	.byte	'__wchar_t',0,3,1,1
-	.word	654
+	.word	669
 	.byte	7
 	.byte	'unsigned int',0,4,7,12
 	.byte	'__size_t',0,3,1,1
-	.word	685
+	.word	700
 	.byte	7
 	.byte	'int',0,4,5,12
 	.byte	'__ptrdiff_t',0,3,1,1
-	.word	718
+	.word	733
 	.byte	13,1,3
-	.word	745
+	.word	760
 	.byte	12
 	.byte	'__codeptr',0,3,1,1
-	.word	747
+	.word	762
 	.byte	7
 	.byte	'unsigned char',0,1,8,12
 	.byte	'uint8',0,4,105,29
-	.word	770
+	.word	785
 	.byte	7
 	.byte	'unsigned short int',0,2,7,12
 	.byte	'uint16',0,4,109,29
-	.word	801
+	.word	816
 	.byte	12
 	.byte	'uint32',0,4,113,29
-	.word	609
+	.word	624
 	.byte	12
 	.byte	'uint64',0,4,118,29
-	.word	312
+	.word	327
 	.byte	12
 	.byte	'sint16',0,4,126,29
-	.word	654
+	.word	669
 	.byte	12
 	.byte	'sint32',0,4,131,1,29
-	.word	430
+	.word	445
 	.byte	7
 	.byte	'long long int',0,8,5,12
 	.byte	'sint64',0,4,138,1,29
-	.word	899
+	.word	914
 	.byte	12
 	.byte	'float32',0,4,167,1,29
-	.word	258
+	.word	273
 	.byte	12
 	.byte	'pvoid',0,5,57,28
-	.word	344
+	.word	359
 	.byte	12
 	.byte	'Ifx_TickTime',0,5,79,28
-	.word	899
+	.word	914
 	.byte	12
 	.byte	'Ifx_Lut_FxpAngle',0,6,84,16
-	.word	430
+	.word	445
 	.byte	14,132,32
-	.word	430
+	.word	445
 	.byte	15,128,8,0,16
-	.word	1009
+	.word	1024
 	.byte	17
 	.byte	'Ifx_g_LutAtan2F32_FxpAngle_table',0,7,60,43
-	.word	1020
+	.word	1035
 	.byte	1,1,14,132,32
-	.word	258
+	.word	273
 	.byte	15,128,8,0,16
-	.word	1068
+	.word	1083
 	.byte	17
 	.byte	'Ifx_g_LutAtan2F32_table',0,7,61,43
-	.word	1079
+	.word	1094
 	.byte	1,1,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
@@ -859,14 +859,14 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.word	.L151-.L150
 .L150:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'E:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
 	.byte	0,0,0
-	.byte	'E:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
 	.byte	0,0,0
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c',0,0,0,0
-	.byte	'E:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
 	.byte	0,0,0
-	.byte	'E:\\\\soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
 	.byte	0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Lut.h',0,0,0,0
 	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_LutAtan2F32.h',0,0,0,0,0
@@ -875,13 +875,13 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_LutAtan2F32_init')
 	.sect	'.debug_info'
 .L66:
-	.word	254
+	.word	269
 	.half	3
 	.word	.L67
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\soberup_2026\\Debug\\',0,12,1
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
 	.word	.L69,.L68
 	.byte	2
 	.word	.L62
@@ -920,13 +920,13 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_LutAtan2F32_fxpAngle')
 	.sect	'.debug_info'
 .L71:
-	.word	771
+	.word	786
 	.half	3
 	.word	.L72
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\soberup_2026\\Debug\\',0,12,1
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
 	.word	.L74,.L73
 	.byte	2
 	.word	.L62
@@ -1376,13 +1376,13 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.sdecl	'.debug_info',debug,cluster('Ifx_LutAtan2F32_float32')
 	.sect	'.debug_info'
 .L76:
-	.word	600
+	.word	615
 	.half	3
 	.word	.L77
 	.byte	4,1
 	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_LutAtan2F32.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\soberup_2026\\Debug\\',0,12,1
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
 	.word	.L79,.L78
 	.byte	2
 	.word	.L62
@@ -1791,33 +1791,8 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.word	0,0
 .L93:
 	.word	0,0
-.L96:
-	.word	-1,.L59,.L127-.L59,.L4-.L59
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
 .L104:
 	.word	-1,.L59,.L135-.L59,.L136-.L59
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L100:
-	.word	-1,.L59,.L132-.L59,.L11-.L59
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L102:
-	.word	-1,.L59,.L134-.L59,.L10-.L59
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L98:
-	.word	-1,.L59,.L129-.L59,.L130-.L59
-	.half	5
-	.byte	144,32,157,32,0
-	.word	0,0
-.L110:
-	.word	-1,.L59,.L141-.L59,.L142-.L59
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
@@ -1826,8 +1801,33 @@ __Ifx_LutAtan2F32_float32_function_end:
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
+.L100:
+	.word	-1,.L59,.L132-.L59,.L11-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L110:
+	.word	-1,.L59,.L141-.L59,.L142-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L102:
+	.word	-1,.L59,.L134-.L59,.L10-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L96:
+	.word	-1,.L59,.L127-.L59,.L4-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
 .L106:
 	.word	-1,.L59,.L138-.L59,.L22-.L59
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+.L98:
+	.word	-1,.L59,.L129-.L59,.L130-.L59
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
