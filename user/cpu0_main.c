@@ -55,9 +55,11 @@ int core0_main(void)
 
         if(mt9v03x_finish_flag_1)
         {
-            binarization(otsuThreshold_fast()-50);
+            binarization(otsuThreshold_fast());
             ips200_displayimage03x((const uint8 *)mt9v03x_image_bin, MT9V03X_1_W, MT9V03X_1_H);                       // 显示原始图像
 //            ips200_show_gray_image(0, 0, (const uint8 *)mt9v03x_image_1, MT9V03X_1_W, MT9V03X_1_H, 240, 180, 64);     // 显示二值化图像
+            search_line_main();
+            caculate_error();
             mt9v03x_finish_flag_1 = 0;
         }
 

@@ -14,5 +14,6 @@ extern Point Side_L[200],Side_R[200],StarM;
 extern int L_point,R_point;
 extern Point Max_Lx,Max_Ly,Max_Rx,Max_Ry;
 
+void search_line_main(void);
 
 #endif /* CODE_MAZE_H_ */

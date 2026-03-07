@@ -6,5 +6,6 @@ extern int fork_num;
 
 void caculate_error();
 int return_error();
+void show_line();
 
 #endif /* CODE_LINE_H_ */

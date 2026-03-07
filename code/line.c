@@ -37,7 +37,7 @@ int get_angle(int x,int y){
 //  สนำรั๙ภý        Show_Line(get_L_point(), get_R_point());
 //---------------------------------------------------------------------------------------------------------------
 
-void Show_Line(){
+void show_line(){
 
     ips200_show_int(200,30,L_point,3);
     ips200_show_int(200,50,R_point,3);

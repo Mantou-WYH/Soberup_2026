@@ -8,6 +8,8 @@
 #include "zf_device_mt9v03x_double.h"
 #include "string.h"
 #include "maze.h"
+#include "line.h"
+#include "zf_device_ips200.h"
 
 const int dir_front[4][2]= {{0,  -1},
                             {1,  0},
@@ -27,7 +29,7 @@ const int dir_frontright[4][2] ={{1,  -1},
 
 Point Side_L[200],Side_R[200],StarM;
 Point Max_Lx,Max_Ly,Max_Rx,Max_Ry;
-uint8_t visited[MT9V03X_1_H][MT9V03X_1_W];
+uint8_t L_visited[MT9V03X_1_H][MT9V03X_1_W],R_visited[MT9V03X_1_H][MT9V03X_1_W];
 int L_point,R_point;
 uint8_t touch = 0;
 
@@ -52,9 +54,10 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
     R_maze.step = 0;
 
 
-    memset(visited, 0, sizeof(visited));
-    visited[L.y][L.x] = 1;
-    visited[R.y][R.x] = 1;
+    memset(L_visited, 0, sizeof(L_visited));
+    memset(R_visited, 0, sizeof(R_visited));
+    L_visited[L.y][L.x] = 1;
+    R_visited[R.y][R.x] = 1;
 
     if (safe_access_binimg(L.x, L.y) == 0 || safe_access_binimg(R.x, R.y) == 0) {
         return;
@@ -104,11 +107,12 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
             Max_Ly.y = L.y;
             Max_Ly.x = L.x;
         }
-        if (visited[L.y][L.x] == 1) {
+        if (R_visited[L.y][L.x] == 1) {
             touch = 1;
+            ips200_show_int(0,120,1,1);
             break;
         } else {
-            visited[L.y][L.x] = 1;
+            L_visited[L.y][L.x] = 1;
         }
 
         // ========== 右手移动 ==========
@@ -147,11 +151,11 @@ void findline_twoside(Point L, Point R, int *Lnum, int *Rnum, int MAX_step) {
             Max_Ry.y = R.y;
             Max_Ry.x = R.x;
         }
-        if (visited[R.y][R.x] == 1) {
+        if (L_visited[R.y][R.x] == 1) {
             touch = 1;
-                break;
+            break;
         } else {
-            visited[R.y][R.x] = 1;
+            R_visited[R.y][R.x] = 1;
         }
     }
 
@@ -279,73 +283,40 @@ void search_line_main(void) {
 
     uint8_t start_found = First_Line_M(0, y);
     if (!start_found) {
-        // 未能找到有效的起始点，直接返回
         return;
     }
 
-    Point current_L = Side_L[0];
-    Point current_R = Side_R[0];
 
-    // 更新当前数量
-    Lnum = 1;
-    Rnum = 1;
+    // 2. 从起始点开始，一次性搜索完整边界
+    touch = 0;  // 重置标志
+    findline_twoside(Side_L[0], Side_R[0], &Lnum, &Rnum, MAX_step);
 
-    // 循环处理
-    int step_count = 0;
-    while (step_count < MAX_step) {
-        // 重置touch标志
-        touch = 0;
+    int search_attempts = 0;  // 防止无限循环
+    const int MAX_ATTEMPTS = 5;  // 最大尝试次数
 
-        // 调用 findline_twoside 处理左右边线
+    while (touch == 1 && search_attempts < MAX_ATTEMPTS) {
+            // 选择更靠上的点（y值更小）
+            Point start_point = Max_Ly.y < Max_Ry.y ? Max_Ly : Max_Ry;
 
-        findline_twoside(current_L, current_R, &Lnum, &Rnum, MAX_step);
-
-        // 检查touch标志是否被设置，如果是则寻找新的起始点
-        if (touch) {
-            // 获取当前行号（使用最新点所在的行）
-            int current_row = (Lnum > 0) ? Side_L[Lnum - 1].y : y;
+            // 向上3行寻找新起点
+            int new_row = start_point.y - 3;
+            if (new_row < SAFE_MARGIN_Y) {
+                break;  // 防止越界
+            }
 
             Point new_L, new_R;
-            if (find_line_edges_at_row(current_row, &new_L, &new_R) == 0) {
-                // 更新当前左右边线的起始点
-                current_L = new_L;
-                current_R = new_R;
+            touch = 0;  // 重置touch标志
 
-                // 添加新的起始点到数组中
-                Side_L[Lnum].x = new_L.x;
-                Side_L[Lnum].y = new_L.y;
-                Lnum++;
-
-                Side_R[Rnum].x = new_R.x;
-                Side_R[Rnum].y = new_R.y;
-                Rnum++;
-
-                // 重置touch标志，以便继续处理
+            if (find_line_edges_at_row(new_row, &new_L, &new_R) == 0) {
+                // 找到新边界点，继续搜索
                 touch = 0;
+                findline_twoside(new_L, new_R, &Lnum, &Rnum, MAX_step - Lnum);
             } else {
-                // 如果无法找到新的边界点，结束循环
+                // 未找到新边界点，结束搜索
                 break;
             }
         }
-
-        // 增加步数
-        step_count++;
-
-        // 检查是否达到最大步数或其它结束条件
-        if (Lnum >= MAX_step || Rnum >= MAX_step) {
-            break;
-        }
-
-        // 更新当前左右边线的最新点作为下次循环的起始点
-        if (Lnum > 0 && Rnum > 0) {
-            current_L = Side_L[Lnum - 1];
-            current_R = Side_R[Rnum - 1];
-        } else {
-            // 如果其中一个数组为空，结束循环
-            break;
-        }
-    }
-
-    // 结果已存储在全局变量 Side_L、Side_R 中
-    // Lnum 和 Rnum 分别记录了左边线和右边线的点数
+    L_point = Lnum;
+    R_point = Rnum;
+    show_line();
 }

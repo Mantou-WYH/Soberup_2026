@@ -24,7 +24,7 @@ int Get_Encoder_L() {
     filtered_right = FILTER_ALPHA * raw + (1 - FILTER_ALPHA) * filtered_right;
 
     // 返回整数值（四舍五入）
-    return (int)(filtered_right + 0.5f);
+    return -(int)(filtered_right + 0.5f);
 }
 
 int Get_Encoder_R() {
@@ -39,5 +39,5 @@ int Get_Encoder_R() {
     filtered_left = FILTER_ALPHA * raw + (1 - FILTER_ALPHA) * filtered_left;
 
     // 返回整数值（四舍五入）
-    return -(int)(filtered_left + 0.5f);
+    return (int)(filtered_left + 0.5f);
 }
