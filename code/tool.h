@@ -7,17 +7,26 @@ void show_point_yellow(int x,int y);
 
 extern float dt;
 
+// 增量式PID结构体（速度环）
 typedef struct {
-    float Kp, Ki, Kd;
-    int target;         // 目标速度
-    int last_error;     // 上次误差
-    int prev_error;     // 上上次误差
-    int last_output;    // 上次输出
+    float Kp;               // 比例系数
+    float Ki;               // 积分系数
+    float Kd;               // 微分系数
+    int target;             // 目标值
+    int error;              // 当前误差 e(k)
+    int last_error;         // 上一次误差 e(k-1)
+    int prev_error;    // 上上次误差 e(k-2)
+    int last_output;        // 上一次最终PWM输出（增量PID核心）
 } IncPID;
 
+// 转向PID结构体（方向环）
 typedef struct {
-    float Kp, Ki, Kd;
-    float error, last_error, last_last_error;
+    float Kp;               // 比例系数
+    float Ki;               // 积分系数
+    float Kd;               // 微分系数
+    float error;            // 当前偏差
+    float last_error;       // 上一次偏差
+    float prev_error;  // 上上次偏差
 } SteeringPID;
 
 

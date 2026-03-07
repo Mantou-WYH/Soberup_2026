@@ -22,11 +22,11 @@ libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o
 
 # Each subdirectory must supply rules for building sources it contributes
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Assert.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/smart_car 2026/Soberup_2026/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/soberup_2026/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Assert.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Assert.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src: ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.c libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
-	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/smart_car 2026/Soberup_2026/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
+	cctc -cs --dep-file="$(*F).d" --misrac-version=2004 -D__CPU__=tc26xb "-fE:/soberup_2026/Debug/TASKING_C_C___Compiler-Include_paths__-I_.opt" --iso=99 --c++14 --language=+volatile --exceptions --anachronisms --fp-model=3 -O0 --tradeoff=4 --compact-max-size=200 -g -Wc-w544 -Wc-w557 -Ctc26xb -Y0 -N0 -Z0 -o "$@" "$<"
 libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.o: libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/Bsp.src libraries/infineon_libraries/Service/CpuGeneric/SysSe/Bsp/subdir.mk
 	astc -Og -Os --no-warnings= --error-limit=42 -o  "$@" "$<"
 
