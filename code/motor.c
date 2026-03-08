@@ -19,11 +19,11 @@
 #define RIGHT_STEER_FACTOR 0.85f    // 右转速度调整系数
 
 // 速度PID控制器（左/右电机）
-IncPID pid_left = {5, 0.15f, 0.0f, 0, 0, 0, 0};
+IncPID pid_left = {4, 0.15f, 0.0f, 0, 0, 0, 0};
 IncPID pid_right = {4.0f, 0.15f, 0.0f, 0, 0, 0, 0};
 
 // 转向PD控制器（路径偏差控制）
-SteeringPID turnPID = {6.5f, 0.0f, 2.0f, 0.0f, 0.0f, 0.0f};
+SteeringPID turnPID = {1.5f, 0.0f, 0.1f, 0.0f, 0.0f, 0.0f};
 
 /**************************************************************
  * 功能: 电机初始化（GPIO/PWM/控制器）

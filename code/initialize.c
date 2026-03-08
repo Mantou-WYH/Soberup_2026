@@ -22,6 +22,7 @@ void init_mian(void){
     Encoder_Init();
     voltage_detect_init();
     LED_init();
+    Mahony_Init(200);
 
     pit_ms_init(CCU60_CH0,5);
 }

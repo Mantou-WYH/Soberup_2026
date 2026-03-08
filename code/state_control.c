@@ -8,6 +8,7 @@
 #include "state_control.h"
 #include "line.h"
 #include "element_line.h"
+#include "zf_device_ips200.h"
 
 state car_state=normal;
 
@@ -20,11 +21,27 @@ void state_update(){
             break;
         }
         case fork:{
-            if(1){
+            if(((element_line_U > 0) + (element_line_L > 0) + (element_line_R > 0)) != 2){
                 car_state = normal;
                 fork_num++;
             }
+            break;
         }
 
     }
+}
+
+void show_state(){
+    switch(car_state){
+        case normal:{
+            ips200_show_string(0,140,"normal");
+            break;
+        }
+        case fork:{
+            ips200_show_string(0,140,"fork");
+            break;
+        }
+
+    }
+
 }

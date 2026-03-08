@@ -176,6 +176,7 @@ void Get_InitAngle(float ax, float ay, float az)
 
 void Mahony_Init(float sampleFrequency)
 {
+    Init_ICM42688();
     twoKi = twoKiDef;   // 2 * integral gain (Ki)
     q0 = 1.0f;
     q1 = 0.0f;
@@ -192,4 +193,8 @@ void Mahony_Init(float sampleFrequency)
     Get_InitAngle(icm_data.acc_x, icm_data.acc_y, icm_data.acc_z);            //先使用加速度计获取一次初始的角度
 
     //init_arcsin_table();
+}
+
+int get_yaw(){
+    return (int)eulerAngle.yaw;
 }

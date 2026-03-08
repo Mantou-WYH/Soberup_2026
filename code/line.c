@@ -14,7 +14,7 @@
 int error=0;
 
 Point target_L,target_R,target_M;
-int fork_seq[20] = {0};
+int fork_seq[10] = {0,1,0,0,1,0,0,0,1,0};
 int fork_num = 0;
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -119,6 +119,7 @@ void caculate_error(){
     }else{
         error = M_result;
     }
+    show_point(M.x,M.y);
 }
 
 int return_error(){

@@ -26,11 +26,11 @@ Point L_edge[10],R_edge[10],U_edge[10],B_edge[10],M_edge[10];
 uint8_t line_W(int hight,int max,Point *edge){
     int count=0;
     for(int i=20;i<MT9V03X_1_W-20;i++){
-        if(safe_access_img(i-2,hight)==0){
-            if(safe_access_img(i-1,hight)==0){
-                if(safe_access_img(i,hight)==255){
-                    if(safe_access_img(i+1,hight)==255){
-                        if(safe_access_img(i+2,hight)==255){
+        if(safe_access_binimg(i-2,hight)==0){
+            if(safe_access_binimg(i-1,hight)==0){
+                if(safe_access_binimg(i,hight)==255){
+                    if(safe_access_binimg(i+1,hight)==255){
+                        if(safe_access_binimg(i+2,hight)==255){
                             count++;
                         }
                     }
@@ -42,11 +42,11 @@ uint8_t line_W(int hight,int max,Point *edge){
     if(count>max){
         int count_point = 0;
         for(int i=20;i<MT9V03X_1_W-20;i++){
-            if(safe_access_img(i-2,hight)==0){
-                if(safe_access_img(i-1,hight)==0){
-                    if(safe_access_img(i,hight)==255){
-                        if(safe_access_img(i+1,hight)==255){
-                            if(safe_access_img(i+2,hight)==255){
+            if(safe_access_binimg(i-2,hight)==0){
+                if(safe_access_binimg(i-1,hight)==0){
+                    if(safe_access_binimg(i,hight)==255){
+                        if(safe_access_binimg(i+1,hight)==255){
+                            if(safe_access_binimg(i+2,hight)==255){
                                 edge[count_point].x = i;
                                 edge[count_point].y = hight;
                                 count_point++;
@@ -69,11 +69,11 @@ uint8_t line_W(int hight,int max,Point *edge){
 uint8_t line_H(int x,int max,Point *edge){
     int count=0;
     for(int i=30+2;i<MT9V03X_1_H-1;i++){
-        if(safe_access_img(x,i-2)==0){
-            if(safe_access_img(x,i-1)==0){
-                if(safe_access_img(x,i)==255){
-                    if(safe_access_img(x,i+1)==255){
-                        if(safe_access_img(x,i+2)==255){
+        if(safe_access_binimg(x,i-2)==0){
+            if(safe_access_binimg(x,i-1)==0){
+                if(safe_access_binimg(x,i)==255){
+                    if(safe_access_binimg(x,i+1)==255){
+                        if(safe_access_binimg(x,i+2)==255){
                             count++;
                         }
                     }
@@ -85,11 +85,11 @@ uint8_t line_H(int x,int max,Point *edge){
     if(count>max){
         int count_point = 0;
         for(int i=30+2;i<MT9V03X_1_H-1;i++){
-            if(safe_access_img(x,i-2)==0){
-                if(safe_access_img(x,i-1)==0){
-                    if(safe_access_img(x,i)==255){
-                        if(safe_access_img(x,i+1)==255){
-                            if(safe_access_img(x,i+2)==255){
+            if(safe_access_binimg(x,i-2)==0){
+                if(safe_access_binimg(x,i-1)==0){
+                    if(safe_access_binimg(x,i)==255){
+                        if(safe_access_binimg(x,i+1)==255){
+                            if(safe_access_binimg(x,i+2)==255){
                                 edge[count_point].x = x;
                                 edge[count_point].y = i;
                                 count_point++;

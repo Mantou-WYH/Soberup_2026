@@ -60,6 +60,11 @@ int core0_main(void)
 //            ips200_show_gray_image(0, 0, (const uint8 *)mt9v03x_image_1, MT9V03X_1_W, MT9V03X_1_H, 240, 180, 64);     // 显示二值化图像
             search_line_main();
             caculate_error();
+            element_update();
+            state_update();
+            show_state();
+            //show_element_line();
+
             mt9v03x_finish_flag_1 = 0;
         }
 

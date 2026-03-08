@@ -10,6 +10,7 @@ typedef enum {
 extern state car_state;
 
 void state_update();
+void show_state();
 
 
 #endif /* CODE_STATE_CONTROL_H_ */

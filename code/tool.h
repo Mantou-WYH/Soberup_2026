@@ -4,6 +4,7 @@
 void show_point_red(int x,int y);
 void show_point_blue(int x,int y);
 void show_point_yellow(int x,int y);
+void show_point(int x,int y);
 
 extern float dt;
 
