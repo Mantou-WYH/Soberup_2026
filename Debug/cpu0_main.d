@@ -320,6 +320,8 @@ cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_wifi_spi.h" :
 cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_wireless_uart.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_wireless_uart.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\icm42688.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\icm42688.h" :
 cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant.h" :
 cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_components\seekfree_assistant_interface.h"
@@ -348,3 +350,5 @@ cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\battery_detect.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\battery_detect.h" :
 cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\LED.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\LED.h" :
+cpu0_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\MahonyAHRS.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\MahonyAHRS.h" :

@@ -12,6 +12,7 @@ float dt = 0.05f;
 // 调试开关（0=关闭，1=开启）
 #define DEBUG_PRINT 0
 
+//float GZ;
 /**************************************************************
  * 功能: 显示红色像素点
  * 参数: x/y - 像素坐标
@@ -71,7 +72,7 @@ float steering_pd_control(SteeringPID *pid, float setpoint, float actual)
     pid->error = current_error;
 
     // PD输出计算
-    float output = pid->Kp * current_error + pid->Kd * derivative;
+    float output = pid->Kp * current_error + pid->Kd * derivative + pid->GKD * GZ ;
 
     return output;
 }

@@ -21,9 +21,9 @@ typedef struct {
 
 // 转向PID结构体（方向环）
 typedef struct {
-    float Kp;               // 比例系数
-    float Ki;               // 积分系数
+    float Kp;               // 比例系
     float Kd;               // 微分系数
+    float GKD;              //陀螺仪阻尼
     float error;            // 当前偏差
     float last_error;       // 上一次偏差
     float prev_error;  // 上上次偏差
