@@ -4,7 +4,8 @@
 
 typedef enum {
     normal,
-    fork
+    fork_straight,
+    fork_turn
 }state;
 
 extern state car_state;

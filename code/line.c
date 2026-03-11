@@ -110,14 +110,14 @@ void caculate_error(){
     int L_result = get_angle(L.x,L.y);
     int R_result = get_angle(R.x,R.y);
 
-    if(car_state == fork){
+    if(car_state == normal){
+        error = M_result;
+    }else{
         if(fork_seq[fork_num]==0){
             error = L_result;
         }else{
             error = R_result;
         }
-    }else{
-        error = M_result;
     }
     show_point(M.x,M.y);
 }

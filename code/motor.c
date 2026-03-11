@@ -25,6 +25,8 @@ IncPID pid_right = {4.0f, 0.15f, 0.0f, 0, 0, 0, 0};
 // 转向PD控制器（路径偏差控制）
 SteeringPID turnPID = {1.5f, 0.0f, 0.1f, 0.0f, 0.0f, 0.0f};
 
+int dis_R = 0,dis_L = 0;
+
 /**************************************************************
  * 功能: 电机初始化（GPIO/PWM/控制器）
  * 参数: 无
@@ -115,6 +117,8 @@ void speed_control_L(int target_speed_L)
     // 读取左编码器实际速度
     int left_speed = Get_Encoder_L();
 
+    dis_L += left_speed;
+
     // 增量式PID计算
     int left_pwm = IncPID_Calculate(&pid_left, left_speed);
 
@@ -123,6 +127,8 @@ void speed_control_L(int target_speed_L)
 
     // 输出PWM到左电机
     L_set_PWM(left_pwm);
+
+    //ips200_show_int(0,120,dis_L,10);
 
     // 调试输出（目标速度、实际速度）
     #if DEBUG_PRINT
@@ -145,6 +151,8 @@ void speed_control_R(int target_speed_R)
     // 读取右编码器实际速度
     int right_speed = Get_Encoder_R();
 
+    dis_R += right_speed;
+
     // 增量式PID计算
     int right_pwm = IncPID_Calculate(&pid_right, right_speed);
 
@@ -153,6 +161,8 @@ void speed_control_R(int target_speed_R)
 
     // 输出PWM到右电机
     R_set_PWM(right_pwm);
+
+    //ips200_show_int(0,140,dis_R,10);
 
     // 调试输出（目标速度、实际速度）
     #if DEBUG_PRINT

@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc29024a --dep-file=element_line.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/element_line.src ../code/element_line.c"
+	.compiler_invocation	"ctc -f cc20348a --dep-file=element_line.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/element_line.src ../code/element_line.c"
 	.compiler_name		"ctc"
 	;source	'../code/element_line.c'
 
@@ -13,63 +13,63 @@ $TC16X
 	
 	.global	line_W
 ; Function line_W
-.L51:
+.L47:
 line_W:	.type	func
 	mov	d9,d4
-.L178:
+.L168:
 	mov	d10,d5
-.L179:
+.L169:
 	mov.aa	a12,a4
-.L180:
+.L170:
 	mov	d11,#0
-.L136:
+.L132:
 	mov	d8,#20
-.L181:
+.L171:
 	j	.L2
 .L3:
 	add	d4,d8,#-2
-.L244:
+.L230:
 	mov	d5,d9
-.L182:
+.L172:
 	call	safe_access_binimg
-.L183:
+.L173:
 	jne	d2,#0,.L4
-.L245:
+.L231:
 	add	d4,d8,#-1
-.L246:
+.L232:
 	mov	d5,d9
-.L184:
+.L174:
 	call	safe_access_binimg
-.L185:
+.L175:
 	jne	d2,#0,.L5
-.L247:
+.L233:
 	mov	e4,d9,d8
 	call	safe_access_binimg
-.L248:
+.L234:
 	mov	d15,#255
-.L249:
+.L235:
 	jne	d15,d2,.L6
-.L250:
+.L236:
 	add	d4,d8,#1
-.L251:
+.L237:
 	mov	d5,d9
-.L186:
+.L176:
 	call	safe_access_binimg
-.L187:
+.L177:
 	mov	d15,#255
-.L252:
+.L238:
 	jne	d15,d2,.L7
-.L253:
+.L239:
 	add	d4,d8,#2
-.L254:
+.L240:
 	mov	d5,d9
-.L188:
+.L178:
 	call	safe_access_binimg
-.L189:
+.L179:
 	mov	d15,#255
-.L255:
+.L241:
 	jne	d15,d2,.L8
-.L256:
+.L242:
 	add	d11,#1
 .L8:
 .L7:
@@ -79,70 +79,70 @@ line_W:	.type	func
 	add	d8,#1
 .L2:
 	mov	d15,#168
-.L257:
+.L243:
 	jlt	d8,d15,.L3
-.L137:
+.L133:
 	jge	d10,d11,.L9
-.L139:
+.L135:
 	mov	d8,#0
-.L141:
+.L137:
 	mov	d12,#20
-.L190:
+.L180:
 	j	.L10
 .L11:
 	add	d4,d12,#-2
-.L258:
+.L244:
 	mov	d5,d9
-.L191:
+.L181:
 	call	safe_access_binimg
-.L192:
+.L182:
 	jne	d2,#0,.L12
-.L259:
+.L245:
 	add	d4,d12,#-1
-.L260:
+.L246:
 	mov	d5,d9
-.L193:
+.L183:
 	call	safe_access_binimg
-.L194:
+.L184:
 	jne	d2,#0,.L13
-.L261:
+.L247:
 	mov	e4,d9,d12
 	call	safe_access_binimg
-.L262:
+.L248:
 	mov	d15,#255
-.L263:
+.L249:
 	jne	d15,d2,.L14
-.L264:
+.L250:
 	add	d4,d12,#1
-.L265:
+.L251:
 	mov	d5,d9
-.L195:
+.L185:
 	call	safe_access_binimg
-.L196:
+.L186:
 	mov	d15,#255
-.L266:
+.L252:
 	jne	d15,d2,.L15
-.L267:
+.L253:
 	add	d4,d12,#2
-.L268:
+.L254:
 	mov	d5,d9
-.L197:
+.L187:
 	call	safe_access_binimg
-.L198:
+.L188:
 	mov	d15,#255
-.L269:
+.L255:
 	jne	d15,d2,.L16
-.L270:
+.L256:
 	mul	d15,d8,#8
 	addsc.a	a15,a12,d15,#0
-.L271:
+.L257:
 	st.w	[a15],d12
-.L272:
+.L258:
 	mul	d15,d8,#8
 	addsc.a	a15,a12,d15,#0
-.L273:
+.L259:
 	st.w	[a15]4,d9
-.L274:
+.L260:
 	add	d8,#1
 .L16:
 .L15:
@@ -152,25 +152,25 @@ line_W:	.type	func
 	add	d12,#1
 .L10:
 	mov	d15,#168
-.L275:
+.L261:
 	jlt	d12,d15,.L11
 .L9:
 	jge	d10,d11,.L17
-.L276:
+.L262:
 	j	.L18
 .L17:
 	mov	d11,d10
 .L18:
 	extr.u	d2,d11,#0,#8
-.L277:
+.L263:
 	j	.L19
 .L19:
 	ret
-.L129:
+.L125:
 	
 __line_W_function_end:
 	.size	line_W,__line_W_function_end-line_W
-.L74:
+.L70:
 	; End of function
 	
 	.sdecl	'.text.element_line.line_H',code,cluster('line_H')
@@ -179,59 +179,59 @@ __line_W_function_end:
 	
 	.global	line_H
 ; Function line_H
-.L53:
+.L49:
 line_H:	.type	func
 	mov	d9,d4
-.L199:
+.L189:
 	mov	d10,d5
-.L200:
+.L190:
 	mov.aa	a12,a4
-.L201:
+.L191:
 	mov	d11,#0
-.L148:
+.L144:
 	mov	d8,#32
-.L202:
+.L192:
 	j	.L20
 .L21:
 	add	d5,d8,#-2
 	mov	d4,d9
-.L203:
+.L193:
 	call	safe_access_binimg
-.L204:
+.L194:
 	jne	d2,#0,.L22
-.L282:
+.L268:
 	add	d5,d8,#-1
 	mov	d4,d9
-.L205:
+.L195:
 	call	safe_access_binimg
-.L206:
+.L196:
 	jne	d2,#0,.L23
-.L283:
+.L269:
 	mov	e4,d8,d9
 	call	safe_access_binimg
-.L284:
+.L270:
 	mov	d15,#255
-.L285:
+.L271:
 	jne	d15,d2,.L24
-.L286:
+.L272:
 	add	d5,d8,#1
 	mov	d4,d9
-.L207:
+.L197:
 	call	safe_access_binimg
-.L208:
+.L198:
 	mov	d15,#255
-.L287:
+.L273:
 	jne	d15,d2,.L25
-.L288:
+.L274:
 	add	d5,d8,#2
 	mov	d4,d9
-.L209:
+.L199:
 	call	safe_access_binimg
-.L210:
+.L200:
 	mov	d15,#255
-.L289:
+.L275:
 	jne	d15,d2,.L26
-.L290:
+.L276:
 	add	d11,#1
 .L26:
 .L25:
@@ -240,67 +240,67 @@ line_H:	.type	func
 .L22:
 	add	d8,#1
 .L20:
-	mov	d15,#119
-.L291:
+	mov	d15,#90
+.L277:
 	jlt	d8,d15,.L21
-.L149:
+.L145:
 	jge	d10,d11,.L27
-.L151:
+.L147:
 	mov	d8,#0
-.L153:
+.L149:
 	mov	d12,#32
-.L211:
+.L201:
 	j	.L28
 .L29:
 	add	d5,d12,#-2
 	mov	d4,d9
-.L212:
+.L202:
 	call	safe_access_binimg
-.L213:
+.L203:
 	jne	d2,#0,.L30
-.L292:
+.L278:
 	add	d5,d12,#-1
 	mov	d4,d9
-.L214:
+.L204:
 	call	safe_access_binimg
-.L215:
+.L205:
 	jne	d2,#0,.L31
-.L293:
+.L279:
 	mov	e4,d12,d9
 	call	safe_access_binimg
-.L294:
+.L280:
 	mov	d0,#255
-.L295:
+.L281:
 	jne	d2,d0,.L32
-.L296:
+.L282:
 	add	d5,d12,#1
 	mov	d4,d9
-.L216:
+.L206:
 	call	safe_access_binimg
-.L217:
+.L207:
 	mov	d15,#255
-.L297:
+.L283:
 	jne	d15,d2,.L33
-.L298:
+.L284:
 	add	d5,d12,#2
 	mov	d4,d9
-.L218:
+.L208:
 	call	safe_access_binimg
-.L219:
+.L209:
 	mov	d15,#255
-.L299:
+.L285:
 	jne	d15,d2,.L34
-.L300:
+.L286:
 	mul	d15,d8,#8
 	addsc.a	a15,a12,d15,#0
-.L301:
+.L287:
 	st.w	[a15],d9
-.L302:
+.L288:
 	mul	d15,d8,#8
 	addsc.a	a15,a12,d15,#0
-.L303:
+.L289:
 	st.w	[a15]4,d12
-.L304:
+.L290:
 	add	d8,#1
 .L34:
 .L33:
@@ -310,25 +310,25 @@ line_H:	.type	func
 	add	d12,#1
 .L28:
 	mov	d15,#119
-.L305:
+.L291:
 	jlt	d12,d15,.L29
 .L27:
 	jge	d10,d11,.L35
-.L306:
+.L292:
 	j	.L36
 .L35:
 	mov	d11,d10
 .L36:
 	extr.u	d2,d11,#0,#8
-.L307:
+.L293:
 	j	.L37
 .L37:
 	ret
-.L143:
+.L139:
 	
 __line_H_function_end:
 	.size	line_H,__line_H_function_end-line_H
-.L79:
+.L75:
 	; End of function
 	
 	.sdecl	'.text.element_line.element_L',code,cluster('element_L')
@@ -337,38 +337,24 @@ __line_H_function_end:
 	
 	.global	element_L
 ; Function element_L
-.L55:
+.L51:
 element_L:	.type	func
 	mov	d5,#0
-.L157:
-	mov	d15,#0
-.L221:
-	j	.L38
-.L39:
-	mul	d0,d15,#3
-.L312:
-	add	d4,d0,#20
-.L313:
+.L210:
+	mov	d4,#30
+.L298:
 	movh.a	a4,#@his(L_edge)
 	lea	a4,[a4]@los(L_edge)
 	call	line_H
-.L220:
-	mov	d5,d2
-.L222:
-	add	d15,#1
+.L211:
+	j	.L38
 .L38:
-	jlt	d15,#6,.L39
-.L158:
-	mov	d2,d5
-.L223:
-	j	.L40
-.L40:
 	ret
-.L155:
+.L151:
 	
 __element_L_function_end:
 	.size	element_L,__element_L_function_end-element_L
-.L84:
+.L80:
 	; End of function
 	
 	.sdecl	'.text.element_line.element_R',code,cluster('element_R')
@@ -377,38 +363,24 @@ __element_L_function_end:
 	
 	.global	element_R
 ; Function element_R
-.L57:
+.L53:
 element_R:	.type	func
 	mov	d5,#0
-.L162:
-	mov	d15,#0
-.L225:
-	j	.L41
-.L42:
-	mul	d0,d15,#3
-.L318:
-	rsub	d4,d0,#168
-.L319:
+.L212:
+	mov	d4,#158
+.L303:
 	movh.a	a4,#@his(R_edge)
 	lea	a4,[a4]@los(R_edge)
 	call	line_H
-.L224:
-	mov	d5,d2
-.L226:
-	add	d15,#1
-.L41:
-	jlt	d15,#6,.L42
-.L163:
-	mov	d2,d5
-.L227:
-	j	.L43
-.L43:
+.L213:
+	j	.L39
+.L39:
 	ret
-.L160:
+.L153:
 	
 __element_R_function_end:
 	.size	element_R,__element_R_function_end-element_R
-.L89:
+.L85:
 	; End of function
 	
 	.sdecl	'.text.element_line.element_U',code,cluster('element_U')
@@ -417,38 +389,38 @@ __element_R_function_end:
 	
 	.global	element_U
 ; Function element_U
-.L59:
+.L55:
 element_U:	.type	func
 	mov	d5,#0
-.L167:
+.L157:
 	mov	d15,#0
-.L229:
-	j	.L44
-.L45:
+.L215:
+	j	.L40
+.L41:
 	mul	d0,d15,#5
-.L324:
+.L308:
 	add	d4,d0,#20
-.L325:
+.L309:
 	movh.a	a4,#@his(U_edge)
 	lea	a4,[a4]@los(U_edge)
 	call	line_W
-.L228:
+.L214:
 	mov	d5,d2
-.L230:
+.L216:
 	add	d15,#1
-.L44:
-	jlt	d15,#6,.L45
-.L168:
+.L40:
+	jlt	d15,#6,.L41
+.L158:
 	mov	d2,d5
-.L231:
-	j	.L46
-.L46:
+.L217:
+	j	.L42
+.L42:
 	ret
-.L165:
+.L155:
 	
 __element_U_function_end:
 	.size	element_U,__element_U_function_end-element_U
-.L94:
+.L90:
 	; End of function
 	
 	.sdecl	'.text.element_line.element_B',code,cluster('element_B')
@@ -457,38 +429,38 @@ __element_U_function_end:
 	
 	.global	element_B
 ; Function element_B
-.L61:
+.L57:
 element_B:	.type	func
 	mov	d5,#0
-.L172:
+.L162:
 	mov	d15,#0
-.L233:
-	j	.L47
-.L48:
+.L219:
+	j	.L43
+.L44:
 	mul	d0,d15,#4
-.L330:
+.L314:
 	rsub	d4,d0,#80
-.L331:
+.L315:
 	movh.a	a4,#@his(B_edge)
 	lea	a4,[a4]@los(B_edge)
 	call	line_W
-.L232:
+.L218:
 	mov	d5,d2
-.L234:
+.L220:
 	add	d15,#1
-.L47:
-	jlt	d15,#6,.L48
-.L173:
+.L43:
+	jlt	d15,#6,.L44
+.L163:
 	mov	d2,d5
-.L235:
-	j	.L49
-.L49:
+.L221:
+	j	.L45
+.L45:
 	ret
-.L170:
+.L160:
 	
 __element_B_function_end:
 	.size	element_B,__element_B_function_end-element_B
-.L99:
+.L95:
 	; End of function
 	
 	.sdecl	'.text.element_line.show_element_line',code,cluster('show_element_line')
@@ -497,58 +469,58 @@ __element_B_function_end:
 	
 	.global	show_element_line
 ; Function show_element_line
-.L63:
+.L59:
 show_element_line:	.type	func
 	mov	d4,#0
-.L336:
+.L320:
 	mov	d5,#160
-.L337:
+.L321:
 	movh.a	a15,#@his(element_line_L)
 	lea	a15,[a15]@los(element_line_L)
 	ld.w	d6,[a15]
-.L338:
+.L322:
 	mov	d7,#2
 	call	ips200_show_int
-.L339:
+.L323:
 	mov	d4,#0
-.L340:
+.L324:
 	mov	d5,#180
-.L341:
+.L325:
 	movh.a	a15,#@his(element_line_R)
 	lea	a15,[a15]@los(element_line_R)
 	ld.w	d6,[a15]
-.L342:
+.L326:
 	mov	d7,#2
 	call	ips200_show_int
-.L343:
+.L327:
 	mov	d4,#0
-.L344:
+.L328:
 	mov	d5,#200
-.L345:
+.L329:
 	movh.a	a15,#@his(element_line_U)
 	lea	a15,[a15]@los(element_line_U)
 	ld.w	d6,[a15]
-.L346:
+.L330:
 	mov	d7,#2
 	call	ips200_show_int
-.L347:
+.L331:
 	mov	d4,#0
-.L348:
+.L332:
 	mov	d5,#220
-.L349:
+.L333:
 	movh.a	a15,#@his(element_line_B)
 	lea	a15,[a15]@los(element_line_B)
 	ld.w	d6,[a15]
-.L350:
+.L334:
 	mov	d7,#2
 	call	ips200_show_int
-.L351:
+.L335:
 	ret
-.L175:
+.L165:
 	
 __show_element_line_function_end:
 	.size	show_element_line,__show_element_line_function_end-show_element_line
-.L104:
+.L100:
 	; End of function
 	
 	.sdecl	'.text.element_line.element_update',code,cluster('element_update')
@@ -557,42 +529,42 @@ __show_element_line_function_end:
 	
 	.global	element_update
 ; Function element_update
-.L65:
+.L61:
 element_update:	.type	func
 	movh.a	a15,#@his(element_line_L)
 	lea	a15,[a15]@los(element_line_L)
-.L356:
+.L340:
 	call	element_L
-.L357:
+.L341:
 	st.w	[a15],d2
-.L358:
+.L342:
 	movh.a	a15,#@his(element_line_R)
 	lea	a15,[a15]@los(element_line_R)
-.L359:
+.L343:
 	call	element_R
-.L360:
+.L344:
 	st.w	[a15],d2
-.L361:
+.L345:
 	movh.a	a15,#@his(element_line_U)
 	lea	a15,[a15]@los(element_line_U)
-.L362:
+.L346:
 	call	element_U
-.L363:
+.L347:
 	st.w	[a15],d2
-.L364:
+.L348:
 	movh.a	a15,#@his(element_line_B)
 	lea	a15,[a15]@los(element_line_B)
-.L365:
+.L349:
 	call	element_B
-.L366:
+.L350:
 	st.w	[a15],d2
-.L367:
+.L351:
 	ret
-.L176:
+.L166:
 	
 __element_update_function_end:
 	.size	element_update,__element_update_function_end-element_update
-.L109:
+.L105:
 	; End of function
 	
 	.sdecl	'.data.element_line.element_line_L',data,cluster('element_line_L')
@@ -681,30 +653,30 @@ M_edge:	.type	object
 	.calls	'element_update','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L67:
+.L63:
 	.word	888
 	.half	3
-	.word	.L68
+	.word	.L64
 	.byte	4
-.L66:
+.L62:
 	.byte	1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L69
-.L128:
+	.word	.L65
+.L124:
 	.byte	2
 	.byte	'unsigned char',0,1,8
-.L130:
+.L126:
 	.byte	2
 	.byte	'int',0,4,5,3
-	.byte	'safe_access_binimg',0,1,8,7
+	.byte	'safe_access_binimg',0,1,9,7
 	.word	156
 	.byte	1,1,1,1,4
-	.byte	'x',0,1,8,30
+	.byte	'x',0,1,9,30
 	.word	173
 	.byte	4
-	.byte	'y',0,1,8,37
+	.byte	'y',0,1,9,37
 	.word	173
 	.byte	0,2
 	.byte	'unsigned short int',0,2,7,5
@@ -729,7 +701,7 @@ M_edge:	.type	object
 	.byte	'y',0
 	.word	173
 	.byte	4,2,35,4,0
-.L133:
+.L129:
 	.byte	9
 	.word	333
 	.byte	2
@@ -814,13 +786,13 @@ M_edge:	.type	object
 	.byte	10
 	.byte	'Point',0,3,11,3
 	.word	333
-.L177:
+.L167:
 	.byte	13,80
 	.word	333
 	.byte	14,9,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L68:
+.L64:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,58,15,59,15,57,15
 	.byte	73,19,54,15,39,12,63,12,60,12,0,0,4,5,0,3,8,58,15,59,15,57,15,73,19,0,0,5,38,0,73,19,0,0,6,46,1,3,8,58
 	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,7,19,1,58,15,59,15,57,15,11,15,0,0,8,13,0,3,8,73,19,11,15,56
@@ -828,12 +800,12 @@ M_edge:	.type	object
 	.byte	1,11,15,73,19,0,0,14,33,0,47,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L69:
-	.word	.L237-.L236
-.L236:
+.L65:
+	.word	.L223-.L222
+.L222:
 	.half	3
-	.word	.L239-.L238
-.L238:
+	.word	.L225-.L224
+.L224:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device',0
 	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -848,821 +820,831 @@ M_edge:	.type	object
 	.byte	'Platform_Types.h',0,3,0,0
 	.byte	'ifx_types.h',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0,0
-.L239:
-.L237:
+.L225:
+.L223:
 	.sdecl	'.debug_info',debug,cluster('line_W')
 	.sect	'.debug_info'
-.L70:
+.L66:
 	.word	354
 	.half	3
-	.word	.L71
+	.word	.L67
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L73,.L72
+	.word	.L69,.L68
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
 	.byte	'line_W',0,1,26,9
-	.word	.L128
+	.word	.L124
 	.byte	1,1,1
-	.word	.L51,.L129,.L50
+	.word	.L47,.L125,.L46
 	.byte	4
 	.byte	'hight',0,1,26,20
-	.word	.L130,.L131
+	.word	.L126,.L127
 	.byte	4
 	.byte	'max',0,1,26,30
-	.word	.L130,.L132
+	.word	.L126,.L128
 	.byte	4
 	.byte	'edge',0,1,26,41
-	.word	.L133,.L134
+	.word	.L129,.L130
 	.byte	5
-	.word	.L51,.L129
+	.word	.L47,.L125
 	.byte	6
 	.byte	'count',0,1,27,9
-	.word	.L130,.L135
+	.word	.L126,.L131
 	.byte	5
-	.word	.L136,.L137
+	.word	.L132,.L133
 	.byte	6
 	.byte	'i',0,1,28,13
-	.word	.L130,.L138
+	.word	.L126,.L134
 	.byte	0,5
-	.word	.L139,.L9
+	.word	.L135,.L9
 	.byte	6
 	.byte	'count_point',0,1,43,13
-	.word	.L130,.L140
+	.word	.L126,.L136
 	.byte	5
-	.word	.L141,.L9
+	.word	.L137,.L9
 	.byte	6
 	.byte	'i',0,1,44,17
-	.word	.L130,.L142
+	.word	.L126,.L138
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('line_W')
 	.sect	'.debug_abbrev'
-.L71:
+.L67:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('line_W')
 	.sect	'.debug_line'
-.L72:
-	.word	.L241-.L240
-.L240:
+.L68:
+	.word	.L227-.L226
+.L226:
 	.half	3
-	.word	.L243-.L242
-.L242:
+	.word	.L229-.L228
+.L228:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L243:
+.L229:
 	.byte	5,9,7,0,5,2
-	.word	.L51
+	.word	.L47
 	.byte	3,25,1,5,14,9
-	.half	.L180-.L51
+	.half	.L170-.L47
 	.byte	3,1,1,9
-	.half	.L136-.L180
+	.half	.L132-.L170
 	.byte	3,1,1,5,34,9
-	.half	.L181-.L136
+	.half	.L171-.L132
 	.byte	1,5,32,9
-	.half	.L3-.L181
+	.half	.L3-.L171
 	.byte	3,1,1,5,35,9
-	.half	.L244-.L3
+	.half	.L230-.L3
 	.byte	1,5,9,9
-	.half	.L183-.L244
+	.half	.L173-.L230
 	.byte	1,5,36,7,9
-	.half	.L245-.L183
+	.half	.L231-.L173
 	.byte	3,1,1,5,39,9
-	.half	.L246-.L245
+	.half	.L232-.L231
 	.byte	1,5,13,9
-	.half	.L185-.L246
+	.half	.L175-.L232
 	.byte	1,5,41,7,9
-	.half	.L247-.L185
+	.half	.L233-.L175
 	.byte	3,1,1,5,49,9
-	.half	.L248-.L247
+	.half	.L234-.L233
 	.byte	1,5,17,9
-	.half	.L249-.L248
+	.half	.L235-.L234
 	.byte	1,5,44,7,9
-	.half	.L250-.L249
+	.half	.L236-.L235
 	.byte	3,1,1,5,47,9
-	.half	.L251-.L250
+	.half	.L237-.L236
 	.byte	1,5,55,9
-	.half	.L187-.L251
+	.half	.L177-.L237
 	.byte	1,5,21,9
-	.half	.L252-.L187
+	.half	.L238-.L177
 	.byte	1,5,48,7,9
-	.half	.L253-.L252
+	.half	.L239-.L238
 	.byte	3,1,1,5,51,9
-	.half	.L254-.L253
+	.half	.L240-.L239
 	.byte	1,5,59,9
-	.half	.L189-.L254
+	.half	.L179-.L240
 	.byte	1,5,25,9
-	.half	.L255-.L189
+	.half	.L241-.L179
 	.byte	1,5,34,7,9
-	.half	.L256-.L255
+	.half	.L242-.L241
 	.byte	3,1,1,5,36,9
-	.half	.L4-.L256
+	.half	.L4-.L242
 	.byte	3,122,1,5,31,9
 	.half	.L2-.L4
 	.byte	1,5,34,9
-	.half	.L257-.L2
+	.half	.L243-.L2
 	.byte	1,5,5,7,9
-	.half	.L137-.L257
+	.half	.L133-.L243
 	.byte	3,14,1,5,25,7,9
-	.half	.L139-.L137
+	.half	.L135-.L133
 	.byte	3,1,1,5,18,9
-	.half	.L141-.L139
+	.half	.L137-.L135
 	.byte	3,1,1,5,38,9
-	.half	.L190-.L141
+	.half	.L180-.L137
 	.byte	1,5,36,9
-	.half	.L11-.L190
+	.half	.L11-.L180
 	.byte	3,1,1,5,39,9
-	.half	.L258-.L11
+	.half	.L244-.L11
 	.byte	1,5,13,9
-	.half	.L192-.L258
+	.half	.L182-.L244
 	.byte	1,5,40,7,9
-	.half	.L259-.L192
+	.half	.L245-.L182
 	.byte	3,1,1,5,43,9
-	.half	.L260-.L259
+	.half	.L246-.L245
 	.byte	1,5,17,9
-	.half	.L194-.L260
+	.half	.L184-.L246
 	.byte	1,5,45,7,9
-	.half	.L261-.L194
+	.half	.L247-.L184
 	.byte	3,1,1,5,53,9
-	.half	.L262-.L261
+	.half	.L248-.L247
 	.byte	1,5,21,9
-	.half	.L263-.L262
+	.half	.L249-.L248
 	.byte	1,5,48,7,9
-	.half	.L264-.L263
+	.half	.L250-.L249
 	.byte	3,1,1,5,51,9
-	.half	.L265-.L264
+	.half	.L251-.L250
 	.byte	1,5,59,9
-	.half	.L196-.L265
+	.half	.L186-.L251
 	.byte	1,5,25,9
-	.half	.L266-.L196
+	.half	.L252-.L186
 	.byte	1,5,52,7,9
-	.half	.L267-.L266
+	.half	.L253-.L252
 	.byte	3,1,1,5,55,9
-	.half	.L268-.L267
+	.half	.L254-.L253
 	.byte	1,5,63,9
-	.half	.L198-.L268
+	.half	.L188-.L254
 	.byte	1,5,29,9
-	.half	.L269-.L198
+	.half	.L255-.L188
 	.byte	1,5,37,7,9
-	.half	.L270-.L269
+	.half	.L256-.L255
 	.byte	3,1,1,5,53,9
-	.half	.L271-.L270
+	.half	.L257-.L256
 	.byte	1,5,37,9
-	.half	.L272-.L271
+	.half	.L258-.L257
 	.byte	3,1,1,5,53,9
-	.half	.L273-.L272
+	.half	.L259-.L258
 	.byte	1,5,44,9
-	.half	.L274-.L273
+	.half	.L260-.L259
 	.byte	3,1,1,5,40,9
-	.half	.L12-.L274
+	.half	.L12-.L260
 	.byte	3,120,1,5,35,9
 	.half	.L10-.L12
 	.byte	1,5,38,9
-	.half	.L275-.L10
+	.half	.L261-.L10
 	.byte	1,5,12,7,9
-	.half	.L9-.L275
+	.half	.L9-.L261
 	.byte	3,16,1,5,27,7,9
-	.half	.L276-.L9
+	.half	.L262-.L9
 	.byte	1,5,21,9
-	.half	.L17-.L276
+	.half	.L17-.L262
 	.byte	1,5,5,9
-	.half	.L277-.L17
+	.half	.L263-.L17
 	.byte	1,5,1,9
-	.half	.L19-.L277
+	.half	.L19-.L263
 	.byte	3,1,1,7,9
-	.half	.L74-.L19
+	.half	.L70-.L19
 	.byte	0,1,1
-.L241:
+.L227:
 	.sdecl	'.debug_ranges',debug,cluster('line_W')
 	.sect	'.debug_ranges'
-.L73:
-	.word	-1,.L51,0,.L74-.L51,0,0
+.L69:
+	.word	-1,.L47,0,.L70-.L47,0,0
 	.sdecl	'.debug_info',debug,cluster('line_H')
 	.sect	'.debug_info'
-.L75:
+.L71:
 	.word	350
 	.half	3
-	.word	.L76
+	.word	.L72
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L78,.L77
+	.word	.L74,.L73
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
 	.byte	'line_H',0,1,69,9
-	.word	.L128
+	.word	.L124
 	.byte	1,1,1
-	.word	.L53,.L143,.L52
+	.word	.L49,.L139,.L48
 	.byte	4
 	.byte	'x',0,1,69,20
-	.word	.L130,.L144
+	.word	.L126,.L140
 	.byte	4
 	.byte	'max',0,1,69,26
-	.word	.L130,.L145
+	.word	.L126,.L141
 	.byte	4
 	.byte	'edge',0,1,69,37
-	.word	.L133,.L146
+	.word	.L129,.L142
 	.byte	5
-	.word	.L53,.L143
+	.word	.L49,.L139
 	.byte	6
 	.byte	'count',0,1,70,9
-	.word	.L130,.L147
+	.word	.L126,.L143
 	.byte	5
-	.word	.L148,.L149
+	.word	.L144,.L145
 	.byte	6
 	.byte	'i',0,1,71,13
-	.word	.L130,.L150
+	.word	.L126,.L146
 	.byte	0,5
-	.word	.L151,.L27
+	.word	.L147,.L27
 	.byte	6
 	.byte	'count_point',0,1,86,13
-	.word	.L130,.L152
+	.word	.L126,.L148
 	.byte	5
-	.word	.L153,.L27
+	.word	.L149,.L27
 	.byte	6
 	.byte	'i',0,1,87,17
-	.word	.L130,.L154
+	.word	.L126,.L150
 	.byte	0,0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('line_H')
 	.sect	'.debug_abbrev'
-.L76:
+.L72:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
 	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('line_H')
 	.sect	'.debug_line'
-.L77:
-	.word	.L279-.L278
-.L278:
+.L73:
+	.word	.L265-.L264
+.L264:
 	.half	3
-	.word	.L281-.L280
-.L280:
+	.word	.L267-.L266
+.L266:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L281:
+.L267:
 	.byte	5,9,7,0,5,2
-	.word	.L53
+	.word	.L49
 	.byte	3,196,0,1,5,14,9
-	.half	.L201-.L53
+	.half	.L191-.L49
 	.byte	3,1,1,9
-	.half	.L148-.L201
-	.byte	3,1,1,5,35,9
-	.half	.L202-.L148
+	.half	.L144-.L191
+	.byte	3,1,1,5,36,9
+	.half	.L192-.L144
 	.byte	1,5,34,9
-	.half	.L21-.L202
+	.half	.L21-.L192
 	.byte	3,1,1,5,9,9
-	.half	.L204-.L21
+	.half	.L194-.L21
 	.byte	1,5,38,7,9
-	.half	.L282-.L204
+	.half	.L268-.L194
 	.byte	3,1,1,5,13,9
-	.half	.L206-.L282
+	.half	.L196-.L268
 	.byte	1,5,41,7,9
-	.half	.L283-.L206
+	.half	.L269-.L196
 	.byte	3,1,1,5,45,9
-	.half	.L284-.L283
+	.half	.L270-.L269
 	.byte	1,5,17,9
-	.half	.L285-.L284
+	.half	.L271-.L270
 	.byte	1,5,46,7,9
-	.half	.L286-.L285
+	.half	.L272-.L271
 	.byte	3,1,1,5,51,9
-	.half	.L208-.L286
+	.half	.L198-.L272
 	.byte	1,5,21,9
-	.half	.L287-.L208
+	.half	.L273-.L198
 	.byte	1,5,50,7,9
-	.half	.L288-.L287
+	.half	.L274-.L273
 	.byte	3,1,1,5,55,9
-	.half	.L210-.L288
+	.half	.L200-.L274
 	.byte	1,5,25,9
-	.half	.L289-.L210
+	.half	.L275-.L200
 	.byte	1,5,34,7,9
-	.half	.L290-.L289
-	.byte	3,1,1,5,37,9
-	.half	.L22-.L290
+	.half	.L276-.L275
+	.byte	3,1,1,5,38,9
+	.half	.L22-.L276
 	.byte	3,122,1,5,33,9
 	.half	.L20-.L22
-	.byte	1,5,35,9
-	.half	.L291-.L20
+	.byte	1,5,36,9
+	.half	.L277-.L20
 	.byte	1,5,5,7,9
-	.half	.L149-.L291
+	.half	.L145-.L277
 	.byte	3,14,1,5,25,7,9
-	.half	.L151-.L149
+	.half	.L147-.L145
 	.byte	3,1,1,5,18,9
-	.half	.L153-.L151
+	.half	.L149-.L147
 	.byte	3,1,1,5,39,9
-	.half	.L211-.L153
+	.half	.L201-.L149
 	.byte	1,5,38,9
-	.half	.L29-.L211
+	.half	.L29-.L201
 	.byte	3,1,1,5,13,9
-	.half	.L213-.L29
+	.half	.L203-.L29
 	.byte	1,5,42,7,9
-	.half	.L292-.L213
+	.half	.L278-.L203
 	.byte	3,1,1,5,17,9
-	.half	.L215-.L292
+	.half	.L205-.L278
 	.byte	1,5,45,7,9
-	.half	.L293-.L215
+	.half	.L279-.L205
 	.byte	3,1,1,5,49,9
-	.half	.L294-.L293
+	.half	.L280-.L279
 	.byte	1,5,21,9
-	.half	.L295-.L294
+	.half	.L281-.L280
 	.byte	1,5,50,7,9
-	.half	.L296-.L295
+	.half	.L282-.L281
 	.byte	3,1,1,5,55,9
-	.half	.L217-.L296
+	.half	.L207-.L282
 	.byte	1,5,25,9
-	.half	.L297-.L217
+	.half	.L283-.L207
 	.byte	1,5,54,7,9
-	.half	.L298-.L297
+	.half	.L284-.L283
 	.byte	3,1,1,5,59,9
-	.half	.L219-.L298
+	.half	.L209-.L284
 	.byte	1,5,29,9
-	.half	.L299-.L219
+	.half	.L285-.L209
 	.byte	1,5,37,7,9
-	.half	.L300-.L299
+	.half	.L286-.L285
 	.byte	3,1,1,5,53,9
-	.half	.L301-.L300
+	.half	.L287-.L286
 	.byte	1,5,37,9
-	.half	.L302-.L301
+	.half	.L288-.L287
 	.byte	3,1,1,5,53,9
-	.half	.L303-.L302
+	.half	.L289-.L288
 	.byte	1,5,44,9
-	.half	.L304-.L303
+	.half	.L290-.L289
 	.byte	3,1,1,5,41,9
-	.half	.L30-.L304
+	.half	.L30-.L290
 	.byte	3,120,1,5,37,9
 	.half	.L28-.L30
 	.byte	1,5,39,9
-	.half	.L305-.L28
+	.half	.L291-.L28
 	.byte	1,5,12,7,9
-	.half	.L27-.L305
+	.half	.L27-.L291
 	.byte	3,19,1,5,27,7,9
-	.half	.L306-.L27
+	.half	.L292-.L27
 	.byte	1,5,21,9
-	.half	.L35-.L306
+	.half	.L35-.L292
 	.byte	1,5,5,9
-	.half	.L307-.L35
+	.half	.L293-.L35
 	.byte	1,5,1,9
-	.half	.L37-.L307
+	.half	.L37-.L293
 	.byte	3,1,1,7,9
-	.half	.L79-.L37
+	.half	.L75-.L37
 	.byte	0,1,1
-.L279:
+.L265:
 	.sdecl	'.debug_ranges',debug,cluster('line_H')
 	.sect	'.debug_ranges'
-.L78:
-	.word	-1,.L53,0,.L79-.L53,0,0
+.L74:
+	.word	-1,.L49,0,.L75-.L49,0,0
 	.sdecl	'.debug_info',debug,cluster('element_L')
 	.sect	'.debug_info'
-.L80:
-	.word	247
+.L76:
+	.word	223
 	.half	3
-	.word	.L81
+	.word	.L77
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L83,.L82
+	.word	.L79,.L78
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
 	.byte	'element_L',0,1,109,5
-	.word	.L130
+	.word	.L126
+	.byte	1,1
+	.word	.L51,.L151,.L50
+	.byte	4
+	.word	.L51,.L151
+	.byte	5
+	.byte	'count',0,1,110,9
+	.word	.L126,.L152
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('element_L')
+	.sect	'.debug_abbrev'
+.L77:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('element_L')
+	.sect	'.debug_line'
+.L78:
+	.word	.L295-.L294
+.L294:
+	.half	3
+	.word	.L297-.L296
+.L296:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/element_line.c',0,0,0,0,0
+.L297:
+	.byte	5,15,7,0,5,2
+	.word	.L51
+	.byte	3,237,0,1,5,20,9
+	.half	.L210-.L51
+	.byte	3,1,1,5,29,9
+	.half	.L298-.L210
+	.byte	1,5,5,9
+	.half	.L211-.L298
+	.byte	3,1,1,5,1,9
+	.half	.L38-.L211
+	.byte	3,1,1,7,9
+	.half	.L80-.L38
+	.byte	0,1,1
+.L295:
+	.sdecl	'.debug_ranges',debug,cluster('element_L')
+	.sect	'.debug_ranges'
+.L79:
+	.word	-1,.L51,0,.L80-.L51,0,0
+	.sdecl	'.debug_info',debug,cluster('element_R')
+	.sect	'.debug_info'
+.L81:
+	.word	223
+	.half	3
+	.word	.L82
+	.byte	4,1
+	.byte	'../code/element_line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L84,.L83
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'element_R',0,1,115,5
+	.word	.L126
+	.byte	1,1
+	.word	.L53,.L153,.L52
+	.byte	4
+	.word	.L53,.L153
+	.byte	5
+	.byte	'count',0,1,116,9
+	.word	.L126,.L154
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('element_R')
+	.sect	'.debug_abbrev'
+.L82:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('element_R')
+	.sect	'.debug_line'
+.L83:
+	.word	.L300-.L299
+.L299:
+	.half	3
+	.word	.L302-.L301
+.L301:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/element_line.c',0,0,0,0,0
+.L302:
+	.byte	5,15,7,0,5,2
+	.word	.L53
+	.byte	3,243,0,1,5,31,9
+	.half	.L212-.L53
+	.byte	3,1,1,5,41,9
+	.half	.L303-.L212
+	.byte	1,5,5,9
+	.half	.L213-.L303
+	.byte	3,1,1,5,1,9
+	.half	.L39-.L213
+	.byte	3,1,1,7,9
+	.half	.L85-.L39
+	.byte	0,1,1
+.L300:
+	.sdecl	'.debug_ranges',debug,cluster('element_R')
+	.sect	'.debug_ranges'
+.L84:
+	.word	-1,.L53,0,.L85-.L53,0,0
+	.sdecl	'.debug_info',debug,cluster('element_U')
+	.sect	'.debug_info'
+.L86:
+	.word	247
+	.half	3
+	.word	.L87
+	.byte	4,1
+	.byte	'../code/element_line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L89,.L88
+	.byte	2
+	.word	.L62
+	.byte	3
+	.byte	'element_U',0,1,121,5
+	.word	.L126
 	.byte	1,1
 	.word	.L55,.L155,.L54
 	.byte	4
 	.word	.L55,.L155
 	.byte	5
-	.byte	'count',0,1,110,9
-	.word	.L130,.L156
+	.byte	'count',0,1,122,9
+	.word	.L126,.L156
 	.byte	4
 	.word	.L157,.L158
 	.byte	5
-	.byte	'i',0,1,111,13
-	.word	.L130,.L159
+	.byte	'i',0,1,123,13
+	.word	.L126,.L159
 	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('element_L')
+	.sdecl	'.debug_abbrev',debug,cluster('element_U')
 	.sect	'.debug_abbrev'
-.L81:
+.L87:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('element_L')
+	.sdecl	'.debug_line',debug,cluster('element_U')
 	.sect	'.debug_line'
-.L82:
-	.word	.L309-.L308
-.L308:
+.L88:
+	.word	.L305-.L304
+.L304:
 	.half	3
-	.word	.L311-.L310
-.L310:
+	.word	.L307-.L306
+.L306:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L311:
+.L307:
 	.byte	5,15,7,0,5,2
 	.word	.L55
-	.byte	3,237,0,1,5,14,9
+	.byte	3,249,0,1,5,14,9
 	.half	.L157-.L55
 	.byte	3,1,1,5,21,9
-	.half	.L221-.L157
+	.half	.L215-.L157
 	.byte	1,5,28,9
-	.half	.L39-.L221
+	.half	.L41-.L215
 	.byte	3,1,1,5,26,9
-	.half	.L312-.L39
+	.half	.L308-.L41
 	.byte	1,5,37,9
-	.half	.L313-.L312
+	.half	.L309-.L308
 	.byte	1,5,15,9
-	.half	.L220-.L313
+	.half	.L214-.L309
 	.byte	1,5,23,9
-	.half	.L222-.L220
+	.half	.L216-.L214
 	.byte	3,127,1,5,21,9
-	.half	.L38-.L222
+	.half	.L40-.L216
 	.byte	1,5,5,7,9
-	.half	.L158-.L38
+	.half	.L158-.L40
 	.byte	3,3,1,5,1,9
-	.half	.L40-.L158
+	.half	.L42-.L158
 	.byte	3,1,1,7,9
-	.half	.L84-.L40
+	.half	.L90-.L42
 	.byte	0,1,1
-.L309:
-	.sdecl	'.debug_ranges',debug,cluster('element_L')
+.L305:
+	.sdecl	'.debug_ranges',debug,cluster('element_U')
 	.sect	'.debug_ranges'
-.L83:
-	.word	-1,.L55,0,.L84-.L55,0,0
-	.sdecl	'.debug_info',debug,cluster('element_R')
+.L89:
+	.word	-1,.L55,0,.L90-.L55,0,0
+	.sdecl	'.debug_info',debug,cluster('element_B')
 	.sect	'.debug_info'
-.L85:
-	.word	247
+.L91:
+	.word	250
 	.half	3
-	.word	.L86
+	.word	.L92
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L88,.L87
+	.word	.L94,.L93
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_R',0,1,117,5
-	.word	.L130
+	.byte	'element_B',0,1,129,1,5
+	.word	.L126
 	.byte	1,1
 	.word	.L57,.L160,.L56
 	.byte	4
 	.word	.L57,.L160
 	.byte	5
-	.byte	'count',0,1,118,9
-	.word	.L130,.L161
+	.byte	'count',0,1,130,1,9
+	.word	.L126,.L161
 	.byte	4
 	.word	.L162,.L163
 	.byte	5
-	.byte	'i',0,1,119,13
-	.word	.L130,.L164
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('element_R')
-	.sect	'.debug_abbrev'
-.L86:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('element_R')
-	.sect	'.debug_line'
-.L87:
-	.word	.L315-.L314
-.L314:
-	.half	3
-	.word	.L317-.L316
-.L316:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/element_line.c',0,0,0,0,0
-.L317:
-	.byte	5,15,7,0,5,2
-	.word	.L57
-	.byte	3,245,0,1,5,14,9
-	.half	.L162-.L57
-	.byte	3,1,1,5,21,9
-	.half	.L225-.L162
-	.byte	1,5,40,9
-	.half	.L42-.L225
-	.byte	3,1,1,5,38,9
-	.half	.L318-.L42
-	.byte	1,5,49,9
-	.half	.L319-.L318
-	.byte	1,5,15,9
-	.half	.L224-.L319
-	.byte	1,5,23,9
-	.half	.L226-.L224
-	.byte	3,127,1,5,21,9
-	.half	.L41-.L226
-	.byte	1,5,5,7,9
-	.half	.L163-.L41
-	.byte	3,3,1,5,1,9
-	.half	.L43-.L163
-	.byte	3,1,1,7,9
-	.half	.L89-.L43
-	.byte	0,1,1
-.L315:
-	.sdecl	'.debug_ranges',debug,cluster('element_R')
-	.sect	'.debug_ranges'
-.L88:
-	.word	-1,.L57,0,.L89-.L57,0,0
-	.sdecl	'.debug_info',debug,cluster('element_U')
-	.sect	'.debug_info'
-.L90:
-	.word	247
-	.half	3
-	.word	.L91
-	.byte	4,1
-	.byte	'../code/element_line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L93,.L92
-	.byte	2
-	.word	.L66
-	.byte	3
-	.byte	'element_U',0,1,125,5
-	.word	.L130
-	.byte	1,1
-	.word	.L59,.L165,.L58
-	.byte	4
-	.word	.L59,.L165
-	.byte	5
-	.byte	'count',0,1,126,9
-	.word	.L130,.L166
-	.byte	4
-	.word	.L167,.L168
-	.byte	5
-	.byte	'i',0,1,127,13
-	.word	.L130,.L169
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('element_U')
-	.sect	'.debug_abbrev'
-.L91:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('element_U')
-	.sect	'.debug_line'
-.L92:
-	.word	.L321-.L320
-.L320:
-	.half	3
-	.word	.L323-.L322
-.L322:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/element_line.c',0,0,0,0,0
-.L323:
-	.byte	5,15,7,0,5,2
-	.word	.L59
-	.byte	3,253,0,1,5,14,9
-	.half	.L167-.L59
-	.byte	3,1,1,5,21,9
-	.half	.L229-.L167
-	.byte	1,5,28,9
-	.half	.L45-.L229
-	.byte	3,1,1,5,26,9
-	.half	.L324-.L45
-	.byte	1,5,37,9
-	.half	.L325-.L324
-	.byte	1,5,15,9
-	.half	.L228-.L325
-	.byte	1,5,23,9
-	.half	.L230-.L228
-	.byte	3,127,1,5,21,9
-	.half	.L44-.L230
-	.byte	1,5,5,7,9
-	.half	.L168-.L44
-	.byte	3,3,1,5,1,9
-	.half	.L46-.L168
-	.byte	3,1,1,7,9
-	.half	.L94-.L46
-	.byte	0,1,1
-.L321:
-	.sdecl	'.debug_ranges',debug,cluster('element_U')
-	.sect	'.debug_ranges'
-.L93:
-	.word	-1,.L59,0,.L94-.L59,0,0
-	.sdecl	'.debug_info',debug,cluster('element_B')
-	.sect	'.debug_info'
-.L95:
-	.word	250
-	.half	3
-	.word	.L96
-	.byte	4,1
-	.byte	'../code/element_line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L98,.L97
-	.byte	2
-	.word	.L66
-	.byte	3
-	.byte	'element_B',0,1,133,1,5
-	.word	.L130
-	.byte	1,1
-	.word	.L61,.L170,.L60
-	.byte	4
-	.word	.L61,.L170
-	.byte	5
-	.byte	'count',0,1,134,1,9
-	.word	.L130,.L171
-	.byte	4
-	.word	.L172,.L173
-	.byte	5
-	.byte	'i',0,1,135,1,13
-	.word	.L130,.L174
+	.byte	'i',0,1,131,1,13
+	.word	.L126,.L164
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('element_B')
 	.sect	'.debug_abbrev'
-.L96:
+.L92:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('element_B')
 	.sect	'.debug_line'
-.L97:
-	.word	.L327-.L326
-.L326:
+.L93:
+	.word	.L311-.L310
+.L310:
 	.half	3
-	.word	.L329-.L328
-.L328:
+	.word	.L313-.L312
+.L312:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L329:
+.L313:
 	.byte	5,15,7,0,5,2
-	.word	.L61
-	.byte	3,133,1,1,5,14,9
-	.half	.L172-.L61
+	.word	.L57
+	.byte	3,129,1,1,5,14,9
+	.half	.L162-.L57
 	.byte	3,1,1,5,21,9
-	.half	.L233-.L172
+	.half	.L219-.L162
 	.byte	1,5,40,9
-	.half	.L48-.L233
+	.half	.L44-.L219
 	.byte	3,1,1,5,38,9
-	.half	.L330-.L48
+	.half	.L314-.L44
 	.byte	1,5,49,9
-	.half	.L331-.L330
+	.half	.L315-.L314
 	.byte	1,5,15,9
-	.half	.L232-.L331
+	.half	.L218-.L315
 	.byte	1,5,23,9
-	.half	.L234-.L232
+	.half	.L220-.L218
 	.byte	3,127,1,5,21,9
-	.half	.L47-.L234
+	.half	.L43-.L220
 	.byte	1,5,5,7,9
-	.half	.L173-.L47
+	.half	.L163-.L43
 	.byte	3,3,1,5,1,9
-	.half	.L49-.L173
+	.half	.L45-.L163
 	.byte	3,1,1,7,9
-	.half	.L99-.L49
+	.half	.L95-.L45
 	.byte	0,1,1
-.L327:
+.L311:
 	.sdecl	'.debug_ranges',debug,cluster('element_B')
 	.sect	'.debug_ranges'
-.L98:
-	.word	-1,.L61,0,.L99-.L61,0,0
+.L94:
+	.word	-1,.L57,0,.L95-.L57,0,0
 	.sdecl	'.debug_info',debug,cluster('show_element_line')
 	.sect	'.debug_info'
-.L100:
+.L96:
 	.word	209
 	.half	3
-	.word	.L101
+	.word	.L97
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L103,.L102
+	.word	.L99,.L98
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'show_element_line',0,1,141,1,6,1,1
-	.word	.L63,.L175,.L62
+	.byte	'show_element_line',0,1,137,1,6,1,1
+	.word	.L59,.L165,.L58
 	.byte	4
-	.word	.L63,.L175
+	.word	.L59,.L165
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('show_element_line')
 	.sect	'.debug_abbrev'
-.L101:
+.L97:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('show_element_line')
 	.sect	'.debug_line'
-.L102:
-	.word	.L333-.L332
-.L332:
+.L98:
+	.word	.L317-.L316
+.L316:
 	.half	3
-	.word	.L335-.L334
-.L334:
+	.word	.L319-.L318
+.L318:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L335:
+.L319:
 	.byte	5,21,7,0,5,2
-	.word	.L63
-	.byte	3,142,1,1,5,23,9
-	.half	.L336-.L63
+	.word	.L59
+	.byte	3,138,1,1,5,23,9
+	.half	.L320-.L59
 	.byte	1,5,27,9
-	.half	.L337-.L336
+	.half	.L321-.L320
 	.byte	1,5,42,9
-	.half	.L338-.L337
+	.half	.L322-.L321
 	.byte	1,5,21,9
-	.half	.L339-.L338
+	.half	.L323-.L322
 	.byte	3,1,1,5,23,9
-	.half	.L340-.L339
+	.half	.L324-.L323
 	.byte	1,5,27,9
-	.half	.L341-.L340
+	.half	.L325-.L324
 	.byte	1,5,42,9
-	.half	.L342-.L341
+	.half	.L326-.L325
 	.byte	1,5,21,9
-	.half	.L343-.L342
+	.half	.L327-.L326
 	.byte	3,1,1,5,23,9
-	.half	.L344-.L343
+	.half	.L328-.L327
 	.byte	1,5,27,9
-	.half	.L345-.L344
+	.half	.L329-.L328
 	.byte	1,5,42,9
-	.half	.L346-.L345
+	.half	.L330-.L329
 	.byte	1,5,21,9
-	.half	.L347-.L346
+	.half	.L331-.L330
 	.byte	3,1,1,5,23,9
-	.half	.L348-.L347
+	.half	.L332-.L331
 	.byte	1,5,27,9
-	.half	.L349-.L348
+	.half	.L333-.L332
 	.byte	1,5,42,9
-	.half	.L350-.L349
+	.half	.L334-.L333
 	.byte	1,5,1,9
-	.half	.L351-.L350
+	.half	.L335-.L334
 	.byte	3,1,1,7,9
-	.half	.L104-.L351
+	.half	.L100-.L335
 	.byte	0,1,1
-.L333:
+.L317:
 	.sdecl	'.debug_ranges',debug,cluster('show_element_line')
 	.sect	'.debug_ranges'
-.L103:
-	.word	-1,.L63,0,.L104-.L63,0,0
+.L99:
+	.word	-1,.L59,0,.L100-.L59,0,0
 	.sdecl	'.debug_info',debug,cluster('element_update')
 	.sect	'.debug_info'
-.L105:
+.L101:
 	.word	206
 	.half	3
-	.word	.L106
+	.word	.L102
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L108,.L107
+	.word	.L104,.L103
 	.byte	2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_update',0,1,149,1,6,1,1
-	.word	.L65,.L176,.L64
+	.byte	'element_update',0,1,145,1,6,1,1
+	.word	.L61,.L166,.L60
 	.byte	4
-	.word	.L65,.L176
+	.word	.L61,.L166
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('element_update')
 	.sect	'.debug_abbrev'
-.L106:
+.L102:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('element_update')
 	.sect	'.debug_line'
-.L107:
-	.word	.L353-.L352
-.L352:
+.L103:
+	.word	.L337-.L336
+.L336:
 	.half	3
-	.word	.L355-.L354
-.L354:
+	.word	.L339-.L338
+.L338:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/element_line.c',0,0,0,0,0
-.L355:
+.L339:
 	.byte	5,5,7,0,5,2
-	.word	.L65
-	.byte	3,149,1,1,5,31,9
-	.half	.L356-.L65
+	.word	.L61
+	.byte	3,145,1,1,5,31,9
+	.half	.L340-.L61
 	.byte	1,5,20,9
-	.half	.L357-.L356
+	.half	.L341-.L340
 	.byte	1,5,5,9
-	.half	.L358-.L357
+	.half	.L342-.L341
 	.byte	3,1,1,5,31,9
-	.half	.L359-.L358
+	.half	.L343-.L342
 	.byte	1,5,20,9
-	.half	.L360-.L359
+	.half	.L344-.L343
 	.byte	1,5,5,9
-	.half	.L361-.L360
+	.half	.L345-.L344
 	.byte	3,1,1,5,31,9
-	.half	.L362-.L361
+	.half	.L346-.L345
 	.byte	1,5,20,9
-	.half	.L363-.L362
+	.half	.L347-.L346
 	.byte	1,5,5,9
-	.half	.L364-.L363
+	.half	.L348-.L347
 	.byte	3,1,1,5,31,9
-	.half	.L365-.L364
+	.half	.L349-.L348
 	.byte	1,5,20,9
-	.half	.L366-.L365
+	.half	.L350-.L349
 	.byte	1,5,1,9
-	.half	.L367-.L366
+	.half	.L351-.L350
 	.byte	3,4,1,7,9
-	.half	.L109-.L367
+	.half	.L105-.L351
 	.byte	0,1,1
-.L353:
+.L337:
 	.sdecl	'.debug_ranges',debug,cluster('element_update')
 	.sect	'.debug_ranges'
-.L108:
-	.word	-1,.L65,0,.L109-.L65,0,0
+.L104:
+	.word	-1,.L61,0,.L105-.L61,0,0
 	.sdecl	'.debug_info',debug,cluster('element_line_L')
+	.sect	'.debug_info'
+.L106:
+	.word	184
+	.half	3
+	.word	.L107
+	.byte	4,1
+	.byte	'../code/element_line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'element_line_L',0,4,11,5
+	.word	.L126
+	.byte	1,5,3
+	.word	element_line_L
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('element_line_L')
+	.sect	'.debug_abbrev'
+.L107:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('element_line_R')
+	.sect	'.debug_info'
+.L108:
+	.word	184
+	.half	3
+	.word	.L109
+	.byte	4,1
+	.byte	'../code/element_line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L62
+	.byte	3
+	.byte	'element_line_R',0,4,11,22
+	.word	.L126
+	.byte	1,5,3
+	.word	element_line_R
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('element_line_R')
+	.sect	'.debug_abbrev'
+.L109:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('element_line_U')
 	.sect	'.debug_info'
 .L110:
 	.word	184
@@ -1672,19 +1654,19 @@ M_edge:	.type	object
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_line_L',0,4,11,5
-	.word	.L130
+	.byte	'element_line_U',0,4,11,39
+	.word	.L126
 	.byte	1,5,3
-	.word	element_line_L
+	.word	element_line_U
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('element_line_L')
+	.sdecl	'.debug_abbrev',debug,cluster('element_line_U')
 	.sect	'.debug_abbrev'
 .L111:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('element_line_R')
+	.sdecl	'.debug_info',debug,cluster('element_line_B')
 	.sect	'.debug_info'
 .L112:
 	.word	184
@@ -1694,63 +1676,63 @@ M_edge:	.type	object
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_line_R',0,4,11,22
-	.word	.L130
+	.byte	'element_line_B',0,4,11,56
+	.word	.L126
 	.byte	1,5,3
-	.word	element_line_R
+	.word	element_line_B
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('element_line_R')
+	.sdecl	'.debug_abbrev',debug,cluster('element_line_B')
 	.sect	'.debug_abbrev'
 .L113:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('element_line_U')
+	.sdecl	'.debug_info',debug,cluster('L_edge')
 	.sect	'.debug_info'
 .L114:
-	.word	184
+	.word	176
 	.half	3
 	.word	.L115
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_line_U',0,4,11,39
-	.word	.L130
+	.byte	'L_edge',0,4,13,7
+	.word	.L167
 	.byte	1,5,3
-	.word	element_line_U
+	.word	L_edge
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('element_line_U')
+	.sdecl	'.debug_abbrev',debug,cluster('L_edge')
 	.sect	'.debug_abbrev'
 .L115:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('element_line_B')
+	.sdecl	'.debug_info',debug,cluster('R_edge')
 	.sect	'.debug_info'
 .L116:
-	.word	184
+	.word	176
 	.half	3
 	.word	.L117
 	.byte	4,1
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'element_line_B',0,4,11,56
-	.word	.L130
+	.byte	'R_edge',0,4,13,18
+	.word	.L167
 	.byte	1,5,3
-	.word	element_line_B
+	.word	R_edge
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('element_line_B')
+	.sdecl	'.debug_abbrev',debug,cluster('R_edge')
 	.sect	'.debug_abbrev'
 .L117:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('L_edge')
+	.sdecl	'.debug_info',debug,cluster('U_edge')
 	.sect	'.debug_info'
 .L118:
 	.word	176
@@ -1760,19 +1742,19 @@ M_edge:	.type	object
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'L_edge',0,4,13,7
-	.word	.L177
+	.byte	'U_edge',0,4,13,29
+	.word	.L167
 	.byte	1,5,3
-	.word	L_edge
+	.word	U_edge
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('L_edge')
+	.sdecl	'.debug_abbrev',debug,cluster('U_edge')
 	.sect	'.debug_abbrev'
 .L119:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('R_edge')
+	.sdecl	'.debug_info',debug,cluster('B_edge')
 	.sect	'.debug_info'
 .L120:
 	.word	176
@@ -1782,19 +1764,19 @@ M_edge:	.type	object
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
-	.byte	'R_edge',0,4,13,18
-	.word	.L177
+	.byte	'B_edge',0,4,13,40
+	.word	.L167
 	.byte	1,5,3
-	.word	R_edge
+	.word	B_edge
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('R_edge')
+	.sdecl	'.debug_abbrev',debug,cluster('B_edge')
 	.sect	'.debug_abbrev'
 .L121:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('U_edge')
+	.sdecl	'.debug_info',debug,cluster('M_edge')
 	.sect	'.debug_info'
 .L122:
 	.word	176
@@ -1804,127 +1786,31 @@ M_edge:	.type	object
 	.byte	'../code/element_line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
-	.byte	3
-	.byte	'U_edge',0,4,13,29
-	.word	.L177
-	.byte	1,5,3
-	.word	U_edge
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('U_edge')
-	.sect	'.debug_abbrev'
-.L123:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('B_edge')
-	.sect	'.debug_info'
-.L124:
-	.word	176
-	.half	3
-	.word	.L125
-	.byte	4,1
-	.byte	'../code/element_line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
-	.byte	3
-	.byte	'B_edge',0,4,13,40
-	.word	.L177
-	.byte	1,5,3
-	.word	B_edge
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('B_edge')
-	.sect	'.debug_abbrev'
-.L125:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('M_edge')
-	.sect	'.debug_info'
-.L126:
-	.word	176
-	.half	3
-	.word	.L127
-	.byte	4,1
-	.byte	'../code/element_line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L66
+	.word	.L62
 	.byte	3
 	.byte	'M_edge',0,4,13,51
-	.word	.L177
+	.word	.L167
 	.byte	1,5,3
 	.word	M_edge
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('M_edge')
 	.sect	'.debug_abbrev'
-.L127:
+.L123:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('element_B')
 	.sect	'.debug_loc'
-.L171:
-	.word	-1,.L61,.L172-.L61,.L232-.L61
-	.half	1
-	.byte	85
-	.word	.L232-.L61,.L47-.L61
-	.half	1
-	.byte	82
-	.word	.L234-.L61,.L170-.L61
-	.half	1
-	.byte	85
-	.word	.L235-.L61,.L170-.L61
-	.half	1
-	.byte	82
-	.word	0,0
-.L60:
-	.word	-1,.L61,0,.L170-.L61
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L174:
-	.word	-1,.L61,.L233-.L61,.L170-.L61
-	.half	1
-	.byte	95
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('element_L')
-	.sect	'.debug_loc'
-.L156:
-	.word	-1,.L55,.L157-.L55,.L220-.L55
-	.half	1
-	.byte	85
-	.word	.L220-.L55,.L38-.L55
-	.half	1
-	.byte	82
-	.word	.L222-.L55,.L155-.L55
-	.half	1
-	.byte	85
-	.word	.L223-.L55,.L155-.L55
-	.half	1
-	.byte	82
-	.word	0,0
-.L54:
-	.word	-1,.L55,0,.L155-.L55
-	.half	2
-	.byte	138,0
-	.word	0,0
-.L159:
-	.word	-1,.L55,.L221-.L55,.L155-.L55
-	.half	1
-	.byte	95
-	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('element_R')
-	.sect	'.debug_loc'
 .L161:
-	.word	-1,.L57,.L162-.L57,.L224-.L57
+	.word	-1,.L57,.L162-.L57,.L218-.L57
 	.half	1
 	.byte	85
-	.word	.L224-.L57,.L41-.L57
+	.word	.L218-.L57,.L43-.L57
 	.half	1
 	.byte	82
-	.word	.L226-.L57,.L160-.L57
+	.word	.L220-.L57,.L160-.L57
 	.half	1
 	.byte	85
-	.word	.L227-.L57,.L160-.L57
+	.word	.L221-.L57,.L160-.L57
 	.half	1
 	.byte	82
 	.word	0,0
@@ -1934,203 +1820,233 @@ M_edge:	.type	object
 	.byte	138,0
 	.word	0,0
 .L164:
-	.word	-1,.L57,.L225-.L57,.L160-.L57
+	.word	-1,.L57,.L219-.L57,.L160-.L57
 	.half	1
 	.byte	95
 	.word	0,0
-	.sdecl	'.debug_loc',debug,cluster('element_U')
+	.sdecl	'.debug_loc',debug,cluster('element_L')
 	.sect	'.debug_loc'
-.L166:
-	.word	-1,.L59,.L167-.L59,.L228-.L59
+.L152:
+	.word	-1,.L51,.L210-.L51,.L211-.L51
 	.half	1
 	.byte	85
-	.word	.L228-.L59,.L44-.L59
-	.half	1
-	.byte	82
-	.word	.L230-.L59,.L165-.L59
-	.half	1
-	.byte	85
-	.word	.L231-.L59,.L165-.L59
+	.word	.L211-.L51,.L151-.L51
 	.half	1
 	.byte	82
 	.word	0,0
-.L58:
-	.word	-1,.L59,0,.L165-.L59
+.L50:
+	.word	-1,.L51,0,.L151-.L51
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L169:
-	.word	-1,.L59,.L229-.L59,.L165-.L59
+	.sdecl	'.debug_loc',debug,cluster('element_R')
+	.sect	'.debug_loc'
+.L154:
+	.word	-1,.L53,.L212-.L53,.L213-.L53
+	.half	1
+	.byte	85
+	.word	.L213-.L53,.L153-.L53
+	.half	1
+	.byte	82
+	.word	0,0
+.L52:
+	.word	-1,.L53,0,.L153-.L53
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('element_U')
+	.sect	'.debug_loc'
+.L156:
+	.word	-1,.L55,.L157-.L55,.L214-.L55
+	.half	1
+	.byte	85
+	.word	.L214-.L55,.L40-.L55
+	.half	1
+	.byte	82
+	.word	.L216-.L55,.L155-.L55
+	.half	1
+	.byte	85
+	.word	.L217-.L55,.L155-.L55
+	.half	1
+	.byte	82
+	.word	0,0
+.L54:
+	.word	-1,.L55,0,.L155-.L55
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L159:
+	.word	-1,.L55,.L215-.L55,.L155-.L55
 	.half	1
 	.byte	95
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('element_update')
 	.sect	'.debug_loc'
-.L64:
-	.word	-1,.L65,0,.L176-.L65
+.L60:
+	.word	-1,.L61,0,.L166-.L61
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('line_H')
 	.sect	'.debug_loc'
-.L147:
-	.word	-1,.L53,.L148-.L53,.L143-.L53
+.L143:
+	.word	-1,.L49,.L144-.L49,.L139-.L49
 	.half	1
 	.byte	91
 	.word	0,0
-.L152:
-	.word	-1,.L53,.L153-.L53,.L27-.L53
+.L148:
+	.word	-1,.L49,.L149-.L49,.L27-.L49
 	.half	1
 	.byte	88
 	.word	0,0
-.L146:
-	.word	-1,.L53,0,.L21-.L53
+.L142:
+	.word	-1,.L49,0,.L21-.L49
 	.half	1
 	.byte	100
-	.word	.L201-.L53,.L143-.L53
+	.word	.L191-.L49,.L139-.L49
 	.half	1
 	.byte	108
 	.word	0,0
-.L150:
-	.word	-1,.L53,.L202-.L53,.L153-.L53
+.L146:
+	.word	-1,.L49,.L192-.L49,.L149-.L49
 	.half	1
 	.byte	88
 	.word	0,0
-.L154:
-	.word	-1,.L53,.L211-.L53,.L27-.L53
+.L150:
+	.word	-1,.L49,.L201-.L49,.L27-.L49
 	.half	1
 	.byte	92
 	.word	0,0
-.L52:
-	.word	-1,.L53,0,.L143-.L53
+.L48:
+	.word	-1,.L49,0,.L139-.L49
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L145:
-	.word	-1,.L53,0,.L21-.L53
+.L141:
+	.word	-1,.L49,0,.L21-.L49
 	.half	1
 	.byte	85
-	.word	.L200-.L53,.L143-.L53
+	.word	.L190-.L49,.L139-.L49
 	.half	1
 	.byte	90
 	.word	0,0
-.L144:
-	.word	-1,.L53,0,.L21-.L53
+.L140:
+	.word	-1,.L49,0,.L21-.L49
 	.half	1
 	.byte	84
-	.word	.L199-.L53,.L143-.L53
+	.word	.L189-.L49,.L139-.L49
 	.half	1
 	.byte	89
-	.word	.L203-.L53,.L204-.L53
+	.word	.L193-.L49,.L194-.L49
 	.half	1
 	.byte	84
-	.word	.L205-.L53,.L206-.L53
+	.word	.L195-.L49,.L196-.L49
 	.half	1
 	.byte	84
-	.word	.L207-.L53,.L208-.L53
+	.word	.L197-.L49,.L198-.L49
 	.half	1
 	.byte	84
-	.word	.L209-.L53,.L210-.L53
+	.word	.L199-.L49,.L200-.L49
 	.half	1
 	.byte	84
-	.word	.L212-.L53,.L213-.L53
+	.word	.L202-.L49,.L203-.L49
 	.half	1
 	.byte	84
-	.word	.L214-.L53,.L215-.L53
+	.word	.L204-.L49,.L205-.L49
 	.half	1
 	.byte	84
-	.word	.L216-.L53,.L217-.L53
+	.word	.L206-.L49,.L207-.L49
 	.half	1
 	.byte	84
-	.word	.L218-.L53,.L219-.L53
+	.word	.L208-.L49,.L209-.L49
 	.half	1
 	.byte	84
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('line_W')
 	.sect	'.debug_loc'
-.L135:
-	.word	-1,.L51,.L136-.L51,.L129-.L51
+.L131:
+	.word	-1,.L47,.L132-.L47,.L125-.L47
 	.half	1
 	.byte	91
 	.word	0,0
-.L140:
-	.word	-1,.L51,.L141-.L51,.L9-.L51
+.L136:
+	.word	-1,.L47,.L137-.L47,.L9-.L47
 	.half	1
 	.byte	88
 	.word	0,0
-.L134:
-	.word	-1,.L51,0,.L3-.L51
+.L130:
+	.word	-1,.L47,0,.L3-.L47
 	.half	1
 	.byte	100
-	.word	.L180-.L51,.L129-.L51
+	.word	.L170-.L47,.L125-.L47
 	.half	1
 	.byte	108
 	.word	0,0
-.L131:
-	.word	-1,.L51,0,.L3-.L51
+.L127:
+	.word	-1,.L47,0,.L3-.L47
 	.half	1
 	.byte	84
-	.word	.L178-.L51,.L129-.L51
+	.word	.L168-.L47,.L125-.L47
 	.half	1
 	.byte	89
-	.word	.L182-.L51,.L183-.L51
+	.word	.L172-.L47,.L173-.L47
 	.half	1
 	.byte	85
-	.word	.L184-.L51,.L185-.L51
+	.word	.L174-.L47,.L175-.L47
 	.half	1
 	.byte	85
-	.word	.L186-.L51,.L187-.L51
+	.word	.L176-.L47,.L177-.L47
 	.half	1
 	.byte	85
-	.word	.L188-.L51,.L189-.L51
+	.word	.L178-.L47,.L179-.L47
 	.half	1
 	.byte	85
-	.word	.L191-.L51,.L192-.L51
+	.word	.L181-.L47,.L182-.L47
 	.half	1
 	.byte	85
-	.word	.L193-.L51,.L194-.L51
+	.word	.L183-.L47,.L184-.L47
 	.half	1
 	.byte	85
-	.word	.L195-.L51,.L196-.L51
+	.word	.L185-.L47,.L186-.L47
 	.half	1
 	.byte	85
-	.word	.L197-.L51,.L198-.L51
+	.word	.L187-.L47,.L188-.L47
 	.half	1
 	.byte	85
 	.word	0,0
-.L138:
-	.word	-1,.L51,.L181-.L51,.L141-.L51
+.L134:
+	.word	-1,.L47,.L171-.L47,.L137-.L47
 	.half	1
 	.byte	88
 	.word	0,0
-.L142:
-	.word	-1,.L51,.L190-.L51,.L9-.L51
+.L138:
+	.word	-1,.L47,.L180-.L47,.L9-.L47
 	.half	1
 	.byte	92
 	.word	0,0
-.L50:
-	.word	-1,.L51,0,.L129-.L51
+.L46:
+	.word	-1,.L47,0,.L125-.L47
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L132:
-	.word	-1,.L51,0,.L3-.L51
+.L128:
+	.word	-1,.L47,0,.L3-.L47
 	.half	1
 	.byte	85
-	.word	.L179-.L51,.L129-.L51
+	.word	.L169-.L47,.L125-.L47
 	.half	1
 	.byte	90
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('show_element_line')
 	.sect	'.debug_loc'
-.L62:
-	.word	-1,.L63,0,.L175-.L63
+.L58:
+	.word	-1,.L59,0,.L165-.L59
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L368:
+.L352:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -2138,33 +2054,33 @@ M_edge:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('line_W')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L51,.L129-.L51
+	.word	.L352,.L47,.L125-.L47
 	.sdecl	'.debug_frame',debug,cluster('line_H')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L53,.L143-.L53
+	.word	.L352,.L49,.L139-.L49
 	.sdecl	'.debug_frame',debug,cluster('element_L')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L55,.L155-.L55
+	.word	.L352,.L51,.L151-.L51
 	.sdecl	'.debug_frame',debug,cluster('element_R')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L57,.L160-.L57
+	.word	.L352,.L53,.L153-.L53
 	.sdecl	'.debug_frame',debug,cluster('element_U')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L59,.L165-.L59
+	.word	.L352,.L55,.L155-.L55
 	.sdecl	'.debug_frame',debug,cluster('element_B')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L61,.L170-.L61
+	.word	.L352,.L57,.L160-.L57
 	.sdecl	'.debug_frame',debug,cluster('show_element_line')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L63,.L175-.L63
+	.word	.L352,.L59,.L165-.L59
 	.sdecl	'.debug_frame',debug,cluster('element_update')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L368,.L65,.L176-.L65
+	.word	.L352,.L61,.L166-.L61
 	; Module end

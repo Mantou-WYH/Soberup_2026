@@ -68,7 +68,7 @@ uint8_t line_W(int hight,int max,Point *edge){
 //---------------------------------------------------------------------------------------------------------------
 uint8_t line_H(int x,int max,Point *edge){
     int count=0;
-    for(int i=30+2;i<MT9V03X_1_H-1;i++){
+    for(int i=30+2;i<MT9V03X_1_H-30;i++){
         if(safe_access_binimg(x,i-2)==0){
             if(safe_access_binimg(x,i-1)==0){
                 if(safe_access_binimg(x,i)==255){
@@ -108,17 +108,13 @@ uint8_t line_H(int x,int max,Point *edge){
 
 int element_L(){
     int count = 0;
-    for(int i=0;i<=5;i++){
-        count = line_H(20+i*3,count,L_edge);
-    }
+    count = line_H(30,count,L_edge);
     return count;
 }
 
 int element_R(){
     int count = 0;
-    for(int i=0;i<=5;i++){
-        count = line_H(MT9V03X_1_W-20-i*3,count,R_edge);
-    }
+    count = line_H(MT9V03X_1_W-30,count,R_edge);
     return count;
 }
 

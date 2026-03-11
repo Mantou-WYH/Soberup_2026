@@ -8,6 +8,7 @@
 #include "stdint.h"
 
 uint8      mt9v03x_image_bin[MT9V03X_1_H][MT9V03X_1_W];
+uint8      img_fu[MT9V03X_1_H][MT9V03X_1_W];  // 腐蚀膨胀结果数组
 
 uint8 safe_access_binimg(int x, int y) {
     if (x >= 0 && x < MT9V03X_1_W && y >= 0 && y < MT9V03X_1_H) {
@@ -32,7 +33,6 @@ void binarization(int thres){
     }
   }
 }
-
 /**
  * @brief 使用安全访问函数且优化的Otsu阈值计算
  * @param step 采样步长，默认2（隔点采样）。增大可提升速度，但会降低精度
@@ -120,4 +120,5 @@ uint8 otsuThreshold_fast(void)   // 注意计算阈值的一定要是原图像
 
     return threshold;
 }
+
 

@@ -69,28 +69,28 @@
      <ViewData>
       <AllViewBaseData>
        <__.0>
-        <ViewId>0</ViewId>
-        <ViewType>Symbols</ViewType>
-       </__.0>
-       <__.1>
-        <ViewId>1</ViewId>
-        <ViewType>Output_Progress</ViewType>
-       </__.1>
-       <__.2>
-        <ViewId>2</ViewId>
-        <ViewType>Locals</ViewType>
-       </__.2>
-       <__.3>
-        <ViewId>3</ViewId>
-        <ViewType>CustomWatch</ViewType>
-       </__.3>
-       <__.4>
         <ViewId>4</ViewId>
         <ViewType>Disassembly</ViewType>
-       </__.4>
-       <__.5>
+       </__.0>
+       <__.1>
+        <ViewId>2</ViewId>
+        <ViewType>Locals</ViewType>
+       </__.1>
+       <__.2>
+        <ViewId>3</ViewId>
+        <ViewType>CustomWatch</ViewType>
+       </__.2>
+       <__.3>
         <ViewId>5</ViewId>
         <ViewType>Document</ViewType>
+       </__.3>
+       <__.4>
+        <ViewId>1</ViewId>
+        <ViewType>Output_Progress</ViewType>
+       </__.4>
+       <__.5>
+        <ViewId>0</ViewId>
+        <ViewType>Symbols</ViewType>
        </__.5>
       </AllViewBaseData>
       <DissasemblyViews>
@@ -243,7 +243,7 @@
       <PrimaryDocumentPaneId>5</PrimaryDocumentPaneId>
       <Frames>
        <__.0>
-        <FocusedViewId>5</FocusedViewId>
+        <FocusedViewId>4</FocusedViewId>
         <FrameState>3</FrameState>
         <IsPrimary>true</IsPrimary>
         <Bounds>
