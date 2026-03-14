@@ -25,7 +25,7 @@ Point L_edge[10],R_edge[10],U_edge[10],B_edge[10],M_edge[10];
 
 uint8_t line_W(int hight,int max,Point *edge){
     int count=0;
-    for(int i=20;i<MT9V03X_1_W-20;i++){
+    for(int i=30;i<MT9V03X_1_W-30;i++){
         if(safe_access_binimg(i-2,hight)==0){
             if(safe_access_binimg(i-1,hight)==0){
                 if(safe_access_binimg(i,hight)==255){
@@ -41,7 +41,7 @@ uint8_t line_W(int hight,int max,Point *edge){
 
     if(count>max){
         int count_point = 0;
-        for(int i=20;i<MT9V03X_1_W-20;i++){
+        for(int i=30;i<MT9V03X_1_W-30;i++){
             if(safe_access_binimg(i-2,hight)==0){
                 if(safe_access_binimg(i-1,hight)==0){
                     if(safe_access_binimg(i,hight)==255){
@@ -120,9 +120,7 @@ int element_R(){
 
 int element_U(){
     int count = 0;
-    for(int i=0;i<=5;i++){
-        count = line_W(20+i*5,count,U_edge);
-    }
+    count = line_W(20,count,U_edge);
     return count;
 }
 
@@ -146,7 +144,7 @@ void element_update(){
     element_line_L = element_L();
     element_line_R = element_R();
     element_line_U = element_U();
-    element_line_B = element_B();
+    //element_line_B = element_B();
     //show_element_line();
     //show_element_first_point();
     //show_circie_line();

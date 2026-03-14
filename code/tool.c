@@ -58,11 +58,12 @@ void show_point(int x, int y)
 {
     if (x > 10 && x < MT9V03X_1_W-10 && y > 10 && y < MT9V03X_1_H-10)
     {
-        ips200_draw_line((uint16)x-10, (uint16)y,(uint16)x+10, (uint16)y,RGB565_YELLOW);
-        ips200_draw_line((uint16)x, (uint16)y-10,(uint16)x, (uint16)y+10,RGB565_YELLOW);
+        for(int i=-1;i<2;i++){
+        ips200_draw_line((uint16)x-10, (uint16)y+i,(uint16)x+10, (uint16)y+i,RGB565_RED);
+        ips200_draw_line((uint16)x+i, (uint16)y-10,(uint16)x+i, (uint16)y+10,RGB565_RED);
+        }
     }
 }
-
 
 /**************************************************************
  * 功能: 位置式PD控制器（转向控制专用）
@@ -127,3 +128,17 @@ int IncPID_Calculate(IncPID *pid, int current_speed)
 
     return output;
 }
+
+
+float calculateAngleDifference(float angle1, float angle2) {
+    // 计算直接差值
+    float diff = fabs(angle1 - angle2);
+
+    // 如果差值大于180度，取360-差值为最小角度差
+    if (diff > 180.0) {
+        diff = 360.0 - diff;
+    }
+
+    return diff;
+}
+

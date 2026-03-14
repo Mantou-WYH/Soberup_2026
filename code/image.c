@@ -65,7 +65,7 @@ uint8 otsuThreshold_fast(void)   // 注意计算阈值的一定要是原图像
         for (j = 0; j < width; j += 2)    // 宽
         {
             // 使用 safe_access_img 函数来安全访问图像数据
-            uint8 pixel_value = safe_access_binimg(j, i);
+            uint8 pixel_value = safe_access_img(j, i);
             pixelCount[pixel_value]++;
             gray_sum += pixel_value;
             if (pixel_value > Pixel_Max)

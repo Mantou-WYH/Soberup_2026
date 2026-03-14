@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc23988a --dep-file=state_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/state_control.src ../code/state_control.c"
+	.compiler_invocation	"ctc -f cc25388a --dep-file=state_control.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/state_control.src ../code/state_control.c"
 	.compiler_name		"ctc"
 	;source	'../code/state_control.c'
 
@@ -13,18 +13,18 @@ $TC16X
 	
 	.global	state_update
 ; Function state_update
-.L23:
+.L25:
 state_update:	.type	func
 	movh.a	a15,#@his(car_state)
 	lea	a15,[a15]@los(car_state)
 	ld.bu	d0,[a15]
-.L59:
+.L64:
 	mov	d15,#0
 	jeq	d15,d0,.L2
-.L60:
+.L65:
 	mov	d15,#1
 	jeq	d15,d0,.L3
-.L61:
+.L66:
 	mov	d15,#2
 	jeq	d15,d0,.L4
 	j	.L5
@@ -32,139 +32,121 @@ state_update:	.type	func
 	movh.a	a15,#@his(element_line_U)
 	lea	a15,[a15]@los(element_line_U)
 	ld.w	d15,[a15]
-.L62:
+.L67:
 	ge	d15,d15,#1
-.L63:
+.L68:
 	movh.a	a15,#@his(element_line_L)
 	lea	a15,[a15]@los(element_line_L)
 	ld.w	d0,[a15]
-.L64:
+.L69:
 	ge	d0,d0,#1
-.L65:
+.L70:
 	add	d15,d0
-.L66:
+.L71:
 	movh.a	a15,#@his(element_line_R)
 	lea	a15,[a15]@los(element_line_R)
 	ld.w	d0,[a15]
-.L67:
+.L72:
 	ge	d0,d0,#1
-.L68:
+.L73:
 	add	d15,d0
-.L69:
+.L74:
 	jne	d15,#2,.L6
-.L70:
+.L75:
 	movh.a	a15,#@his(trend)
 	lea	a15,[a15]@los(trend)
-.L71:
+.L76:
 	ld.w	d15,[a15]
-.L72:
+.L77:
 	movh	d0,#16128
-.L73:
+.L78:
 	cmp.f	d15,d15,d0
 	extr.u	d15,d15,#2,#1
 	jeq	d15,#0,.L7
-.L74:
+.L79:
+	movh.a	a15,#@his(count)
+	lea	a15,[a15]@los(count)
+	ld.w	d15,[a15]
+.L80:
+	jlt	d15,#3,.L8
+.L81:
 	movh.a	a15,#@his(fork_num)
 	lea	a15,[a15]@los(fork_num)
 	ld.w	d15,[a15]
-.L75:
+.L82:
 	mul	d15,d15,#4
-.L76:
+.L83:
 	movh.a	a15,#@his(fork_type)
 	lea	a15,[a15]@los(fork_type)
-.L77:
+.L84:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d15,[a15]
-.L78:
-	jne	d15,#0,.L8
-.L79:
-	movh.a	a15,#@his(car_state)
-	lea	a15,[a15]@los(car_state)
-.L80:
-	mov	d15,#1
-.L81:
-	st.b	[a15],d15
-.L82:
-	j	.L9
-.L8:
-	movh.a	a15,#@his(car_state)
-	lea	a15,[a15]@los(car_state)
-.L83:
-	mov	d15,#2
-.L84:
-	st.b	[a15],d15
 .L85:
-	movh.a	a2,#@his(current_angle)
-	lea	a2,[a2]@los(current_angle)
+	jne	d15,#0,.L9
 .L86:
-	movh.a	a15,#@his(eulerAngle)
-	lea	a15,[a15]@los(eulerAngle)
+	movh.a	a15,#@his(car_state)
+	lea	a15,[a15]@los(car_state)
 .L87:
-	ld.w	d15,[a15]8
-	ftoiz	d15,d15
+	mov	d15,#1
 .L88:
-	st.w	[a2],d15
+	st.b	[a15],d15
+.L89:
+	j	.L10
 .L9:
+	movh.a	a15,#@his(car_state)
+	lea	a15,[a15]@los(car_state)
+.L90:
+	mov	d15,#2
+.L91:
+	st.b	[a15],d15
+.L92:
+	movh.a	a15,#@his(current_angle)
+	lea	a15,[a15]@los(current_angle)
+.L93:
+	movh.a	a2,#@his(imu660rc_yaw)
+	lea	a2,[a2]@los(imu660rc_yaw)
+	ld.w	d15,[a2]
+.L94:
+	st.w	[a15],d15
+.L10:
+	j	.L11
+.L8:
+	movh.a	a15,#@his(count)
+	lea	a15,[a15]@los(count)
+	movh.a	a2,#@his(count)
+	lea	a2,[a2]@los(count)
+	ld.w	d15,[a2]
+.L95:
+	add	d15,#1
+	st.w	[a15],d15
+.L11:
 .L7:
 .L6:
-	j	.L10
+	j	.L12
 .L3:
 	movh.a	a15,#@his(element_line_U)
 	lea	a15,[a15]@los(element_line_U)
 	ld.w	d15,[a15]
-.L89:
+.L96:
 	ge	d15,d15,#1
-.L90:
+.L97:
 	movh.a	a15,#@his(element_line_L)
 	lea	a15,[a15]@los(element_line_L)
 	ld.w	d0,[a15]
-.L91:
+.L98:
 	ge	d0,d0,#1
-.L92:
+.L99:
 	add	d15,d0
-.L93:
+.L100:
 	movh.a	a15,#@his(element_line_R)
 	lea	a15,[a15]@los(element_line_R)
 	ld.w	d0,[a15]
-.L94:
-	ge	d0,d0,#1
-.L95:
-	add	d15,d0
-.L96:
-	jge	d15,#2,.L11
-.L97:
-	movh.a	a15,#@his(car_state)
-	lea	a15,[a15]@los(car_state)
-.L98:
-	mov	d15,#0
-.L99:
-	st.b	[a15],d15
-.L100:
-	movh.a	a15,#@his(fork_num)
-	lea	a15,[a15]@los(fork_num)
-	movh.a	a2,#@his(fork_num)
-	lea	a2,[a2]@los(fork_num)
-	ld.w	d15,[a2]
 .L101:
-	add	d15,#1
-	st.w	[a15],d15
-.L11:
-	j	.L12
-.L4:
-	movh.a	a15,#@his(eulerAngle)
-	lea	a15,[a15]@los(eulerAngle)
-	ld.w	d15,[a15]8
-	movh.a	a15,#@his(current_angle)
-	lea	a15,[a15]@los(current_angle)
-	ld.w	d0,[a15]
-	itof	d0,d0
-	sub.f	d15,d15,d0
-	ftoiz	d15,d15
-	abs	d0,d15
+	ge	d0,d0,#1
 .L102:
-	mov	d15,#60
+	add	d15,d0
 .L103:
-	jge	d15,d0,.L13
+	jge	d15,#2,.L13
 .L104:
 	movh.a	a15,#@his(car_state)
 	lea	a15,[a15]@los(car_state)
@@ -183,16 +165,47 @@ state_update:	.type	func
 	st.w	[a15],d15
 .L13:
 	j	.L14
+.L4:
+	movh.a	a15,#@his(imu660rc_yaw)
+	lea	a15,[a15]@los(imu660rc_yaw)
+	ld.w	d4,[a15]
+.L109:
+	movh.a	a15,#@his(current_angle)
+	lea	a15,[a15]@los(current_angle)
+	ld.w	d5,[a15]
+	call	calculateAngleDifference
+.L110:
+	mov	d15,#60
+.L111:
+	jge	d15,d2,.L15
+.L112:
+	movh.a	a15,#@his(car_state)
+	lea	a15,[a15]@los(car_state)
+.L113:
+	mov	d15,#0
+.L114:
+	st.b	[a15],d15
+.L115:
+	movh.a	a15,#@his(fork_num)
+	lea	a15,[a15]@los(fork_num)
+	movh.a	a2,#@his(fork_num)
+	lea	a2,[a2]@los(fork_num)
+	ld.w	d15,[a2]
+.L116:
+	add	d15,#1
+	st.w	[a15],d15
+.L15:
+	j	.L16
 .L5:
+.L16:
 .L14:
 .L12:
-.L10:
 	ret
-.L46:
+.L50:
 	
 __state_update_function_end:
 	.size	state_update,__state_update_function_end-state_update
-.L34:
+.L36:
 	; End of function
 	
 	.sdecl	'.text.state_control.show_state',code,cluster('show_state')
@@ -201,61 +214,61 @@ __state_update_function_end:
 	
 	.global	show_state
 ; Function show_state
-.L25:
+.L27:
 show_state:	.type	func
 	movh.a	a15,#@his(car_state)
 	lea	a15,[a15]@los(car_state)
 	ld.bu	d15,[a15]
-.L113:
+.L121:
 	mov	d0,#0
-	jeq	d15,d0,.L15
-.L114:
-	mov	d0,#1
-	jeq	d15,d0,.L16
-.L115:
-	mov	d0,#2
 	jeq	d15,d0,.L17
-	j	.L18
-.L15:
+.L122:
+	mov	d0,#1
+	jeq	d15,d0,.L18
+.L123:
+	mov	d0,#2
+	jeq	d15,d0,.L19
+	j	.L20
+.L17:
 	mov	d4,#0
-.L116:
-	mov	d5,#140
-.L117:
+.L124:
+	mov	d5,#120
+.L125:
 	movh.a	a4,#@his(.1.str)
 	lea	a4,[a4]@los(.1.str)
 	call	ips200_show_string
-.L118:
-	j	.L19
-.L17:
+.L126:
+	j	.L21
+.L19:
 	mov	d4,#0
-.L119:
-	mov	d5,#140
-.L120:
+.L127:
+	mov	d5,#120
+.L128:
 	movh.a	a4,#@his(.2.str)
 	lea	a4,[a4]@los(.2.str)
 	call	ips200_show_string
-.L121:
-	j	.L20
-.L16:
+.L129:
+	j	.L22
+.L18:
 	mov	d4,#0
-.L122:
-	mov	d5,#140
-.L123:
+.L130:
+	mov	d5,#120
+.L131:
 	movh.a	a4,#@his(.3.str)
 	lea	a4,[a4]@los(.3.str)
 	call	ips200_show_string
-.L124:
-	j	.L21
-.L18:
-.L21:
+.L132:
+	j	.L23
 .L20:
-.L19:
+.L23:
+.L22:
+.L21:
 	ret
-.L47:
+.L51:
 	
 __show_state_function_end:
 	.size	show_state,__show_state_function_end-show_state
-.L39:
+.L41:
 	; End of function
 	
 	.sdecl	'.data.state_control.car_state',data,cluster('car_state')
@@ -270,14 +283,21 @@ car_state:	.type	object
 	.align	2
 fork_type:	.type	object
 	.size	fork_type,40
-	.word	1
-	.space	36
+	.word	1,1,1,1
+	.space	24
 	.sdecl	'.data.state_control.current_angle',data,cluster('current_angle')
 	.sect	'.data.state_control.current_angle'
 	.global	current_angle
 	.align	2
 current_angle:	.type	object
 	.size	current_angle,4
+	.space	4
+	.sdecl	'.data.state_control.count',data,cluster('count')
+	.sect	'.data.state_control.count'
+	.global	count
+	.align	2
+count:	.type	object
+	.size	count,4
 	.space	4
 	.sdecl	'.rodata.state_control..1.str',data,rom
 	.sect	'.rodata.state_control..1.str'
@@ -301,6 +321,7 @@ current_angle:	.type	object
 	.byte	97,105,103,104
 	.byte	116
 	.space	1
+	.calls	'state_update','calculateAngleDifference'
 	.calls	'show_state','ips200_show_string'
 	.calls	'state_update','',0
 	.extern	element_line_L
@@ -309,199 +330,188 @@ current_angle:	.type	object
 	.extern	fork_num
 	.extern	ips200_show_string
 	.extern	trend
-	.extern	eulerAngle
+	.extern	imu660rc_yaw
+	.extern	calculateAngleDifference
 	.calls	'show_state','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L27:
-	.word	1172
+.L29:
+	.word	1120
 	.half	3
-	.word	.L28
+	.word	.L30
 	.byte	4
-.L26:
+.L28:
 	.byte	1
 	.byte	'../code/state_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L29
-.L50:
+	.word	.L31
 	.byte	2
-	.byte	'int',0,4,5,3
-	.byte	'__abs',0
-	.word	157
-	.byte	1,1,1,1,4
-	.word	157
-	.byte	0,2
 	.byte	'unsigned short int',0,2,7,2
-	.byte	'char',0,1,6,5
-	.word	207
-	.byte	6
-	.word	215
-	.byte	7
-	.byte	'ips200_show_string',0,1,177,1,9,1,1,1,1,8
+	.byte	'char',0,1,6,3
+	.word	179
+	.byte	4
+	.word	187
+	.byte	5
+	.byte	'ips200_show_string',0,1,177,1,9,1,1,1,1,6
 	.byte	'x',0,1,177,1,49
-	.word	185
-	.byte	8
+	.word	157
+	.byte	6
 	.byte	'y',0,1,177,1,59
-	.word	185
-	.byte	8
+	.word	157
+	.byte	6
 	.byte	'dat',0,1,177,1,73
-	.word	220
-	.byte	0,2
-	.byte	'short int',0,2,5,9
+	.word	192
+	.byte	0
+.L55:
+	.byte	2
+	.byte	'int',0,4,5,7
+	.byte	'calculateAngleDifference',0,2,46,16
+	.word	261
+	.byte	1,1,1,2
+	.byte	'short int',0,2,5,8
 	.byte	'__wchar_t',0,2,1,1
-	.word	289
+	.word	304
 	.byte	2
-	.byte	'unsigned int',0,4,7,9
+	.byte	'unsigned int',0,4,7,8
 	.byte	'__size_t',0,2,1,1
-	.word	320
-	.byte	9
+	.word	335
+	.byte	8
 	.byte	'__ptrdiff_t',0,2,1,1
-	.word	157
-	.byte	10,1,6
-	.word	373
-	.byte	9
+	.word	261
+	.byte	9,1,4
+	.word	388
+	.byte	8
 	.byte	'__codeptr',0,2,1,1
-	.word	375
-	.byte	9
+	.word	390
+	.byte	8
 	.byte	'__intptr_t',0,2,1,1
-	.word	157
-	.byte	9
+	.word	261
+	.byte	8
 	.byte	'__uintptr_t',0,2,1,1
-	.word	320
-	.byte	11
+	.word	335
+	.byte	10
 	.byte	'element_line_L',0,3,4,12
-	.word	157
-	.byte	1,1,11
+	.word	261
+	.byte	1,1,10
 	.byte	'element_line_R',0,3,4,27
-	.word	157
-	.byte	1,1,11
+	.word	261
+	.byte	1,1,10
 	.byte	'element_line_U',0,3,4,42
-	.word	157
+	.word	261
 	.byte	1,1
-.L48:
-	.byte	12,4,5,9,1,13
-	.byte	'normal',0,0,13
-	.byte	'fork_straight',0,1,13
-	.byte	'fork_turn',0,2,0,9
+.L52:
+	.byte	11,4,5,9,1,12
+	.byte	'normal',0,0,12
+	.byte	'fork_straight',0,1,12
+	.byte	'fork_turn',0,2,0,8
 	.byte	'state',0,4,9,2
-	.word	512
-	.byte	11
+	.word	527
+	.byte	10
 	.byte	'fork_num',0,5,5,12
-	.word	157
-	.byte	1,1,9
+	.word	261
+	.byte	1,1,8
 	.byte	'_iob_flag_t',0,6,82,25
-	.word	185
+	.word	157
 	.byte	2
-	.byte	'unsigned char',0,1,8,9
+	.byte	'unsigned char',0,1,8,8
 	.byte	'uint8',0,7,105,29
-	.word	608
-	.byte	9
+	.word	623
+	.byte	8
 	.byte	'uint16',0,7,109,29
-	.word	185
+	.word	157
 	.byte	2
-	.byte	'unsigned long int',0,4,7,9
+	.byte	'unsigned long int',0,4,7,8
 	.byte	'uint32',0,7,113,29
-	.word	654
+	.word	669
 	.byte	2
-	.byte	'unsigned long long int',0,8,7,9
+	.byte	'unsigned long long int',0,8,7,8
 	.byte	'uint64',0,7,118,29
-	.word	690
-	.byte	9
+	.word	705
+	.byte	8
 	.byte	'sint16',0,7,126,29
-	.word	289
+	.word	304
 	.byte	2
-	.byte	'long int',0,4,5,9
+	.byte	'long int',0,4,5,8
 	.byte	'sint32',0,7,131,1,29
-	.word	746
+	.word	761
 	.byte	2
-	.byte	'long long int',0,8,5,9
+	.byte	'long long int',0,8,5,8
 	.byte	'sint64',0,7,138,1,29
-	.word	774
+	.word	789
+.L54:
 	.byte	2
-	.byte	'float',0,4,4,9
+	.byte	'float',0,4,4,8
 	.byte	'float32',0,7,167,1,29
-	.word	807
-	.byte	14
-	.byte	'void',0,6
-	.word	833
-	.byte	9
+	.word	822
+	.byte	13
+	.byte	'void',0,4
+	.word	848
+	.byte	8
 	.byte	'pvoid',0,8,57,28
-	.word	839
-	.byte	9
+	.word	854
+	.byte	8
 	.byte	'Ifx_TickTime',0,8,79,28
-	.word	774
+	.word	789
 	.byte	2
-	.byte	'char',0,1,6,9
+	.byte	'char',0,1,6,8
 	.byte	'int8',0,9,54,29
-	.word	879
-	.byte	9
+	.word	894
+	.byte	8
 	.byte	'int16',0,9,55,29
-	.word	289
-	.byte	9
+	.word	304
+	.byte	8
 	.byte	'int32',0,9,56,29
-	.word	157
-	.byte	9
+	.word	261
+	.byte	8
 	.byte	'int64',0,9,57,29
-	.word	774
-	.byte	15,10,13,9,20,16
+	.word	789
+	.byte	14,10,13,9,20,15
 	.byte	'slope',0
-	.word	807
-	.byte	4,2,35,0,16
+	.word	822
+	.byte	4,2,35,0,15
 	.byte	'avg_dist',0
-	.word	807
-	.byte	4,2,35,4,16
+	.word	822
+	.byte	4,2,35,4,15
 	.byte	'first_dist',0
-	.word	807
-	.byte	4,2,35,8,16
+	.word	822
+	.byte	4,2,35,8,15
 	.byte	'last_dist',0
-	.word	807
-	.byte	4,2,35,12,16
+	.word	822
+	.byte	4,2,35,12,15
 	.byte	'valid_pairs',0
-	.word	157
-	.byte	4,2,35,16,0,9
+	.word	261
+	.byte	4,2,35,16,0,8
 	.byte	'DistTrend',0,10,19,3
-	.word	942
-	.byte	11
+	.word	957
+	.byte	10
 	.byte	'trend',0,10,38,18
-	.word	942
-	.byte	1,1,15,11,26,9,12,16
-	.byte	'pitch',0
-	.word	807
-	.byte	4,2,35,0,16
-	.byte	'roll',0
-	.word	807
-	.byte	4,2,35,4,16
-	.byte	'yaw',0
-	.word	807
-	.byte	4,2,35,8,0,9
-	.byte	'euler_param_t',0,11,31,3
-	.word	1075
-	.byte	11
-	.byte	'eulerAngle',0,11,41,22
-	.word	1075
+	.word	957
+	.byte	1,1,10
+	.byte	'imu660rc_yaw',0,11,181,1,53
+	.word	822
 	.byte	1,1
-.L49:
-	.byte	17,40
-	.word	157
-	.byte	18,9,0,0
+.L53:
+	.byte	16,40
+	.word	261
+	.byte	17,9,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L28:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,73,19,54,15,39,12
-	.byte	63,12,60,12,0,0,4,5,0,73,19,0,0,5,38,0,73,19,0,0,6,15,0,73,19,0,0,7,46,1,3,8,58,15,59,15,57,15,54,15,39
-	.byte	12,63,12,60,12,0,0,8,5,0,3,8,58,15,59,15,57,15,73,19,0,0,9,22,0,3,8,58,15,59,15,57,15,73,19,0,0,10,21
-	.byte	0,54,15,0,0,11,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,12,4,1,58,15,59,15,57,15,11,15,0,0,13
-	.byte	40,0,3,8,28,13,0,0,14,59,0,3,8,0,0,15,19,1,58,15,59,15,57,15,11,15,0,0,16,13,0,3,8,73,19,11,15,56,9,0
-	.byte	0,17,1,1,11,15,73,19,0,0,18,33,0,47,15,0,0,0
+.L30:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
+	.byte	0,0,5,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,6,5,0,3,8,58,15,59,15,57,15,73,19,0,0,7,46
+	.byte	0,3,8,58,15,59,15,57,15,73,19,54,15,63,12,60,12,0,0,8,22,0,3,8,58,15,59,15,57,15,73,19,0,0,9,21,0,54,15
+	.byte	0,0,10,52,0,3,8,58,15,59,15,57,15,73,19,63,12,60,12,0,0,11,4,1,58,15,59,15,57,15,11,15,0,0,12,40,0,3,8
+	.byte	28,13,0,0,13,59,0,3,8,0,0,14,19,1,58,15,59,15,57,15,11,15,0,0,15,13,0,3,8,73,19,11,15,56,9,0,0,16,1,1
+	.byte	11,15,73,19,0,0,17,33,0,47,15,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L29:
-	.word	.L52-.L51
-.L51:
+.L31:
+	.word	.L57-.L56
+.L56:
 	.half	3
-	.word	.L54-.L53
-.L53:
+	.word	.L59-.L58
+.L58:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device',0
 	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
@@ -517,146 +527,138 @@ current_angle:	.type	object
 	.byte	'ifx_types.h',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
 	.byte	'..\\code\\maze.h',0,0,0,0
-	.byte	'..\\code\\MahonyAHRS.h',0,0,0,0,0
-.L54:
-.L52:
+	.byte	'zf_device_imu660rc.h',0,1,0,0,0
+.L59:
+.L57:
 	.sdecl	'.debug_info',debug,cluster('state_update')
 	.sect	'.debug_info'
-.L30:
-	.word	204
+.L32:
+	.word	214
 	.half	3
-	.word	.L31
+	.word	.L33
 	.byte	4,1
 	.byte	'../code/state_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L33,.L32
+	.word	.L35,.L34
 	.byte	2
-	.word	.L26
+	.word	.L28
 	.byte	3
-	.byte	'state_update',0,1,20,6,1,1
-	.word	.L23,.L46,.L22
+	.byte	'state_update',0,1,21,6,1,1
+	.word	.L25,.L50,.L24
 	.byte	4
-	.word	.L23,.L46
-	.byte	0,0
+	.word	.L25,.L50
+	.byte	5
+	.word	.L4,.L12
+	.byte	0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('state_update')
 	.sect	'.debug_abbrev'
-.L31:
+.L33:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
-	.byte	63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.byte	63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('state_update')
 	.sect	'.debug_line'
-.L32:
-	.word	.L56-.L55
-.L55:
+.L34:
+	.word	.L61-.L60
+.L60:
 	.half	3
-	.word	.L58-.L57
-.L57:
+	.word	.L63-.L62
+.L62:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/state_control.c',0,0,0,0,0
-.L58:
+.L63:
 	.byte	5,12,7,0,5,2
-	.word	.L23
-	.byte	3,20,1,5,14,9
-	.half	.L59-.L23
+	.word	.L25
+	.byte	3,21,1,5,14,9
+	.half	.L64-.L25
 	.byte	3,1,1,9
-	.half	.L60-.L59
-	.byte	3,11,1,9
-	.half	.L61-.L60
-	.byte	3,7,1,5,19,9
-	.half	.L2-.L61
-	.byte	3,111,1,5,34,9
-	.half	.L62-.L2
-	.byte	1,5,42,9
-	.half	.L63-.L62
-	.byte	1,5,57,9
-	.half	.L64-.L63
-	.byte	1,5,39,9
 	.half	.L65-.L64
-	.byte	1,5,65,9
+	.byte	3,15,1,9
 	.half	.L66-.L65
-	.byte	1,5,80,9
-	.half	.L67-.L66
-	.byte	1,5,62,9
+	.byte	3,7,1,5,19,9
+	.half	.L2-.L66
+	.byte	3,107,1,5,34,9
+	.half	.L67-.L2
+	.byte	1,5,42,9
 	.half	.L68-.L67
-	.byte	1,5,16,9
+	.byte	1,5,57,9
 	.half	.L69-.L68
-	.byte	1,5,93,7,9
+	.byte	1,5,39,9
 	.half	.L70-.L69
-	.byte	1,5,98,9
+	.byte	1,5,65,9
 	.half	.L71-.L70
-	.byte	1,5,105,9
+	.byte	1,5,80,9
 	.half	.L72-.L71
-	.byte	1,5,104,9
+	.byte	1,5,62,9
 	.half	.L73-.L72
-	.byte	1,5,30,9
+	.byte	1,5,16,9
 	.half	.L74-.L73
-	.byte	3,1,1,5,29,9
+	.byte	1,5,93,7,9
 	.half	.L75-.L74
-	.byte	1,5,20,9
+	.byte	1,5,98,9
 	.half	.L76-.L75
-	.byte	1,5,29,9
+	.byte	1,5,105,9
 	.half	.L77-.L76
-	.byte	1,5,17,9
+	.byte	1,5,104,9
 	.half	.L78-.L77
-	.byte	1,5,21,7,9
+	.byte	1,5,20,9
 	.half	.L79-.L78
-	.byte	3,1,1,5,33,9
+	.byte	3,1,1,5,17,9
 	.half	.L80-.L79
-	.byte	1,5,31,9
+	.byte	1,5,34,7,9
 	.half	.L81-.L80
-	.byte	1,5,46,9
+	.byte	3,1,1,5,33,9
 	.half	.L82-.L81
-	.byte	1,5,21,9
-	.half	.L8-.L82
-	.byte	3,2,1,5,33,9
-	.half	.L83-.L8
-	.byte	1,5,31,9
+	.byte	1,5,24,9
+	.half	.L83-.L82
+	.byte	1,5,33,9
 	.half	.L84-.L83
 	.byte	1,5,21,9
 	.half	.L85-.L84
-	.byte	3,1,1,5,37,9
+	.byte	1,5,25,7,9
 	.half	.L86-.L85
-	.byte	1,5,47,9
+	.byte	3,1,1,5,37,9
 	.half	.L87-.L86
 	.byte	1,5,35,9
 	.half	.L88-.L87
+	.byte	1,5,50,9
+	.half	.L89-.L88
+	.byte	1,5,25,9
+	.half	.L9-.L89
+	.byte	3,2,1,5,37,9
+	.half	.L90-.L9
+	.byte	1,5,35,9
+	.half	.L91-.L90
+	.byte	1,5,25,9
+	.half	.L92-.L91
+	.byte	3,1,1,5,41,9
+	.half	.L93-.L92
+	.byte	1,5,39,9
+	.half	.L94-.L93
+	.byte	1,5,22,9
+	.half	.L10-.L94
+	.byte	3,126,1,5,21,9
+	.half	.L8-.L10
+	.byte	3,5,1,5,26,9
+	.half	.L95-.L8
 	.byte	1,5,13,9
-	.half	.L6-.L88
+	.half	.L6-.L95
 	.byte	3,3,1,5,18,9
 	.half	.L3-.L6
 	.byte	3,3,1,5,33,9
-	.half	.L89-.L3
+	.half	.L96-.L3
 	.byte	1,5,41,9
-	.half	.L90-.L89
-	.byte	1,5,56,9
-	.half	.L91-.L90
-	.byte	1,5,38,9
-	.half	.L92-.L91
-	.byte	1,5,64,9
-	.half	.L93-.L92
-	.byte	1,5,79,9
-	.half	.L94-.L93
-	.byte	1,5,61,9
-	.half	.L95-.L94
-	.byte	1,5,13,9
-	.half	.L96-.L95
-	.byte	1,5,17,7,9
 	.half	.L97-.L96
-	.byte	3,1,1,5,29,9
+	.byte	1,5,56,9
 	.half	.L98-.L97
-	.byte	1,5,27,9
+	.byte	1,5,38,9
 	.half	.L99-.L98
-	.byte	1,5,17,9
+	.byte	1,5,64,9
 	.half	.L100-.L99
-	.byte	3,1,1,5,25,9
+	.byte	1,5,79,9
 	.half	.L101-.L100
-	.byte	1,5,13,9
-	.half	.L11-.L101
-	.byte	3,2,1,5,16,9
-	.half	.L4-.L11
-	.byte	3,3,1,5,50,9
-	.half	.L102-.L4
+	.byte	1,5,61,9
+	.half	.L102-.L101
 	.byte	1,5,13,9
 	.half	.L103-.L102
 	.byte	1,5,17,7,9
@@ -671,116 +673,114 @@ current_angle:	.type	object
 	.half	.L108-.L107
 	.byte	1,5,13,9
 	.half	.L13-.L108
+	.byte	3,2,1,5,41,9
+	.half	.L4-.L13
+	.byte	3,3,1,5,54,9
+	.half	.L109-.L4
+	.byte	1,5,69,9
+	.half	.L110-.L109
+	.byte	1,5,13,9
+	.half	.L111-.L110
+	.byte	1,5,17,7,9
+	.half	.L112-.L111
+	.byte	3,1,1,5,29,9
+	.half	.L113-.L112
+	.byte	1,5,27,9
+	.half	.L114-.L113
+	.byte	1,5,17,9
+	.half	.L115-.L114
+	.byte	3,1,1,5,25,9
+	.half	.L116-.L115
+	.byte	1,5,13,9
+	.half	.L15-.L116
 	.byte	3,2,1,5,1,9
-	.half	.L10-.L13
+	.half	.L12-.L15
 	.byte	3,5,1,7,9
-	.half	.L34-.L10
+	.half	.L36-.L12
 	.byte	0,1,1
-.L56:
+.L61:
 	.sdecl	'.debug_ranges',debug,cluster('state_update')
 	.sect	'.debug_ranges'
-.L33:
-	.word	-1,.L23,0,.L34-.L23,0,0
+.L35:
+	.word	-1,.L25,0,.L36-.L25,0,0
 	.sdecl	'.debug_info',debug,cluster('show_state')
 	.sect	'.debug_info'
-.L35:
+.L37:
 	.word	202
 	.half	3
-	.word	.L36
+	.word	.L38
 	.byte	4,1
 	.byte	'../code/state_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L38,.L37
+	.word	.L40,.L39
 	.byte	2
-	.word	.L26
+	.word	.L28
 	.byte	3
-	.byte	'show_state',0,1,52,6,1,1
-	.word	.L25,.L47,.L24
+	.byte	'show_state',0,1,57,6,1,1
+	.word	.L27,.L51,.L26
 	.byte	4
-	.word	.L25,.L47
+	.word	.L27,.L51
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('show_state')
 	.sect	'.debug_abbrev'
-.L36:
+.L38:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('show_state')
 	.sect	'.debug_line'
-.L37:
-	.word	.L110-.L109
-.L109:
+.L39:
+	.word	.L118-.L117
+.L117:
 	.half	3
-	.word	.L112-.L111
-.L111:
+	.word	.L120-.L119
+.L119:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/state_control.c',0,0,0,0,0
-.L112:
+.L120:
 	.byte	5,12,7,0,5,2
-	.word	.L25
-	.byte	3,52,1,5,14,9
-	.half	.L113-.L25
+	.word	.L27
+	.byte	3,57,1,5,14,9
+	.half	.L121-.L27
 	.byte	3,1,1,9
-	.half	.L114-.L113
+	.half	.L122-.L121
 	.byte	3,8,1,9
-	.half	.L115-.L114
-	.byte	3,124,1,5,32,9
-	.half	.L15-.L115
-	.byte	3,125,1,5,34,9
-	.half	.L116-.L15
-	.byte	1,5,38,9
-	.half	.L117-.L116
-	.byte	1,5,13,9
-	.half	.L118-.L117
-	.byte	3,1,1,5,32,9
-	.half	.L17-.L118
-	.byte	3,3,1,5,34,9
-	.half	.L119-.L17
-	.byte	1,5,38,9
-	.half	.L120-.L119
-	.byte	1,5,13,9
-	.half	.L121-.L120
-	.byte	3,1,1,5,32,9
-	.half	.L16-.L121
-	.byte	3,3,1,5,34,9
-	.half	.L122-.L16
-	.byte	1,5,38,9
 	.half	.L123-.L122
+	.byte	3,124,1,5,32,9
+	.half	.L17-.L123
+	.byte	3,125,1,5,34,9
+	.half	.L124-.L17
+	.byte	1,5,38,9
+	.half	.L125-.L124
 	.byte	1,5,13,9
-	.half	.L124-.L123
+	.half	.L126-.L125
+	.byte	3,1,1,5,32,9
+	.half	.L19-.L126
+	.byte	3,3,1,5,34,9
+	.half	.L127-.L19
+	.byte	1,5,38,9
+	.half	.L128-.L127
+	.byte	1,5,13,9
+	.half	.L129-.L128
+	.byte	3,1,1,5,32,9
+	.half	.L18-.L129
+	.byte	3,3,1,5,34,9
+	.half	.L130-.L18
+	.byte	1,5,38,9
+	.half	.L131-.L130
+	.byte	1,5,13,9
+	.half	.L132-.L131
 	.byte	3,1,1,5,1,9
-	.half	.L19-.L124
+	.half	.L21-.L132
 	.byte	3,5,1,7,9
-	.half	.L39-.L19
+	.half	.L41-.L21
 	.byte	0,1,1
-.L110:
+.L118:
 	.sdecl	'.debug_ranges',debug,cluster('show_state')
 	.sect	'.debug_ranges'
-.L38:
-	.word	-1,.L25,0,.L39-.L25,0,0
-	.sdecl	'.debug_info',debug,cluster('car_state')
-	.sect	'.debug_info'
 .L40:
-	.word	180
-	.half	3
-	.word	.L41
-	.byte	4,1
-	.byte	'../code/state_control.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L26
-	.byte	3
-	.byte	'car_state',0,2,15,7
-	.word	.L48
-	.byte	1,5,3
-	.word	car_state
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('car_state')
-	.sect	'.debug_abbrev'
-.L41:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('fork_type')
+	.word	-1,.L27,0,.L41-.L27,0,0
+	.sdecl	'.debug_info',debug,cluster('car_state')
 	.sect	'.debug_info'
 .L42:
 	.word	180
@@ -790,68 +790,111 @@ current_angle:	.type	object
 	.byte	'../code/state_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L26
+	.word	.L28
 	.byte	3
-	.byte	'fork_type',0,2,17,5
-	.word	.L49
+	.byte	'car_state',0,2,15,7
+	.word	.L52
 	.byte	1,5,3
-	.word	fork_type
+	.word	car_state
 	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('fork_type')
+	.sdecl	'.debug_abbrev',debug,cluster('car_state')
 	.sect	'.debug_abbrev'
 .L43:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('current_angle')
+	.sdecl	'.debug_info',debug,cluster('fork_type')
 	.sect	'.debug_info'
 .L44:
-	.word	184
+	.word	180
 	.half	3
 	.word	.L45
 	.byte	4,1
 	.byte	'../code/state_control.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L26
+	.word	.L28
 	.byte	3
-	.byte	'current_angle',0,2,18,5
-	.word	.L50
+	.byte	'fork_type',0,2,17,5
+	.word	.L53
+	.byte	1,5,3
+	.word	fork_type
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('fork_type')
+	.sect	'.debug_abbrev'
+.L45:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('current_angle')
+	.sect	'.debug_info'
+.L46:
+	.word	184
+	.half	3
+	.word	.L47
+	.byte	4,1
+	.byte	'../code/state_control.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L28
+	.byte	3
+	.byte	'current_angle',0,2,18,7
+	.word	.L54
 	.byte	1,5,3
 	.word	current_angle
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('current_angle')
 	.sect	'.debug_abbrev'
-.L45:
+.L47:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('count')
+	.sect	'.debug_info'
+.L48:
+	.word	176
+	.half	3
+	.word	.L49
+	.byte	4,1
+	.byte	'../code/state_control.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L28
+	.byte	3
+	.byte	'count',0,2,19,5
+	.word	.L55
+	.byte	1,5,3
+	.word	count
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('count')
+	.sect	'.debug_abbrev'
+.L49:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('show_state')
 	.sect	'.debug_loc'
-.L24:
-	.word	-1,.L25,0,.L47-.L25
+.L26:
+	.word	-1,.L27,0,.L51-.L27
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('state_update')
 	.sect	'.debug_loc'
-.L22:
-	.word	-1,.L23,0,.L46-.L23
+.L24:
+	.word	-1,.L25,0,.L50-.L25
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L125:
+.L133:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
 	.byte	8,39
 	.sdecl	'.debug_frame',debug,cluster('state_update')
 	.sect	'.debug_frame'
-	.word	24
-	.word	.L125,.L23,.L46-.L23
-	.byte	8,19,8,20,8,21,8,22,8,23,0,0
+	.word	12
+	.word	.L133,.L25,.L50-.L25
 	.sdecl	'.debug_frame',debug,cluster('show_state')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L125,.L25,.L47-.L25
+	.word	.L133,.L27,.L51-.L27
 	; Module end

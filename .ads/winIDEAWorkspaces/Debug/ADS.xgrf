@@ -13,7 +13,7 @@
        <EditorPersist>
         <__.0>
          <BookmarkList></BookmarkList>
-         <CaretPos>1613</CaretPos>
+         <CaretPos>1636</CaretPos>
          <Encoding>6</Encoding>
          <FileName>E:\smart_car 2026\Soberup_2026\user\cpu0_main.c</FileName>
          <FileType>1</FileType>
@@ -389,10 +389,6 @@
       </FindInFilesDialogData>
      </GlobalData>
      <History>
-      <ComboBox>
-       <ComboBoxes>
-       </ComboBoxes>
-      </ComboBox>
      </History>
      <Options>
       <CallstackWindow>

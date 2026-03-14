@@ -1,6 +1,6 @@
 	; Module start
 	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
-	.compiler_invocation	"ctc -f cc20356a --dep-file=line.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/line.src ../code/line.c"
+	.compiler_invocation	"ctc -f cc7496a --dep-file=line.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IE:\\\\smart_car 2026\\\\Soberup_2026 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\code -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Configurations -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_common -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_components -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_driver -IE:\\\\smart_car 2026\\\\Soberup_2026\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o code/line.src ../code/line.c"
 	.compiler_name		"ctc"
 	;source	'../code/line.c'
 
@@ -13,36 +13,36 @@ $TC16X
 	
 	.global	get_angle
 ; Function get_angle
-.L28:
+.L40:
 get_angle:	.type	func
 	rsub	d15,d4,#94
-.L114:
+.L148:
 	rsub	d0,d5,#120
-.L100:
+.L130:
 	itof	d4,d15
-.L256:
+.L345:
 	itof	d5,d0
 	call	atan2f
-.L116:
+.L150:
 	movh	d15,#17204
-.L115:
+.L149:
 	mul.f	d15,d2,d15
-.L257:
+.L346:
 	mov	d0,#4048
 	addih	d0,d0,#16457
-.L258:
+.L347:
 	div.f	d15,d15,d0
-.L259:
+.L348:
 	ftoiz	d2,d15
-.L117:
+.L151:
 	j	.L2
 .L2:
 	ret
-.L97:
+.L127:
 	
 __get_angle_function_end:
 	.size	get_angle,__get_angle_function_end-get_angle
-.L60:
+.L81:
 	; End of function
 	
 	.sdecl	'.text.line.show_line',code,cluster('show_line')
@@ -51,98 +51,222 @@ __get_angle_function_end:
 	
 	.global	show_line
 ; Function show_line
-.L30:
+.L42:
 show_line:	.type	func
 	mov	d4,#200
-.L227:
+.L274:
 	mov	d5,#30
-.L228:
+.L275:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d6,[a15]
-.L229:
+.L276:
 	mov	d7,#3
 	call	ips200_show_int
-.L230:
+.L277:
 	mov	d4,#200
-.L231:
+.L278:
 	mov	d5,#50
-.L232:
+.L279:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d6,[a15]
-.L233:
+.L280:
 	mov	d7,#3
 	call	ips200_show_int
-.L92:
-	mov	d8,#0
 .L118:
+	mov	d8,#0
+.L152:
 	j	.L3
 .L4:
 	mul	d15,d8,#8
-.L234:
+.L281:
 	movh.a	a15,#@his(Side_L)
 	lea	a15,[a15]@los(Side_L)
-.L235:
+.L282:
 	addsc.a	a15,a15,d15,#0
-.L236:
+.L283:
 	ld.w	d4,[a15]
-.L237:
+.L284:
 	mul	d15,d8,#8
-.L238:
+.L285:
 	movh.a	a15,#@his(Side_L)
 	lea	a15,[a15]@los(Side_L)
-.L239:
+.L286:
 	addsc.a	a15,a15,d15,#0
-.L240:
+.L287:
 	ld.w	d5,[a15]4
 	call	show_point_red
-.L241:
+.L288:
 	add	d8,#1
 .L3:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d15,[a15]
-.L242:
+.L289:
 	jlt	d8,d15,.L4
-.L93:
-	mov	d8,#0
 .L119:
+	mov	d8,#0
+.L153:
 	j	.L5
 .L6:
 	mul	d15,d8,#8
-.L243:
+.L290:
 	movh.a	a15,#@his(Side_R)
 	lea	a15,[a15]@los(Side_R)
-.L244:
+.L291:
 	addsc.a	a15,a15,d15,#0
-.L245:
+.L292:
 	ld.w	d4,[a15]
-.L246:
+.L293:
 	mul	d15,d8,#8
-.L247:
+.L294:
 	movh.a	a15,#@his(Side_R)
 	lea	a15,[a15]@los(Side_R)
-.L248:
+.L295:
 	addsc.a	a15,a15,d15,#0
-.L249:
+.L296:
 	ld.w	d5,[a15]4
 	call	show_point_blue
-.L250:
+.L297:
 	add	d8,#1
 .L5:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d15,[a15]
-.L251:
+.L298:
 	jlt	d8,d15,.L6
-.L95:
+.L121:
 	ret
-.L91:
+.L117:
 	
 __show_line_function_end:
 	.size	show_line,__show_line_function_end-show_line
-.L55:
+.L71:
+	; End of function
+	
+	.sdecl	'.text.line.show_middle_line',code,cluster('show_middle_line')
+	.sect	'.text.line.show_middle_line'
+	.align	2
+	
+	.global	show_middle_line
+; Function show_middle_line
+.L44:
+show_middle_line:	.type	func
+	mov	d8,#0
+.L154:
+	j	.L7
+.L8:
+	mul	d15,d8,#8
+.L303:
+	movh.a	a15,#@his(Side_L)
+	lea	a15,[a15]@los(Side_L)
+.L304:
+	addsc.a	a15,a15,d15,#0
+.L305:
+	ld.w	d0,[a15]
+.L306:
+	mul	d15,d8,#8
+.L307:
+	movh.a	a15,#@his(Side_R)
+	lea	a15,[a15]@los(Side_R)
+.L308:
+	addsc.a	a15,a15,d15,#0
+.L309:
+	ld.w	d15,[a15]
+.L310:
+	add	d0,d15
+.L311:
+	mov	d15,#2
+.L312:
+	div	e0,d0,d15
+.L313:
+	mov	d2,d0
+.L314:
+	mul	d15,d8,#8
+.L315:
+	movh.a	a15,#@his(Side_L)
+	lea	a15,[a15]@los(Side_L)
+.L316:
+	addsc.a	a15,a15,d15,#0
+.L317:
+	ld.w	d0,[a15]4
+.L318:
+	mul	d15,d8,#8
+.L319:
+	movh.a	a15,#@his(Side_R)
+	lea	a15,[a15]@los(Side_R)
+.L320:
+	addsc.a	a15,a15,d15,#0
+.L321:
+	ld.w	d15,[a15]4
+.L322:
+	add	d0,d15
+.L323:
+	mov	d15,#2
+.L324:
+	div	e0,d0,d15
+.L325:
+	mov	d3,d0
+.L155:
+	mov	d15,d2
+.L326:
+	jlt	d15,#1,.L9
+.L327:
+	mov	d0,d2
+.L328:
+	mov	d15,#188
+.L329:
+	jge	d0,d15,.L10
+.L330:
+	mov	d15,d3
+.L331:
+	jlt	d15,#1,.L11
+.L332:
+	mov	d0,d3
+.L333:
+	mov	d15,#188
+.L334:
+	jge	d0,d15,.L12
+.L335:
+	mov	e4,d3,d2
+.L336:
+	call	show_point_yellow
+.L12:
+.L11:
+.L10:
+.L9:
+	add	d8,#1
+.L7:
+	movh.a	a15,#@his(L_point)
+	lea	a15,[a15]@los(L_point)
+	ld.w	d15,[a15]
+.L337:
+	lt	d15,d8,d15
+.L338:
+	movh.a	a15,#@his(R_point)
+	lea	a15,[a15]@los(R_point)
+	ld.w	d0,[a15]
+.L339:
+	jge	d0,d15,.L13
+.L340:
+	movh.a	a15,#@his(R_point)
+	lea	a15,[a15]@los(R_point)
+	ld.w	d15,[a15]
+	j	.L14
+.L13:
+	movh.a	a15,#@his(L_point)
+	lea	a15,[a15]@los(L_point)
+	ld.w	d15,[a15]
+.L14:
+	jne	d15,#0,.L8
+.L124:
+	ret
+.L123:
+	
+__show_middle_line_function_end:
+	.size	show_middle_line,__show_middle_line_function_end-show_middle_line
+.L76:
 	; End of function
 	
 	.sdecl	'.text.line.average_point',code,cluster('average_point')
@@ -151,52 +275,108 @@ __show_line_function_end:
 	
 	.global	average_point
 ; Function average_point
-.L32:
+.L46:
 average_point:	.type	func
 	mov	d2,#0
-.L264:
+.L353:
 	mov	d3,#0
-.L108:
+.L138:
 	mov	d0,#0
-.L110:
-	j	.L7
-.L8:
+.L140:
+	j	.L15
+.L16:
 	mul	d15,d4,#8
 	addsc.a	a15,a4,d15,#0
-.L265:
+.L354:
 	ld.w	d15,[a15]
-.L266:
+.L355:
 	add	d2,d15
-.L267:
+.L356:
 	mul	d15,d4,#8
 	addsc.a	a15,a4,d15,#0
-.L268:
+.L357:
 	ld.w	d15,[a15]4
-.L269:
+.L358:
 	add	d3,d15
-.L270:
+.L359:
 	add	d0,#1
-.L271:
+.L360:
 	add	d4,#1
-.L7:
-	jlt	d4,d5,.L8
-.L111:
+.L15:
+	jlt	d4,d5,.L16
+.L141:
 	div	e4,d2,d0
-.L120:
+.L156:
 	mov	d2,d4
-.L272:
+.L361:
 	div	e0,d3,d0
-.L121:
+.L157:
 	mov	d3,d0
-.L273:
-	j	.L9
-.L9:
+.L362:
+	j	.L17
+.L17:
 	ret
-.L102:
+.L132:
 	
 __average_point_function_end:
 	.size	average_point,__average_point_function_end-average_point
-.L65:
+.L86:
+	; End of function
+	
+	.sdecl	'.text.line.show_target_point',code,cluster('show_target_point')
+	.sect	'.text.line.show_target_point'
+	.align	2
+	
+	.global	show_target_point
+; Function show_target_point
+.L48:
+show_target_point:	.type	func
+	mov	e0,d5,d4
+	ld.d	e2,[a10]0
+.L160:
+	movh.a	a15,#@his(car_state)
+	lea	a15,[a15]@los(car_state)
+	ld.bu	d15,[a15]
+.L367:
+	jne	d15,#0,.L18
+.L161:
+	mov	e4,d1,d0
+.L159:
+	call	show_point
+.L158:
+	j	.L19
+.L18:
+	movh.a	a15,#@his(fork_num)
+	lea	a15,[a15]@los(fork_num)
+	ld.w	d15,[a15]
+.L368:
+	mul	d15,d15,#4
+.L369:
+	movh.a	a15,#@his(fork_seq)
+	lea	a15,[a15]@los(fork_seq)
+.L370:
+	addsc.a	a15,a15,d15,#0
+	ld.w	d15,[a15]
+.L371:
+	jne	d15,#0,.L20
+.L372:
+	mov	e4,d7,d6
+.L163:
+	call	show_point
+.L162:
+	j	.L21
+.L20:
+	mov	e4,d3,d2
+.L164:
+	call	show_point
+.L21:
+.L19:
+	ret
+.L143:
+	
+__show_target_point_function_end:
+	.size	show_target_point,__show_target_point_function_end-show_target_point
+.L91:
 	; End of function
 	
 	.sdecl	'.text.line.caculate_error',code,cluster('caculate_error')
@@ -205,267 +385,275 @@ __average_point_function_end:
 	
 	.global	caculate_error
 ; Function caculate_error
-.L34:
+.L50:
 caculate_error:	.type	func
-	mov	d8,#75
-.L122:
+	sub.a	a10,#16
+.L165:
+	mov	d8,#85
+.L166:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d0,[a15]
-.L146:
-	jge	d8,d0,.L10
-.L147:
+.L194:
+	jge	d8,d0,.L22
+.L195:
 	movh.a	a4,#@his(Side_L)
 	lea	a4,[a4]@los(Side_L)
-.L148:
+.L196:
 	add	d4,d8,#-5
-.L149:
+.L197:
 	mov	d5,d8
-.L124:
+.L168:
 	call	average_point
-.L125:
+.L169:
 	mov	e10,d3,d2
-.L150:
-	j	.L11
-.L10:
+.L198:
+	j	.L23
+.L22:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d0,[a15]
-.L151:
+.L199:
 	mov	d15,#40
-.L152:
-	jge	d15,d0,.L12
-.L153:
+.L200:
+	jge	d15,d0,.L24
+.L201:
 	movh.a	a4,#@his(Side_L)
 	lea	a4,[a4]@los(Side_L)
-.L154:
+.L202:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d4,[a15]
-.L155:
+.L203:
 	add	d4,#-5
-.L156:
+.L204:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d5,[a15]
 	call	average_point
-.L157:
+.L205:
 	mov	e10,d3,d2
-.L158:
-	j	.L13
-.L12:
+.L206:
+	j	.L25
+.L24:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d0,[a15]
-.L159:
+.L207:
 	mov	d15,#20
-.L160:
-	jge	d15,d0,.L14
-.L161:
+.L208:
+	jge	d15,d0,.L26
+.L209:
 	movh.a	a4,#@his(Side_L)
 	lea	a4,[a4]@los(Side_L)
-.L162:
+.L210:
 	mov	d4,#15
-.L163:
+.L211:
 	mov	d5,#20
 	call	average_point
-.L164:
+.L212:
 	mov	e10,d3,d2
-.L165:
-	j	.L15
-.L14:
+.L213:
+	j	.L27
+.L26:
 	movh.a	a15,#@his(L_point)
 	lea	a15,[a15]@los(L_point)
 	ld.w	d15,[a15]
-.L166:
+.L214:
 	add	d15,#-1
-.L167:
+.L215:
 	mul	d15,d15,#8
-.L168:
+.L216:
 	movh.a	a15,#@his(Side_L)
 	lea	a15,[a15]@los(Side_L)
-.L169:
+.L217:
 	addsc.a	a15,a15,d15,#0
 	ld.d	e0,[a15]0
-.L170:
+.L218:
 	mov	e10,d1,d0
-.L15:
-.L13:
-.L11:
+.L27:
+.L25:
+.L23:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d15,[a15]
-.L171:
-	jge	d8,d15,.L16
-.L172:
+.L219:
+	jge	d8,d15,.L28
+.L220:
 	movh.a	a4,#@his(Side_R)
 	lea	a4,[a4]@los(Side_R)
-.L173:
+.L221:
 	add	d4,d8,#-5
-.L174:
+.L222:
 	mov	d5,d8
-.L126:
+.L170:
 	call	average_point
-.L127:
+.L171:
 	mov	e8,d3,d2
-.L123:
-	j	.L17
-.L16:
+.L167:
+	j	.L29
+.L28:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d0,[a15]
-.L175:
+.L223:
 	mov	d15,#40
-.L176:
-	jge	d15,d0,.L18
-.L177:
+.L224:
+	jge	d15,d0,.L30
+.L225:
 	movh.a	a4,#@his(Side_R)
 	lea	a4,[a4]@los(Side_R)
-.L178:
+.L226:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d15,[a15]
-.L179:
+.L227:
 	add	d15,#-5
-.L180:
+.L228:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d5,[a15]
 	mov	d4,d15
 	call	average_point
-.L181:
+.L229:
 	mov	e8,d3,d2
-.L128:
-	j	.L19
-.L18:
+.L172:
+	j	.L31
+.L30:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d0,[a15]
-.L182:
+.L230:
 	mov	d15,#20
-.L183:
-	jge	d15,d0,.L20
-.L184:
+.L231:
+	jge	d15,d0,.L32
+.L232:
 	movh.a	a4,#@his(Side_R)
 	lea	a4,[a4]@los(Side_R)
-.L185:
+.L233:
 	mov	d4,#15
-.L186:
+.L234:
 	mov	d5,#20
 	call	average_point
-.L187:
+.L235:
 	mov	e8,d3,d2
-.L129:
-	j	.L21
-.L20:
+.L173:
+	j	.L33
+.L32:
 	movh.a	a15,#@his(R_point)
 	lea	a15,[a15]@los(R_point)
 	ld.w	d15,[a15]
-.L188:
+.L236:
 	add	d15,#-1
-.L189:
+.L237:
 	mul	d15,d15,#8
-.L190:
+.L238:
 	movh.a	a15,#@his(Side_R)
 	lea	a15,[a15]@los(Side_R)
-.L191:
+.L239:
 	addsc.a	a15,a15,d15,#0
 	ld.d	e0,[a15]0
-.L192:
+.L240:
 	mov	e8,d1,d0
-.L21:
-.L19:
-.L17:
+.L33:
+.L31:
+.L29:
 	mov	d15,d10
-.L193:
+.L241:
 	mov	d0,d8
-.L194:
+.L242:
 	add	d15,d0
-.L195:
+.L243:
 	mov	d0,#2
-.L196:
+.L244:
 	div	e0,d15,d0
-.L197:
+.L245:
 	mov	d12,d0
-.L198:
+.L246:
 	mov	d15,d11
-.L199:
+.L247:
 	mov	d0,d9
-.L200:
+.L248:
 	add	d15,d0
-.L201:
+.L249:
 	mov	d0,#2
-.L202:
+.L250:
 	div	e0,d15,d0
-.L203:
+.L251:
 	mov	d13,d0
-.L86:
+.L112:
 	mov	e4,d13,d12
-.L204:
+.L252:
 	call	get_angle
-.L130:
+.L174:
 	mov	d14,d2
-.L132:
+.L176:
 	mov	e4,d11,d10
-.L133:
+.L177:
 	call	get_angle
-.L131:
-	mov	d10,d2
-.L135:
+.L175:
+	st.w	[a10]8,d2
+.L179:
 	mov	e4,d9,d8
-.L136:
+.L180:
 	call	get_angle
-.L134:
+.L178:
 	movh.a	a15,#@his(car_state)
 	lea	a15,[a15]@los(car_state)
 	ld.bu	d15,[a15]
-.L205:
-	jne	d15,#0,.L22
-.L206:
+.L253:
+	jne	d15,#0,.L34
+.L254:
 	movh.a	a15,#@his(error)
 	lea	a15,[a15]@los(error)
-.L207:
+.L255:
 	st.w	[a15],d14
-.L208:
-	j	.L23
-.L22:
+.L256:
+	j	.L35
+.L34:
 	movh.a	a15,#@his(fork_num)
 	lea	a15,[a15]@los(fork_num)
 	ld.w	d15,[a15]
-.L209:
+.L257:
 	mul	d15,d15,#4
-.L210:
+.L258:
 	movh.a	a15,#@his(fork_seq)
 	lea	a15,[a15]@los(fork_seq)
-.L211:
+.L259:
 	addsc.a	a15,a15,d15,#0
 	ld.w	d15,[a15]
-.L212:
-	jne	d15,#0,.L24
-.L213:
+.L260:
+	jne	d15,#0,.L36
+.L261:
 	movh.a	a15,#@his(error)
 	lea	a15,[a15]@los(error)
-.L214:
-	st.w	[a15],d10
-.L215:
-	j	.L25
-.L24:
+.L262:
+	ld.w	d15,[a10]8
+.L182:
+	st.w	[a15],d15
+.L263:
+	j	.L37
+.L36:
 	movh.a	a15,#@his(error)
 	lea	a15,[a15]@los(error)
-.L216:
+.L264:
 	st.w	[a15],d2
-.L25:
-.L23:
+.L37:
+.L35:
+	st.d	[a10]0,e8
+.L183:
 	mov	e4,d13,d12
-.L217:
-	call	show_point
-.L137:
+.L184:
+	mov	e6,d11,d10
+.L185:
+	call	show_target_point
+.L181:
 	ret
-.L78:
+.L104:
 	
 __caculate_error_function_end:
 	.size	caculate_error,__caculate_error_function_end-caculate_error
-.L45:
+.L61:
 	; End of function
 	
 	.sdecl	'.text.line.return_error',code,cluster('return_error')
@@ -474,20 +662,20 @@ __caculate_error_function_end:
 	
 	.global	return_error
 ; Function return_error
-.L36:
+.L52:
 return_error:	.type	func
 	movh.a	a15,#@his(error)
 	lea	a15,[a15]@los(error)
 	ld.w	d2,[a15]
-.L222:
-	j	.L26
-.L26:
+.L269:
+	j	.L38
+.L38:
 	ret
-.L90:
+.L116:
 	
 __return_error_function_end:
 	.size	return_error,__return_error_function_end-return_error
-.L50:
+.L66:
 	; End of function
 	
 	.sdecl	'.data.line.error',data,cluster('error')
@@ -524,13 +712,10 @@ target_M:	.type	object
 	.align	2
 fork_seq:	.type	object
 	.size	fork_seq,40
-	.space	4
 	.word	1
 	.space	8
 	.word	1
-	.space	12
-	.word	1
-	.space	4
+	.space	24
 	.sdecl	'.data.line.fork_num',data,cluster('fork_num')
 	.sect	'.data.line.fork_num'
 	.global	fork_num
@@ -542,13 +727,17 @@ fork_num:	.type	object
 	.calls	'show_line','ips200_show_int'
 	.calls	'show_line','show_point_red'
 	.calls	'show_line','show_point_blue'
+	.calls	'show_middle_line','show_point_yellow'
+	.calls	'show_target_point','show_point'
 	.calls	'caculate_error','average_point'
 	.calls	'caculate_error','get_angle'
-	.calls	'caculate_error','show_point'
+	.calls	'caculate_error','show_target_point'
 	.calls	'get_angle','',0
 	.calls	'show_line','',0
+	.calls	'show_middle_line','',0
 	.calls	'average_point','',0
-	.calls	'caculate_error','',0
+	.calls	'show_target_point','',0
+	.calls	'caculate_error','',16
 	.extern	Side_L
 	.extern	Side_R
 	.extern	L_point
@@ -556,23 +745,24 @@ fork_num:	.type	object
 	.extern	atan2f
 	.extern	show_point_red
 	.extern	show_point_blue
+	.extern	show_point_yellow
 	.extern	show_point
 	.extern	ips200_show_int
 	.extern	car_state
 	.calls	'return_error','',0
 	.sdecl	'.debug_info',debug
 	.sect	'.debug_info'
-.L38:
-	.word	1134
+.L54:
+	.word	1181
 	.half	3
-	.word	.L39
+	.word	.L55
 	.byte	4
-.L37:
+.L53:
 	.byte	1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L40
+	.word	.L56
 	.byte	2
 	.byte	'float',0,4,4,3
 	.byte	'atan2f',0,1,107,25
@@ -582,10 +772,10 @@ fork_num:	.type	object
 	.byte	4,1,107,50
 	.word	148
 	.byte	0
-.L79:
+.L105:
 	.byte	2
 	.byte	'int',0,4,5
-.L82:
+.L108:
 	.byte	5,2,8,9,8,6
 	.byte	'x',0
 	.word	193
@@ -607,6 +797,13 @@ fork_num:	.type	object
 	.byte	'y',0,3,5,32
 	.word	193
 	.byte	0,7
+	.byte	'show_point_yellow',0,3,6,6,1,1,1,1,8
+	.byte	'x',0,3,6,28
+	.word	193
+	.byte	8
+	.byte	'y',0,3,6,34
+	.word	193
+	.byte	0,7
 	.byte	'show_point',0,3,7,6,1,1,1,1,8
 	.byte	'x',0,3,7,21
 	.word	193
@@ -620,42 +817,42 @@ fork_num:	.type	object
 	.byte	'unsigned char',0,1,8,7
 	.byte	'ips200_show_int',0,4,178,1,9,1,1,1,1,8
 	.byte	'x',0,4,178,1,49
-	.word	357
+	.word	404
 	.byte	8
 	.byte	'y',0,4,178,1,59
-	.word	357
+	.word	404
 	.byte	8
 	.byte	'dat',0,4,178,1,74
-	.word	379
+	.word	426
 	.byte	8
 	.byte	'num',0,4,178,1,85
-	.word	384
+	.word	431
 	.byte	0
-.L103:
+.L133:
 	.byte	10
 	.word	200
 	.byte	2
 	.byte	'short int',0,2,5,11
 	.byte	'__wchar_t',0,5,1,1
-	.word	480
+	.word	527
 	.byte	2
 	.byte	'unsigned int',0,4,7,11
 	.byte	'__size_t',0,5,1,1
-	.word	511
+	.word	558
 	.byte	11
 	.byte	'__ptrdiff_t',0,5,1,1
 	.word	193
 	.byte	12,1,10
-	.word	564
+	.word	611
 	.byte	11
 	.byte	'__codeptr',0,5,1,1
-	.word	566
+	.word	613
 	.byte	11
 	.byte	'__intptr_t',0,5,1,1
 	.word	193
 	.byte	11
 	.byte	'__uintptr_t',0,5,1,1
-	.word	511
+	.word	558
 	.byte	11
 	.byte	'Point',0,2,11,3
 	.word	200
@@ -663,10 +860,10 @@ fork_num:	.type	object
 	.word	200
 	.byte	14,199,1,0,15
 	.byte	'Side_L',0,2,35,14
-	.word	642
+	.word	689
 	.byte	1,1,15
 	.byte	'Side_R',0,2,35,26
-	.word	642
+	.word	689
 	.byte	1,1,15
 	.byte	'L_point',0,2,36,12
 	.word	193
@@ -675,74 +872,74 @@ fork_num:	.type	object
 	.word	193
 	.byte	1,1,11
 	.byte	'_iob_flag_t',0,6,82,25
-	.word	357
+	.word	404
 	.byte	11
 	.byte	'uint8',0,7,105,29
-	.word	384
+	.word	431
 	.byte	11
 	.byte	'uint16',0,7,109,29
-	.word	357
+	.word	404
 	.byte	2
 	.byte	'unsigned long int',0,4,7,11
 	.byte	'uint32',0,7,113,29
-	.word	772
+	.word	819
 	.byte	2
 	.byte	'unsigned long long int',0,8,7,11
 	.byte	'uint64',0,7,118,29
-	.word	808
+	.word	855
 	.byte	11
 	.byte	'sint16',0,7,126,29
-	.word	480
+	.word	527
 	.byte	2
 	.byte	'long int',0,4,5,11
 	.byte	'sint32',0,7,131,1,29
-	.word	864
+	.word	911
 	.byte	2
 	.byte	'long long int',0,8,5,11
 	.byte	'sint64',0,7,138,1,29
-	.word	892
+	.word	939
 	.byte	11
 	.byte	'float32',0,7,167,1,29
 	.word	148
 	.byte	16
 	.byte	'void',0,10
-	.word	942
+	.word	989
 	.byte	11
 	.byte	'pvoid',0,8,57,28
-	.word	948
+	.word	995
 	.byte	11
 	.byte	'Ifx_TickTime',0,8,79,28
-	.word	892
+	.word	939
 	.byte	2
 	.byte	'char',0,1,6,11
 	.byte	'int8',0,9,54,29
-	.word	988
+	.word	1035
 	.byte	11
 	.byte	'int16',0,9,55,29
-	.word	480
+	.word	527
 	.byte	11
 	.byte	'int32',0,9,56,29
 	.word	193
 	.byte	11
 	.byte	'int64',0,9,57,29
-	.word	892
+	.word	939
 	.byte	17,10,5,9,1,18
 	.byte	'normal',0,0,18
 	.byte	'fork_straight',0,1,18
 	.byte	'fork_turn',0,2,0,11
 	.byte	'state',0,10,9,2
-	.word	1051
+	.word	1098
 	.byte	15
 	.byte	'car_state',0,10,11,14
-	.word	1051
+	.word	1098
 	.byte	1,1
-.L113:
+.L147:
 	.byte	13,40
 	.word	193
 	.byte	14,9,0,0
 	.sdecl	'.debug_abbrev',debug
 	.sect	'.debug_abbrev'
-.L39:
+.L55:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,46,1,3,8,58,15,59,15,57,15
 	.byte	73,19,54,15,39,12,63,12,60,12,0,0,4,5,0,58,15,59,15,57,15,73,19,0,0,5,19,1,58,15,59,15,57,15,11,15,0,0
 	.byte	6,13,0,3,8,73,19,11,15,56,9,0,0,7,46,1,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,8,5,0,3,8,58
@@ -751,12 +948,12 @@ fork_num:	.type	object
 	.byte	0,0,16,59,0,3,8,0,0,17,4,1,58,15,59,15,57,15,11,15,0,0,18,40,0,3,8,28,13,0,0,0
 	.sdecl	'.debug_line',debug
 	.sect	'.debug_line'
-.L40:
-	.word	.L139-.L138
-.L138:
+.L56:
+	.word	.L187-.L186
+.L186:
 	.half	3
-	.word	.L141-.L140
-.L140:
+	.word	.L189-.L188
+.L188:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
 	.byte	'D:\\AURIX-Studio-1.10.2\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
 	.byte	'E:\\\\smart_car 2026\\\\Soberup_2026\\\\libraries\\\\zf_device',0
@@ -772,916 +969,1230 @@ fork_num:	.type	object
 	.byte	'ifx_types.h',0,3,0,0
 	.byte	'zf_common_typedef.h',0,4,0,0
 	.byte	'..\\code\\state_control.h',0,0,0,0,0
-.L141:
-.L139:
+.L189:
+.L187:
 	.sdecl	'.debug_info',debug,cluster('caculate_error')
 	.sect	'.debug_info'
-.L41:
-	.word	363
+.L57:
+	.word	366
 	.half	3
-	.word	.L42
+	.word	.L58
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L44,.L43
+	.word	.L60,.L59
 	.byte	2
-	.word	.L37
+	.word	.L53
 	.byte	3
-	.byte	'caculate_error',0,1,81,6,1,1
-	.word	.L34,.L78,.L33
+	.byte	'caculate_error',0,1,104,6,1,1
+	.word	.L50,.L104,.L49
 	.byte	4
-	.word	.L34,.L78
+	.word	.L50,.L104
 	.byte	5
-	.byte	'front_point',0,1,82,9
-	.word	.L79,.L80
+	.byte	'front_point',0,1,105,9
+	.word	.L105,.L106
 	.byte	5
-	.byte	'average_range',0,1,83,9
-	.word	.L79,.L81
+	.byte	'average_range',0,1,106,9
+	.word	.L105,.L107
 	.byte	5
-	.byte	'R',0,1,85,11
-	.word	.L82,.L83
+	.byte	'R',0,1,108,11
+	.word	.L108,.L109
 	.byte	5
-	.byte	'L',0,1,85,13
-	.word	.L82,.L84
+	.byte	'L',0,1,108,13
+	.word	.L108,.L110
 	.byte	5
-	.byte	'M',0,1,85,15
-	.word	.L82,.L85
+	.byte	'M',0,1,108,15
+	.word	.L108,.L111
 	.byte	4
-	.word	.L86,.L78
+	.word	.L112,.L104
 	.byte	5
-	.byte	'M_result',0,1,109,9
-	.word	.L79,.L87
+	.byte	'M_result',0,1,132,1,9
+	.word	.L105,.L113
 	.byte	5
-	.byte	'L_result',0,1,110,9
-	.word	.L79,.L88
+	.byte	'L_result',0,1,133,1,9
+	.word	.L105,.L114
 	.byte	5
-	.byte	'R_result',0,1,111,9
-	.word	.L79,.L89
+	.byte	'R_result',0,1,134,1,9
+	.word	.L105,.L115
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('caculate_error')
 	.sect	'.debug_abbrev'
-.L42:
+.L58:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('caculate_error')
 	.sect	'.debug_line'
-.L43:
-	.word	.L143-.L142
-.L142:
+.L59:
+	.word	.L191-.L190
+.L190:
 	.half	3
-	.word	.L145-.L144
-.L144:
+	.word	.L193-.L192
+.L192:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/line.c',0,0,0,0,0
-.L145:
-	.byte	5,21,7,0,5,2
-	.word	.L34
-	.byte	3,209,0,1,5,9,9
-	.half	.L122-.L34
+.L193:
+	.byte	5,6,7,0,5,2
+	.word	.L50
+	.byte	3,231,0,1,5,21,9
+	.half	.L165-.L50
+	.byte	3,1,1,5,9,9
+	.half	.L166-.L165
 	.byte	3,5,1,5,5,9
-	.half	.L146-.L122
+	.half	.L194-.L166
 	.byte	1,5,27,7,9
-	.half	.L147-.L146
-	.byte	3,1,1,5,45,9
-	.half	.L148-.L147
-	.byte	1,5,60,9
-	.half	.L149-.L148
-	.byte	1,5,11,9
-	.half	.L125-.L149
-	.byte	1,5,72,9
-	.half	.L150-.L125
-	.byte	1,5,14,9
-	.half	.L10-.L150
-	.byte	3,2,1,5,22,9
-	.half	.L151-.L10
-	.byte	1,5,11,9
-	.half	.L152-.L151
-	.byte	1,5,27,7,9
-	.half	.L153-.L152
-	.byte	3,1,1,5,34,9
-	.half	.L154-.L153
-	.byte	1,5,41,9
-	.half	.L155-.L154
-	.byte	1,5,56,9
-	.half	.L156-.L155
-	.byte	1,5,11,9
-	.half	.L157-.L156
-	.byte	1,5,64,9
-	.half	.L158-.L157
-	.byte	1,5,14,9
-	.half	.L12-.L158
-	.byte	3,1,1,5,22,9
-	.half	.L159-.L12
-	.byte	1,5,11,9
-	.half	.L160-.L159
-	.byte	1,5,27,7,9
-	.half	.L161-.L160
-	.byte	3,1,1,5,34,9
-	.half	.L162-.L161
-	.byte	1,5,37,9
-	.half	.L163-.L162
-	.byte	1,5,11,9
-	.half	.L164-.L163
-	.byte	1,5,40,9
-	.half	.L165-.L164
-	.byte	1,5,20,9
-	.half	.L14-.L165
-	.byte	3,2,1,5,27,9
-	.half	.L166-.L14
-	.byte	1,5,19,9
-	.half	.L167-.L166
-	.byte	1,5,13,9
-	.half	.L168-.L167
-	.byte	1,5,19,9
-	.half	.L169-.L168
-	.byte	1,5,11,9
-	.half	.L170-.L169
-	.byte	1,5,9,9
-	.half	.L11-.L170
-	.byte	3,2,1,5,5,9
-	.half	.L171-.L11
-	.byte	1,5,27,7,9
-	.half	.L172-.L171
-	.byte	3,1,1,5,45,9
-	.half	.L173-.L172
-	.byte	1,5,60,9
-	.half	.L174-.L173
-	.byte	1,5,11,9
-	.half	.L127-.L174
-	.byte	1,5,72,9
-	.half	.L123-.L127
-	.byte	1,5,14,9
-	.half	.L16-.L123
-	.byte	3,1,1,5,22,9
-	.half	.L175-.L16
-	.byte	1,5,11,9
-	.half	.L176-.L175
-	.byte	1,5,27,7,9
-	.half	.L177-.L176
-	.byte	3,1,1,5,34,9
-	.half	.L178-.L177
-	.byte	1,5,41,9
-	.half	.L179-.L178
-	.byte	1,5,56,9
-	.half	.L180-.L179
-	.byte	1,5,11,9
-	.half	.L181-.L180
-	.byte	1,5,64,9
-	.half	.L128-.L181
-	.byte	1,5,14,9
-	.half	.L18-.L128
-	.byte	3,1,1,5,22,9
-	.half	.L182-.L18
-	.byte	1,5,11,9
-	.half	.L183-.L182
-	.byte	1,5,27,7,9
-	.half	.L184-.L183
-	.byte	3,1,1,5,34,9
-	.half	.L185-.L184
-	.byte	1,5,37,9
-	.half	.L186-.L185
-	.byte	1,5,11,9
-	.half	.L187-.L186
-	.byte	1,5,40,9
-	.half	.L129-.L187
-	.byte	1,5,20,9
-	.half	.L20-.L129
-	.byte	3,2,1,5,27,9
-	.half	.L188-.L20
-	.byte	1,5,19,9
-	.half	.L189-.L188
-	.byte	1,5,13,9
-	.half	.L190-.L189
-	.byte	1,5,19,9
-	.half	.L191-.L190
-	.byte	1,5,11,9
-	.half	.L192-.L191
-	.byte	1,5,13,9
-	.half	.L17-.L192
-	.byte	3,3,1,5,17,9
-	.half	.L193-.L17
-	.byte	1,5,15,9
-	.half	.L194-.L193
-	.byte	1,5,21,9
 	.half	.L195-.L194
-	.byte	1,5,20,9
+	.byte	3,1,1,5,45,9
 	.half	.L196-.L195
-	.byte	1,5,9,9
+	.byte	1,5,60,9
 	.half	.L197-.L196
-	.byte	1,5,13,9
-	.half	.L198-.L197
-	.byte	3,1,1,5,17,9
-	.half	.L199-.L198
-	.byte	1,5,15,9
+	.byte	1,5,11,9
+	.half	.L169-.L197
+	.byte	1,5,72,9
+	.half	.L198-.L169
+	.byte	1,5,14,9
+	.half	.L22-.L198
+	.byte	3,2,1,5,22,9
+	.half	.L199-.L22
+	.byte	1,5,11,9
 	.half	.L200-.L199
-	.byte	1,5,21,9
+	.byte	1,5,27,7,9
 	.half	.L201-.L200
-	.byte	1,5,20,9
+	.byte	3,1,1,5,34,9
 	.half	.L202-.L201
-	.byte	1,5,9,9
+	.byte	1,5,41,9
 	.half	.L203-.L202
-	.byte	1,5,31,9
-	.half	.L86-.L203
-	.byte	3,1,1,5,35,9
-	.half	.L204-.L86
-	.byte	1,5,31,9
-	.half	.L132-.L204
-	.byte	3,1,1,5,35,9
-	.half	.L133-.L132
-	.byte	1,5,31,9
-	.half	.L135-.L133
-	.byte	3,1,1,5,35,9
-	.half	.L136-.L135
-	.byte	1,5,8,9
-	.half	.L134-.L136
-	.byte	3,2,1,5,5,9
-	.half	.L205-.L134
-	.byte	1,5,9,7,9
+	.byte	1,5,56,9
+	.half	.L204-.L203
+	.byte	1,5,11,9
+	.half	.L205-.L204
+	.byte	1,5,64,9
 	.half	.L206-.L205
-	.byte	3,1,1,5,15,9
-	.half	.L207-.L206
-	.byte	1,5,25,9
+	.byte	1,5,14,9
+	.half	.L24-.L206
+	.byte	3,1,1,5,22,9
+	.half	.L207-.L24
+	.byte	1,5,11,9
 	.half	.L208-.L207
-	.byte	1,5,21,9
-	.half	.L22-.L208
-	.byte	3,2,1,5,20,9
-	.half	.L209-.L22
-	.byte	1,5,12,9
+	.byte	1,5,27,7,9
+	.half	.L209-.L208
+	.byte	3,1,1,5,34,9
 	.half	.L210-.L209
-	.byte	1,5,20,9
+	.byte	1,5,37,9
 	.half	.L211-.L210
-	.byte	1,5,9,9
+	.byte	1,5,11,9
 	.half	.L212-.L211
-	.byte	1,5,13,7,9
+	.byte	1,5,40,9
 	.half	.L213-.L212
-	.byte	3,1,1,5,19,9
-	.half	.L214-.L213
-	.byte	1,5,29,9
+	.byte	1,5,20,9
+	.half	.L26-.L213
+	.byte	3,2,1,5,27,9
+	.half	.L214-.L26
+	.byte	1,5,19,9
 	.half	.L215-.L214
 	.byte	1,5,13,9
-	.half	.L24-.L215
+	.half	.L216-.L215
+	.byte	1,5,19,9
+	.half	.L217-.L216
+	.byte	1,5,11,9
+	.half	.L218-.L217
+	.byte	1,5,9,9
+	.half	.L23-.L218
+	.byte	3,2,1,5,5,9
+	.half	.L219-.L23
+	.byte	1,5,27,7,9
+	.half	.L220-.L219
+	.byte	3,1,1,5,45,9
+	.half	.L221-.L220
+	.byte	1,5,60,9
+	.half	.L222-.L221
+	.byte	1,5,11,9
+	.half	.L171-.L222
+	.byte	1,5,72,9
+	.half	.L167-.L171
+	.byte	1,5,14,9
+	.half	.L28-.L167
+	.byte	3,1,1,5,22,9
+	.half	.L223-.L28
+	.byte	1,5,11,9
+	.half	.L224-.L223
+	.byte	1,5,27,7,9
+	.half	.L225-.L224
+	.byte	3,1,1,5,34,9
+	.half	.L226-.L225
+	.byte	1,5,41,9
+	.half	.L227-.L226
+	.byte	1,5,56,9
+	.half	.L228-.L227
+	.byte	1,5,11,9
+	.half	.L229-.L228
+	.byte	1,5,64,9
+	.half	.L172-.L229
+	.byte	1,5,14,9
+	.half	.L30-.L172
+	.byte	3,1,1,5,22,9
+	.half	.L230-.L30
+	.byte	1,5,11,9
+	.half	.L231-.L230
+	.byte	1,5,27,7,9
+	.half	.L232-.L231
+	.byte	3,1,1,5,34,9
+	.half	.L233-.L232
+	.byte	1,5,37,9
+	.half	.L234-.L233
+	.byte	1,5,11,9
+	.half	.L235-.L234
+	.byte	1,5,40,9
+	.half	.L173-.L235
+	.byte	1,5,20,9
+	.half	.L32-.L173
+	.byte	3,2,1,5,27,9
+	.half	.L236-.L32
+	.byte	1,5,19,9
+	.half	.L237-.L236
+	.byte	1,5,13,9
+	.half	.L238-.L237
+	.byte	1,5,19,9
+	.half	.L239-.L238
+	.byte	1,5,11,9
+	.half	.L240-.L239
+	.byte	1,5,13,9
+	.half	.L29-.L240
+	.byte	3,3,1,5,17,9
+	.half	.L241-.L29
+	.byte	1,5,15,9
+	.half	.L242-.L241
+	.byte	1,5,21,9
+	.half	.L243-.L242
+	.byte	1,5,20,9
+	.half	.L244-.L243
+	.byte	1,5,9,9
+	.half	.L245-.L244
+	.byte	1,5,13,9
+	.half	.L246-.L245
+	.byte	3,1,1,5,17,9
+	.half	.L247-.L246
+	.byte	1,5,15,9
+	.half	.L248-.L247
+	.byte	1,5,21,9
+	.half	.L249-.L248
+	.byte	1,5,20,9
+	.half	.L250-.L249
+	.byte	1,5,9,9
+	.half	.L251-.L250
+	.byte	1,5,31,9
+	.half	.L112-.L251
+	.byte	3,1,1,5,35,9
+	.half	.L252-.L112
+	.byte	1,5,31,9
+	.half	.L176-.L252
+	.byte	3,1,1,5,35,9
+	.half	.L177-.L176
+	.byte	1,5,31,9
+	.half	.L179-.L177
+	.byte	3,1,1,5,35,9
+	.half	.L180-.L179
+	.byte	1,5,8,9
+	.half	.L178-.L180
+	.byte	3,2,1,5,5,9
+	.half	.L253-.L178
+	.byte	1,5,9,7,9
+	.half	.L254-.L253
+	.byte	3,1,1,5,15,9
+	.half	.L255-.L254
+	.byte	1,5,25,9
+	.half	.L256-.L255
+	.byte	1,5,21,9
+	.half	.L34-.L256
+	.byte	3,2,1,5,20,9
+	.half	.L257-.L34
+	.byte	1,5,12,9
+	.half	.L258-.L257
+	.byte	1,5,20,9
+	.half	.L259-.L258
+	.byte	1,5,9,9
+	.half	.L260-.L259
+	.byte	1,5,13,7,9
+	.half	.L261-.L260
+	.byte	3,1,1,5,19,9
+	.half	.L262-.L261
+	.byte	1,5,29,9
+	.half	.L263-.L262
+	.byte	1,5,13,9
+	.half	.L36-.L263
 	.byte	3,2,1,5,19,9
-	.half	.L216-.L24
-	.byte	1,5,17,9
-	.half	.L23-.L216
-	.byte	3,3,1,5,21,9
-	.half	.L217-.L23
+	.half	.L264-.L36
+	.byte	1,5,27,9
+	.half	.L35-.L264
+	.byte	3,3,1,5,25,9
+	.half	.L183-.L35
 	.byte	1,5,1,9
-	.half	.L137-.L217
-	.byte	3,1,1,7,9
-	.half	.L45-.L137
+	.half	.L181-.L183
+	.byte	3,2,1,7,9
+	.half	.L61-.L181
 	.byte	0,1,1
-.L143:
+.L191:
 	.sdecl	'.debug_ranges',debug,cluster('caculate_error')
 	.sect	'.debug_ranges'
-.L44:
-	.word	-1,.L34,0,.L45-.L34,0,0
+.L60:
+	.word	-1,.L50,0,.L61-.L50,0,0
 	.sdecl	'.debug_info',debug,cluster('return_error')
 	.sect	'.debug_info'
-.L46:
-	.word	199
+.L62:
+	.word	200
 	.half	3
-	.word	.L47
+	.word	.L63
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L49,.L48
+	.word	.L65,.L64
 	.byte	2
-	.word	.L37
+	.word	.L53
 	.byte	3
-	.byte	'return_error',0,1,125,5
-	.word	.L79
+	.byte	'return_error',0,1,149,1,5
+	.word	.L105
 	.byte	1,1
-	.word	.L36,.L90,.L35
+	.word	.L52,.L116,.L51
 	.byte	4
-	.word	.L36,.L90
+	.word	.L52,.L116
 	.byte	0,0
 	.sdecl	'.debug_abbrev',debug,cluster('return_error')
 	.sect	'.debug_abbrev'
-.L47:
+.L63:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
 	.byte	54,15,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
 	.sdecl	'.debug_line',debug,cluster('return_error')
 	.sect	'.debug_line'
-.L48:
-	.word	.L219-.L218
-.L218:
+.L64:
+	.word	.L266-.L265
+.L265:
 	.half	3
-	.word	.L221-.L220
-.L220:
+	.word	.L268-.L267
+.L267:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/line.c',0,0,0,0,0
-.L221:
+.L268:
 	.byte	5,12,7,0,5,2
-	.word	.L36
-	.byte	3,253,0,1,5,5,9
-	.half	.L222-.L36
+	.word	.L52
+	.byte	3,149,1,1,5,5,9
+	.half	.L269-.L52
 	.byte	1,5,1,9
-	.half	.L26-.L222
+	.half	.L38-.L269
 	.byte	3,1,1,7,9
-	.half	.L50-.L26
+	.half	.L66-.L38
 	.byte	0,1,1
-.L219:
+.L266:
 	.sdecl	'.debug_ranges',debug,cluster('return_error')
 	.sect	'.debug_ranges'
-.L49:
-	.word	-1,.L36,0,.L50-.L36,0,0
+.L65:
+	.word	-1,.L52,0,.L66-.L52,0,0
 	.sdecl	'.debug_info',debug,cluster('show_line')
 	.sect	'.debug_info'
-.L51:
+.L67:
 	.word	241
 	.half	3
-	.word	.L52
+	.word	.L68
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L54,.L53
+	.word	.L70,.L69
 	.byte	2
-	.word	.L37
+	.word	.L53
 	.byte	3
 	.byte	'show_line',0,1,40,6,1,1
-	.word	.L30,.L91,.L29
+	.word	.L42,.L117,.L41
 	.byte	4
-	.word	.L30,.L91
+	.word	.L42,.L117
 	.byte	4
-	.word	.L92,.L93
+	.word	.L118,.L119
 	.byte	5
 	.byte	'i',0,1,44,13
-	.word	.L79,.L94
+	.word	.L105,.L120
 	.byte	0,4
-	.word	.L93,.L95
+	.word	.L119,.L121
 	.byte	5
 	.byte	'i',0,1,49,13
-	.word	.L79,.L96
+	.word	.L105,.L122
 	.byte	0,0,0,0
 	.sdecl	'.debug_abbrev',debug,cluster('show_line')
 	.sect	'.debug_abbrev'
-.L52:
+.L68:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
 	.byte	63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
 	.sdecl	'.debug_line',debug,cluster('show_line')
 	.sect	'.debug_line'
-.L53:
-	.word	.L224-.L223
-.L223:
+.L69:
+	.word	.L271-.L270
+.L270:
 	.half	3
-	.word	.L226-.L225
-.L225:
+	.word	.L273-.L272
+.L272:
 	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
 	.byte	'../code/line.c',0,0,0,0,0
-.L226:
+.L273:
 	.byte	5,21,7,0,5,2
-	.word	.L30
+	.word	.L42
 	.byte	3,41,1,5,25,9
-	.half	.L227-.L30
+	.half	.L274-.L42
 	.byte	1,5,28,9
-	.half	.L228-.L227
+	.half	.L275-.L274
 	.byte	1,5,36,9
-	.half	.L229-.L228
+	.half	.L276-.L275
 	.byte	1,5,21,9
-	.half	.L230-.L229
+	.half	.L277-.L276
 	.byte	3,1,1,5,25,9
-	.half	.L231-.L230
+	.half	.L278-.L277
 	.byte	1,5,28,9
-	.half	.L232-.L231
+	.half	.L279-.L278
 	.byte	1,5,36,9
-	.half	.L233-.L232
+	.half	.L280-.L279
 	.byte	1,5,14,9
-	.half	.L92-.L233
+	.half	.L118-.L280
 	.byte	3,1,1,5,26,9
-	.half	.L118-.L92
+	.half	.L152-.L118
 	.byte	1,5,30,9
-	.half	.L4-.L118
+	.half	.L4-.L152
 	.byte	3,1,1,5,24,9
-	.half	.L234-.L4
+	.half	.L281-.L4
 	.byte	1,5,30,9
-	.half	.L235-.L234
+	.half	.L282-.L281
 	.byte	1,5,33,9
-	.half	.L236-.L235
+	.half	.L283-.L282
 	.byte	1,5,42,9
-	.half	.L237-.L236
+	.half	.L284-.L283
 	.byte	1,5,36,9
-	.half	.L238-.L237
+	.half	.L285-.L284
 	.byte	1,5,42,9
-	.half	.L239-.L238
+	.half	.L286-.L285
 	.byte	1,5,45,9
-	.half	.L240-.L239
+	.half	.L287-.L286
 	.byte	1,5,28,9
-	.half	.L241-.L240
+	.half	.L288-.L287
 	.byte	3,127,1,5,19,9
-	.half	.L3-.L241
+	.half	.L3-.L288
 	.byte	1,5,26,9
-	.half	.L242-.L3
+	.half	.L289-.L3
 	.byte	1,5,14,7,9
-	.half	.L93-.L242
+	.half	.L119-.L289
 	.byte	3,5,1,5,26,9
-	.half	.L119-.L93
+	.half	.L153-.L119
 	.byte	1,5,31,9
-	.half	.L6-.L119
+	.half	.L6-.L153
 	.byte	3,1,1,5,25,9
-	.half	.L243-.L6
+	.half	.L290-.L6
 	.byte	1,5,31,9
-	.half	.L244-.L243
+	.half	.L291-.L290
 	.byte	1,5,34,9
-	.half	.L245-.L244
+	.half	.L292-.L291
 	.byte	1,5,43,9
-	.half	.L246-.L245
+	.half	.L293-.L292
 	.byte	1,5,37,9
-	.half	.L247-.L246
+	.half	.L294-.L293
 	.byte	1,5,43,9
-	.half	.L248-.L247
+	.half	.L295-.L294
 	.byte	1,5,46,9
-	.half	.L249-.L248
+	.half	.L296-.L295
 	.byte	1,5,28,9
-	.half	.L250-.L249
+	.half	.L297-.L296
 	.byte	3,127,1,5,19,9
-	.half	.L5-.L250
+	.half	.L5-.L297
 	.byte	1,5,26,9
-	.half	.L251-.L5
+	.half	.L298-.L5
 	.byte	1,5,1,7,9
-	.half	.L95-.L251
+	.half	.L121-.L298
 	.byte	3,4,1,7,9
-	.half	.L55-.L95
+	.half	.L71-.L121
 	.byte	0,1,1
-.L224:
+.L271:
 	.sdecl	'.debug_ranges',debug,cluster('show_line')
 	.sect	'.debug_ranges'
-.L54:
-	.word	-1,.L30,0,.L55-.L30,0,0
-	.sdecl	'.debug_info',debug,cluster('get_angle')
-	.sect	'.debug_info'
-.L56:
-	.word	255
-	.half	3
-	.word	.L57
-	.byte	4,1
-	.byte	'../code/line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L59,.L58
-	.byte	2
-	.word	.L37
-	.byte	3
-	.byte	'get_angle',0,1,26,5
-	.word	.L79
-	.byte	1,1,1
-	.word	.L28,.L97,.L27
-	.byte	4
-	.byte	'x',0,1,26,19
-	.word	.L79,.L98
-	.byte	4
-	.byte	'y',0,1,26,25
-	.word	.L79,.L99
-	.byte	5
-	.word	.L28,.L97
-	.byte	5
-	.word	.L100,.L97
-	.byte	6
-	.byte	'result',0,1,29,9
-	.word	.L79,.L101
-	.byte	0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('get_angle')
-	.sect	'.debug_abbrev'
-.L57:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('get_angle')
-	.sect	'.debug_line'
-.L58:
-	.word	.L253-.L252
-.L252:
-	.half	3
-	.word	.L255-.L254
-.L254:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/line.c',0,0,0,0,0
-.L255:
-	.byte	5,24,7,0,5,2
-	.word	.L28
-	.byte	3,26,1,5,21,9
-	.half	.L114-.L28
-	.byte	3,1,1,5,31,9
-	.half	.L100-.L114
-	.byte	3,1,1,5,34,9
-	.half	.L256-.L100
-	.byte	1,5,39,9
-	.half	.L116-.L256
-	.byte	1,5,37,9
-	.half	.L115-.L116
-	.byte	1,5,48,9
-	.half	.L257-.L115
-	.byte	1,5,46,9
-	.half	.L258-.L257
-	.byte	1,5,18,9
-	.half	.L259-.L258
-	.byte	1,5,5,9
-	.half	.L117-.L259
-	.byte	3,1,1,5,1,9
-	.half	.L2-.L117
-	.byte	3,1,1,7,9
-	.half	.L60-.L2
-	.byte	0,1,1
-.L253:
-	.sdecl	'.debug_ranges',debug,cluster('get_angle')
-	.sect	'.debug_ranges'
-.L59:
-	.word	-1,.L28,0,.L60-.L28,0,0
-	.sdecl	'.debug_info',debug,cluster('average_point')
-	.sect	'.debug_info'
-.L61:
-	.word	322
-	.half	3
-	.word	.L62
-	.byte	4,1
-	.byte	'../code/line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
-	.word	.L64,.L63
-	.byte	2
-	.word	.L37
-	.byte	3
-	.byte	'average_point',0,1,64,7
-	.word	.L82
-	.byte	1,1,1
-	.word	.L32,.L102,.L31
-	.byte	4
-	.byte	'Pointin',0,1,64,28
-	.word	.L103,.L104
-	.byte	4
-	.byte	'min',0,1,64,40
-	.word	.L79,.L105
-	.byte	4
-	.byte	'max',0,1,64,48
-	.word	.L79,.L106
-	.byte	5
-	.word	.L32,.L102
-	.byte	6
-	.byte	'sum',0,1,65,11
-	.word	.L82,.L107
-	.byte	5
-	.word	.L108,.L102
-	.byte	6
-	.byte	'count',0,1,68,9
-	.word	.L79,.L109
-	.byte	5
-	.word	.L110,.L111
-	.byte	6
-	.byte	'i',0,1,70,13
-	.word	.L79,.L112
-	.byte	0,0,0,0,0
-	.sdecl	'.debug_abbrev',debug,cluster('average_point')
-	.sect	'.debug_abbrev'
-.L62:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
-	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
-	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
-	.sdecl	'.debug_line',debug,cluster('average_point')
-	.sect	'.debug_line'
-.L63:
-	.word	.L261-.L260
-.L260:
-	.half	3
-	.word	.L263-.L262
-.L262:
-	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
-	.byte	'../code/line.c',0,0,0,0,0
-.L263:
-	.byte	5,13,7,0,5,2
-	.word	.L32
-	.byte	3,193,0,1,9
-	.half	.L264-.L32
-	.byte	3,1,1,5,15,9
-	.half	.L108-.L264
-	.byte	3,1,1,5,24,9
-	.half	.L110-.L108
-	.byte	3,2,1,5,25,9
-	.half	.L8-.L110
-	.byte	3,1,1,5,28,9
-	.half	.L265-.L8
-	.byte	1,5,15,9
-	.half	.L266-.L265
-	.byte	1,5,25,9
-	.half	.L267-.L266
-	.byte	3,1,1,5,28,9
-	.half	.L268-.L267
-	.byte	1,5,15,9
-	.half	.L269-.L268
-	.byte	1,9
-	.half	.L270-.L269
-	.byte	3,1,1,5,26,9
-	.half	.L271-.L270
-	.byte	3,125,1,5,24,9
-	.half	.L7-.L271
-	.byte	1,5,18,7,9
-	.half	.L111-.L7
-	.byte	3,6,1,5,11,9
-	.half	.L120-.L111
-	.byte	1,5,18,9
-	.half	.L272-.L120
-	.byte	3,1,1,5,11,9
-	.half	.L121-.L272
-	.byte	1,5,5,9
-	.half	.L273-.L121
-	.byte	3,1,1,5,1,9
-	.half	.L9-.L273
-	.byte	3,1,1,7,9
-	.half	.L65-.L9
-	.byte	0,1,1
-.L261:
-	.sdecl	'.debug_ranges',debug,cluster('average_point')
-	.sect	'.debug_ranges'
-.L64:
-	.word	-1,.L32,0,.L65-.L32,0,0
-	.sdecl	'.debug_info',debug,cluster('fork_num')
-	.sect	'.debug_info'
-.L66:
-	.word	170
-	.half	3
-	.word	.L67
-	.byte	4,1
-	.byte	'../code/line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
-	.byte	3
-	.byte	'fork_num',0,5,18,5
-	.word	.L79
-	.byte	1,5,3
-	.word	fork_num
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('fork_num')
-	.sect	'.debug_abbrev'
-.L67:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('error')
-	.sect	'.debug_info'
-.L68:
-	.word	167
-	.half	3
-	.word	.L69
-	.byte	4,1
-	.byte	'../code/line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
-	.byte	3
-	.byte	'error',0,5,14,5
-	.word	.L79
-	.byte	1,5,3
-	.word	error
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('error')
-	.sect	'.debug_abbrev'
-.L69:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('target_L')
-	.sect	'.debug_info'
 .L70:
-	.word	170
-	.half	3
-	.word	.L71
-	.byte	4,1
-	.byte	'../code/line.c',0
-	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
-	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
-	.byte	3
-	.byte	'target_L',0,5,16,7
-	.word	.L82
-	.byte	1,5,3
-	.word	target_L
-	.byte	0
-	.sdecl	'.debug_abbrev',debug,cluster('target_L')
-	.sect	'.debug_abbrev'
-.L71:
-	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
-	.byte	0,0,0
-	.sdecl	'.debug_info',debug,cluster('target_R')
+	.word	-1,.L42,0,.L71-.L42,0,0
+	.sdecl	'.debug_info',debug,cluster('show_middle_line')
 	.sect	'.debug_info'
 .L72:
-	.word	170
+	.word	248
 	.half	3
 	.word	.L73
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L75,.L74
+	.byte	2
+	.word	.L53
+	.byte	3
+	.byte	'show_middle_line',0,1,55,6,1,1
+	.word	.L44,.L123,.L43
+	.byte	4
+	.word	.L44,.L123
+	.byte	4
+	.word	.L44,.L124
+	.byte	5
+	.byte	'i',0,1,56,13
+	.word	.L105,.L125
+	.byte	4
+	.word	.L8,.L9
+	.byte	5
+	.byte	'M',0,1,57,15
+	.word	.L108,.L126
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('show_middle_line')
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('show_middle_line')
+	.sect	'.debug_line'
+.L74:
+	.word	.L300-.L299
+.L299:
+	.half	3
+	.word	.L302-.L301
+.L301:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/line.c',0,0,0,0,0
+.L302:
+	.byte	5,14,7,0,5,2
+	.word	.L44
+	.byte	3,55,1,5,39,9
+	.half	.L154-.L44
+	.byte	1,5,28,9
+	.half	.L8-.L154
+	.byte	3,2,1,5,22,9
+	.half	.L303-.L8
+	.byte	1,5,28,9
+	.half	.L304-.L303
+	.byte	1,5,31,9
+	.half	.L305-.L304
+	.byte	1,5,40,9
+	.half	.L306-.L305
+	.byte	1,5,34,9
+	.half	.L307-.L306
+	.byte	1,5,40,9
+	.half	.L308-.L307
+	.byte	1,5,43,9
+	.half	.L309-.L308
+	.byte	1,5,33,9
+	.half	.L310-.L309
+	.byte	1,5,47,9
+	.half	.L311-.L310
+	.byte	1,5,46,9
+	.half	.L312-.L311
+	.byte	1,5,13,9
+	.half	.L313-.L312
+	.byte	1,5,32,9
+	.half	.L314-.L313
+	.byte	3,1,1,5,26,9
+	.half	.L315-.L314
+	.byte	1,5,32,9
+	.half	.L316-.L315
+	.byte	1,5,35,9
+	.half	.L317-.L316
+	.byte	1,5,44,9
+	.half	.L318-.L317
+	.byte	1,5,38,9
+	.half	.L319-.L318
+	.byte	1,5,44,9
+	.half	.L320-.L319
+	.byte	1,5,47,9
+	.half	.L321-.L320
+	.byte	1,5,37,9
+	.half	.L322-.L321
+	.byte	1,5,51,9
+	.half	.L323-.L322
+	.byte	1,5,50,9
+	.half	.L324-.L323
+	.byte	1,5,13,9
+	.half	.L325-.L324
+	.byte	1,9
+	.half	.L155-.L325
+	.byte	3,1,1,5,12,9
+	.half	.L326-.L155
+	.byte	1,5,20,7,9
+	.half	.L327-.L326
+	.byte	1,5,23,9
+	.half	.L328-.L327
+	.byte	1,5,22,9
+	.half	.L329-.L328
+	.byte	1,5,29,7,9
+	.half	.L330-.L329
+	.byte	1,5,31,9
+	.half	.L331-.L330
+	.byte	1,5,36,7,9
+	.half	.L332-.L331
+	.byte	1,5,39,9
+	.half	.L333-.L332
+	.byte	1,5,38,9
+	.half	.L334-.L333
+	.byte	1,5,32,7,9
+	.half	.L335-.L334
+	.byte	3,1,1,5,36,9
+	.half	.L336-.L335
+	.byte	1,5,41,9
+	.half	.L9-.L336
+	.byte	3,123,1,5,19,9
+	.half	.L7-.L9
+	.byte	1,5,18,9
+	.half	.L337-.L7
+	.byte	1,5,19,9
+	.half	.L338-.L337
+	.byte	1,5,17,9
+	.half	.L339-.L338
+	.byte	1,5,19,7,9
+	.half	.L340-.L339
+	.byte	1,5,39,9
+	.half	.L14-.L340
+	.byte	1,5,1,7,9
+	.half	.L124-.L14
+	.byte	3,8,1,7,9
+	.half	.L76-.L124
+	.byte	0,1,1
+.L300:
+	.sdecl	'.debug_ranges',debug,cluster('show_middle_line')
+	.sect	'.debug_ranges'
+.L75:
+	.word	-1,.L44,0,.L76-.L44,0,0
+	.sdecl	'.debug_info',debug,cluster('get_angle')
+	.sect	'.debug_info'
+.L77:
+	.word	255
+	.half	3
+	.word	.L78
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L80,.L79
+	.byte	2
+	.word	.L53
+	.byte	3
+	.byte	'get_angle',0,1,26,5
+	.word	.L105
+	.byte	1,1,1
+	.word	.L40,.L127,.L39
+	.byte	4
+	.byte	'x',0,1,26,19
+	.word	.L105,.L128
+	.byte	4
+	.byte	'y',0,1,26,25
+	.word	.L105,.L129
+	.byte	5
+	.word	.L40,.L127
+	.byte	5
+	.word	.L130,.L127
+	.byte	6
+	.byte	'result',0,1,29,9
+	.word	.L105,.L131
+	.byte	0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('get_angle')
+	.sect	'.debug_abbrev'
+.L78:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('get_angle')
+	.sect	'.debug_line'
+.L79:
+	.word	.L342-.L341
+.L341:
+	.half	3
+	.word	.L344-.L343
+.L343:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/line.c',0,0,0,0,0
+.L344:
+	.byte	5,24,7,0,5,2
+	.word	.L40
+	.byte	3,26,1,5,21,9
+	.half	.L148-.L40
+	.byte	3,1,1,5,31,9
+	.half	.L130-.L148
+	.byte	3,1,1,5,34,9
+	.half	.L345-.L130
+	.byte	1,5,39,9
+	.half	.L150-.L345
+	.byte	1,5,37,9
+	.half	.L149-.L150
+	.byte	1,5,48,9
+	.half	.L346-.L149
+	.byte	1,5,46,9
+	.half	.L347-.L346
+	.byte	1,5,18,9
+	.half	.L348-.L347
+	.byte	1,5,5,9
+	.half	.L151-.L348
+	.byte	3,1,1,5,1,9
+	.half	.L2-.L151
+	.byte	3,1,1,7,9
+	.half	.L81-.L2
+	.byte	0,1,1
+.L342:
+	.sdecl	'.debug_ranges',debug,cluster('get_angle')
+	.sect	'.debug_ranges'
+.L80:
+	.word	-1,.L40,0,.L81-.L40,0,0
+	.sdecl	'.debug_info',debug,cluster('average_point')
+	.sect	'.debug_info'
+.L82:
+	.word	322
+	.half	3
+	.word	.L83
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L85,.L84
+	.byte	2
+	.word	.L53
+	.byte	3
+	.byte	'average_point',0,1,75,7
+	.word	.L108
+	.byte	1,1,1
+	.word	.L46,.L132,.L45
+	.byte	4
+	.byte	'Pointin',0,1,75,28
+	.word	.L133,.L134
+	.byte	4
+	.byte	'min',0,1,75,40
+	.word	.L105,.L135
+	.byte	4
+	.byte	'max',0,1,75,48
+	.word	.L105,.L136
+	.byte	5
+	.word	.L46,.L132
+	.byte	6
+	.byte	'sum',0,1,76,11
+	.word	.L108,.L137
+	.byte	5
+	.word	.L138,.L132
+	.byte	6
+	.byte	'count',0,1,79,9
+	.word	.L105,.L139
+	.byte	5
+	.word	.L140,.L141
+	.byte	6
+	.byte	'i',0,1,81,13
+	.word	.L105,.L142
+	.byte	0,0,0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('average_point')
+	.sect	'.debug_abbrev'
+.L83:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6
+	.byte	52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('average_point')
+	.sect	'.debug_line'
+.L84:
+	.word	.L350-.L349
+.L349:
+	.half	3
+	.word	.L352-.L351
+.L351:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/line.c',0,0,0,0,0
+.L352:
+	.byte	5,13,7,0,5,2
+	.word	.L46
+	.byte	3,204,0,1,9
+	.half	.L353-.L46
+	.byte	3,1,1,5,15,9
+	.half	.L138-.L353
+	.byte	3,1,1,5,24,9
+	.half	.L140-.L138
+	.byte	3,2,1,5,25,9
+	.half	.L16-.L140
+	.byte	3,1,1,5,28,9
+	.half	.L354-.L16
+	.byte	1,5,15,9
+	.half	.L355-.L354
+	.byte	1,5,25,9
+	.half	.L356-.L355
+	.byte	3,1,1,5,28,9
+	.half	.L357-.L356
+	.byte	1,5,15,9
+	.half	.L358-.L357
+	.byte	1,9
+	.half	.L359-.L358
+	.byte	3,1,1,5,26,9
+	.half	.L360-.L359
+	.byte	3,125,1,5,24,9
+	.half	.L15-.L360
+	.byte	1,5,18,7,9
+	.half	.L141-.L15
+	.byte	3,6,1,5,11,9
+	.half	.L156-.L141
+	.byte	1,5,18,9
+	.half	.L361-.L156
+	.byte	3,1,1,5,11,9
+	.half	.L157-.L361
+	.byte	1,5,5,9
+	.half	.L362-.L157
+	.byte	3,1,1,5,1,9
+	.half	.L17-.L362
+	.byte	3,1,1,7,9
+	.half	.L86-.L17
+	.byte	0,1,1
+.L350:
+	.sdecl	'.debug_ranges',debug,cluster('average_point')
+	.sect	'.debug_ranges'
+.L85:
+	.word	-1,.L46,0,.L86-.L46,0,0
+	.sdecl	'.debug_info',debug,cluster('show_target_point')
+	.sect	'.debug_info'
+.L87:
+	.word	243
+	.half	3
+	.word	.L88
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1
+	.word	.L90,.L89
+	.byte	2
+	.word	.L53
+	.byte	3
+	.byte	'show_target_point',0,1,92,6,1,1,1
+	.word	.L48,.L143,.L47
+	.byte	4
+	.byte	'M',0,1,92,30
+	.word	.L108,.L144
+	.byte	4
+	.byte	'L',0,1,92,38
+	.word	.L108,.L145
+	.byte	4
+	.byte	'R',0,1,92,46
+	.word	.L108,.L146
+	.byte	5
+	.word	.L48,.L143
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('show_target_point')
+	.sect	'.debug_abbrev'
+.L88:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('show_target_point')
+	.sect	'.debug_line'
+.L89:
+	.word	.L364-.L363
+.L363:
+	.half	3
+	.word	.L366-.L365
+.L365:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../code/line.c',0,0,0,0,0
+.L366:
+	.byte	5,6,7,0,5,2
+	.word	.L48
+	.byte	3,219,0,1,5,8,9
+	.half	.L160-.L48
+	.byte	3,1,1,5,5,9
+	.half	.L367-.L160
+	.byte	1,5,21,7,9
+	.half	.L161-.L367
+	.byte	3,1,1,5,25,9
+	.half	.L159-.L161
+	.byte	1,5,28,9
+	.half	.L158-.L159
+	.byte	1,5,21,9
+	.half	.L18-.L158
+	.byte	3,2,1,5,20,9
+	.half	.L368-.L18
+	.byte	1,5,12,9
+	.half	.L369-.L368
+	.byte	1,5,20,9
+	.half	.L370-.L369
+	.byte	1,5,9,9
+	.half	.L371-.L370
+	.byte	1,5,25,7,9
+	.half	.L372-.L371
+	.byte	3,1,1,5,29,9
+	.half	.L163-.L372
+	.byte	1,5,32,9
+	.half	.L162-.L163
+	.byte	1,5,25,9
+	.half	.L20-.L162
+	.byte	3,2,1,5,29,9
+	.half	.L164-.L20
+	.byte	1,5,1,9
+	.half	.L19-.L164
+	.byte	3,3,1,7,9
+	.half	.L91-.L19
+	.byte	0,1,1
+.L364:
+	.sdecl	'.debug_ranges',debug,cluster('show_target_point')
+	.sect	'.debug_ranges'
+.L90:
+	.word	-1,.L48,0,.L91-.L48,0,0
+	.sdecl	'.debug_info',debug,cluster('fork_num')
+	.sect	'.debug_info'
+.L92:
+	.word	170
+	.half	3
+	.word	.L93
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
+	.word	.L53
+	.byte	3
+	.byte	'fork_num',0,5,18,5
+	.word	.L105
+	.byte	1,5,3
+	.word	fork_num
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('fork_num')
+	.sect	'.debug_abbrev'
+.L93:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('error')
+	.sect	'.debug_info'
+.L94:
+	.word	167
+	.half	3
+	.word	.L95
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L53
+	.byte	3
+	.byte	'error',0,5,14,5
+	.word	.L105
+	.byte	1,5,3
+	.word	error
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('error')
+	.sect	'.debug_abbrev'
+.L95:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('target_L')
+	.sect	'.debug_info'
+.L96:
+	.word	170
+	.half	3
+	.word	.L97
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L53
+	.byte	3
+	.byte	'target_L',0,5,16,7
+	.word	.L108
+	.byte	1,5,3
+	.word	target_L
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('target_L')
+	.sect	'.debug_abbrev'
+.L97:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('target_R')
+	.sect	'.debug_info'
+.L98:
+	.word	170
+	.half	3
+	.word	.L99
+	.byte	4,1
+	.byte	'../code/line.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
+	.word	.L53
 	.byte	3
 	.byte	'target_R',0,5,16,16
-	.word	.L82
+	.word	.L108
 	.byte	1,5,3
 	.word	target_R
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('target_R')
 	.sect	'.debug_abbrev'
-.L73:
+.L99:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('target_M')
 	.sect	'.debug_info'
-.L74:
+.L100:
 	.word	170
 	.half	3
-	.word	.L75
+	.word	.L101
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
+	.word	.L53
 	.byte	3
 	.byte	'target_M',0,5,16,25
-	.word	.L82
+	.word	.L108
 	.byte	1,5,3
 	.word	target_M
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('target_M')
 	.sect	'.debug_abbrev'
-.L75:
+.L101:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_info',debug,cluster('fork_seq')
 	.sect	'.debug_info'
-.L76:
+.L102:
 	.word	170
 	.half	3
-	.word	.L77
+	.word	.L103
 	.byte	4,1
 	.byte	'../code/line.c',0
 	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
 	.byte	'E:\\smart_car 2026\\Soberup_2026\\Debug\\',0,12,1,2
-	.word	.L37
+	.word	.L53
 	.byte	3
 	.byte	'fork_seq',0,5,17,5
-	.word	.L113
+	.word	.L147
 	.byte	1,5,3
 	.word	fork_seq
 	.byte	0
 	.sdecl	'.debug_abbrev',debug,cluster('fork_seq')
 	.sect	'.debug_abbrev'
-.L77:
+.L103:
 	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
 	.byte	0,0,0
 	.sdecl	'.debug_loc',debug,cluster('average_point')
 	.sect	'.debug_loc'
-.L104:
-	.word	-1,.L32,0,.L102-.L32
+.L134:
+	.word	-1,.L46,0,.L132-.L46
 	.half	1
 	.byte	100
 	.word	0,0
-.L31:
-	.word	-1,.L32,0,.L102-.L32
+.L45:
+	.word	-1,.L46,0,.L132-.L46
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L109:
-	.word	-1,.L32,.L110-.L32,.L121-.L32
+.L139:
+	.word	-1,.L46,.L140-.L46,.L157-.L46
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
-.L112:
+.L142:
 	.word	0,0
-.L106:
-	.word	-1,.L32,0,.L120-.L32
+.L136:
+	.word	-1,.L46,0,.L156-.L46
 	.half	1
 	.byte	85
 	.word	0,0
-.L105:
-	.word	-1,.L32,0,.L120-.L32
+.L135:
+	.word	-1,.L46,0,.L156-.L46
 	.half	1
 	.byte	84
 	.word	0,0
-.L107:
-	.word	-1,.L32,.L108-.L32,.L102-.L32
+.L137:
+	.word	-1,.L46,.L138-.L46,.L132-.L46
 	.half	2
 	.byte	144,33
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('caculate_error')
 	.sect	'.debug_loc'
-.L84:
-	.word	-1,.L34,.L132-.L34,.L133-.L34
+.L110:
+	.word	-1,.L50,.L176-.L50,.L177-.L50
+	.half	2
+	.byte	144,37
+	.word	.L184-.L50,.L185-.L50
 	.half	2
 	.byte	144,37
 	.word	0,0
-.L88:
-	.word	-1,.L34,.L131-.L34,.L134-.L34
+.L114:
+	.word	-1,.L50,.L175-.L50,.L178-.L50
 	.half	1
 	.byte	82
-	.word	.L135-.L34,.L78-.L34
+	.word	.L179-.L50,.L104-.L50
+	.half	2
+	.byte	145,120
+	.word	.L182-.L50,.L36-.L50
 	.half	1
-	.byte	90
+	.byte	95
 	.word	0,0
-.L85:
-	.word	-1,.L34,.L86-.L34,.L78-.L34
+.L111:
+	.word	-1,.L50,.L112-.L50,.L104-.L50
 	.half	2
 	.byte	144,38
 	.word	0,0
-.L87:
-	.word	-1,.L34,.L130-.L34,.L131-.L34
+.L113:
+	.word	-1,.L50,.L174-.L50,.L175-.L50
 	.half	1
 	.byte	82
-	.word	.L132-.L34,.L78-.L34
+	.word	.L176-.L50,.L104-.L50
 	.half	1
 	.byte	94
 	.word	0,0
-.L83:
-	.word	-1,.L34,.L135-.L34,.L136-.L34
+.L109:
+	.word	-1,.L50,.L179-.L50,.L180-.L50
+	.half	2
+	.byte	144,36
+	.word	.L35-.L50,.L183-.L50
 	.half	2
 	.byte	144,36
 	.word	0,0
-.L89:
-	.word	-1,.L34,.L134-.L34,.L137-.L34
+.L115:
+	.word	-1,.L50,.L178-.L50,.L181-.L50
 	.half	1
 	.byte	82
 	.word	0,0
-.L81:
+.L107:
 	.word	0,0
-.L33:
-	.word	-1,.L34,0,.L78-.L34
+.L49:
+	.word	-1,.L50,0,.L165-.L50
+	.half	2
+	.byte	138,0
+	.word	.L165-.L50,.L104-.L50
+	.half	2
+	.byte	138,16
+	.word	.L104-.L50,.L104-.L50
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L80:
-	.word	-1,.L34,.L122-.L34,.L123-.L34
+.L106:
+	.word	-1,.L50,.L166-.L50,.L167-.L50
 	.half	1
 	.byte	88
-	.word	.L124-.L34,.L125-.L34
+	.word	.L168-.L50,.L169-.L50
 	.half	1
 	.byte	85
-	.word	.L126-.L34,.L127-.L34
+	.word	.L170-.L50,.L171-.L50
 	.half	1
 	.byte	85
-	.word	.L16-.L34,.L128-.L34
+	.word	.L28-.L50,.L172-.L50
 	.half	1
 	.byte	88
-	.word	.L18-.L34,.L129-.L34
+	.word	.L30-.L50,.L173-.L50
 	.half	1
 	.byte	88
-	.word	.L20-.L34,.L17-.L34
+	.word	.L32-.L50,.L29-.L50
 	.half	1
 	.byte	88
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('get_angle')
 	.sect	'.debug_loc'
-.L27:
-	.word	-1,.L28,0,.L97-.L28
+.L39:
+	.word	-1,.L40,0,.L127-.L40
 	.half	2
 	.byte	138,0
 	.word	0,0
-.L101:
-	.word	-1,.L28,.L117-.L28,.L97-.L28
+.L131:
+	.word	-1,.L40,.L151-.L40,.L127-.L40
 	.half	1
 	.byte	82
 	.word	0,0
-.L98:
-	.word	-1,.L28,0,.L114-.L28
+.L128:
+	.word	-1,.L40,0,.L148-.L40
 	.half	1
 	.byte	84
-	.word	.L114-.L28,.L115-.L28
+	.word	.L148-.L40,.L149-.L40
 	.half	1
 	.byte	95
 	.word	0,0
-.L99:
-	.word	-1,.L28,0,.L100-.L28
+.L129:
+	.word	-1,.L40,0,.L130-.L40
 	.half	1
 	.byte	85
-	.word	.L100-.L28,.L116-.L28
+	.word	.L130-.L40,.L150-.L40
 	.half	5
 	.byte	144,32,157,32,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('return_error')
 	.sect	'.debug_loc'
-.L35:
-	.word	-1,.L36,0,.L90-.L36
+.L51:
+	.word	-1,.L52,0,.L116-.L52
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_loc',debug,cluster('show_line')
 	.sect	'.debug_loc'
-.L94:
-	.word	-1,.L30,.L118-.L30,.L119-.L30
+.L120:
+	.word	-1,.L42,.L152-.L42,.L153-.L42
 	.half	1
 	.byte	88
 	.word	0,0
-.L96:
-	.word	-1,.L30,.L119-.L30,.L91-.L30
+.L122:
+	.word	-1,.L42,.L153-.L42,.L117-.L42
 	.half	1
 	.byte	88
 	.word	0,0
-.L29:
-	.word	-1,.L30,0,.L91-.L30
+.L41:
+	.word	-1,.L42,0,.L117-.L42
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('show_middle_line')
+	.sect	'.debug_loc'
+.L126:
+	.word	-1,.L44,.L155-.L44,.L9-.L44
+	.half	2
+	.byte	144,33
+	.word	0,0
+.L125:
+	.word	-1,.L44,.L154-.L44,.L123-.L44
+	.half	1
+	.byte	88
+	.word	0,0
+.L43:
+	.word	-1,.L44,0,.L123-.L44
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('show_target_point')
+	.sect	'.debug_loc'
+.L145:
+	.word	-1,.L48,0,.L158-.L48
+	.half	2
+	.byte	144,35
+	.word	.L18-.L48,.L162-.L48
+	.half	2
+	.byte	144,35
+	.word	.L20-.L48,.L19-.L48
+	.half	2
+	.byte	144,35
+	.word	0,0
+.L144:
+	.word	-1,.L48,0,.L159-.L48
+	.half	2
+	.byte	144,34
+	.word	.L161-.L48,.L159-.L48
+	.half	2
+	.byte	144,32
+	.word	.L18-.L48,.L163-.L48
+	.half	2
+	.byte	144,34
+	.word	.L20-.L48,.L164-.L48
+	.half	2
+	.byte	144,34
+	.word	0,0
+.L146:
+	.word	-1,.L48,0,.L143-.L48
+	.half	2
+	.byte	145,0
+	.word	0,.L143-.L48
+	.half	2
+	.byte	145,0
+	.word	.L160-.L48,.L158-.L48
+	.half	2
+	.byte	144,33
+	.word	.L18-.L48,.L162-.L48
+	.half	2
+	.byte	144,33
+	.word	.L20-.L48,.L19-.L48
+	.half	2
+	.byte	144,33
+	.word	0,0
+.L47:
+	.word	-1,.L48,0,.L143-.L48
 	.half	2
 	.byte	138,0
 	.word	0,0
 	.sdecl	'.debug_frame',debug
 	.sect	'.debug_frame'
-.L274:
+.L373:
 	.word	48
 	.word	-1
 	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
@@ -1689,23 +2200,36 @@ fork_num:	.type	object
 	.sdecl	'.debug_frame',debug,cluster('get_angle')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L274,.L28,.L97-.L28
+	.word	.L373,.L40,.L127-.L40
 	.sdecl	'.debug_frame',debug,cluster('show_line')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L274,.L30,.L91-.L30
+	.word	.L373,.L42,.L117-.L42
+	.sdecl	'.debug_frame',debug,cluster('show_middle_line')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L373,.L44,.L123-.L44
 	.sdecl	'.debug_frame',debug,cluster('average_point')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L274,.L32,.L102-.L32
+	.word	.L373,.L46,.L132-.L46
 	.byte	8,18,8,19,8,21,8,22,8,23,0,0
-	.sdecl	'.debug_frame',debug,cluster('caculate_error')
+	.sdecl	'.debug_frame',debug,cluster('show_target_point')
 	.sect	'.debug_frame'
 	.word	12
-	.word	.L274,.L34,.L78-.L34
+	.word	.L373,.L48,.L143-.L48
+	.sdecl	'.debug_frame',debug,cluster('caculate_error')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L373,.L50,.L104-.L50
+	.byte	4
+	.word	(.L165-.L50)/2
+	.byte	19,16,22,26,3,19,138,16,4
+	.word	(.L104-.L165)/2
+	.byte	19,0,8,26,0,0
 	.sdecl	'.debug_frame',debug,cluster('return_error')
 	.sect	'.debug_frame'
 	.word	24
-	.word	.L274,.L36,.L90-.L36
+	.word	.L373,.L52,.L116-.L52
 	.byte	8,18,8,19,8,20,8,21,8,22,8,23
 	; Module end

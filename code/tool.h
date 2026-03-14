@@ -42,6 +42,8 @@ float steering_pd_control(SteeringPID *pid, float setpoint, float actual);
 // 增量式PID控制
 int IncPID_Calculate(IncPID *pid, int current_speed);
 
+float calculateAngleDifference(float angle1, float angle2);
+
 #define constrain(value, min, max) ((value) < (min) ? (min) : ((value) > (max) ? (max) : (value)))
 #define max(a,b) a>b?a:b
 #define min(a,b) a>b?b:a

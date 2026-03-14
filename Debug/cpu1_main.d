@@ -282,6 +282,8 @@ cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660ra.h" :
 cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rb.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rb.h" :
+cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rc.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rc.h" :
 cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rx.h"
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rx.h" :
 cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu963ra.h"
@@ -352,3 +354,5 @@ cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\LED.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\LED.h" :
 cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\MahonyAHRS.h"
 "E:\\smart_car 2026\\Soberup_2026\\code\MahonyAHRS.h" :
+cpu1_main.o :	"E:\\smart_car 2026\\Soberup_2026\\code\menu.h"
+"E:\\smart_car 2026\\Soberup_2026\\code\menu.h" :

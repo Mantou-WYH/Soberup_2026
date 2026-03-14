@@ -13,6 +13,7 @@
 extern IncPID pid_left, pid_right;
 extern SteeringPID turnPID;
 
+
 // ************************* º¯ÊýÉùÃ÷ *************************
 void Motor_Init(void);
 void L_set_PWM(int Speed);
@@ -22,6 +23,10 @@ void speed_control_R(int target_speed_R);
 void combined_control(int base_speed, float path_deviation);
 int IncPID_Calculate(IncPID *pid, int actual);
 float steering_control(float path_deviation);
+void car_stop();
+void negative_pressure_init();
+void negative_pressure_start();
+void negative_pressure_stop();
 
 
 

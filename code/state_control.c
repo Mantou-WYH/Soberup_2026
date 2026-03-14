@@ -10,22 +10,27 @@
 #include "element_line.h"
 #include "zf_device_ips200.h"
 #include "maze.h"
-#include "MahonyAHRS.h"
+#include "zf_device_imu660rc.h"
 
 state car_state=normal;
 
-int fork_type[10] = {1};
-int current_angle = 0;
+int fork_type[10] = {1,1,1,1,0,0,0,0,0,0};
+float current_angle = 0;
+int count = 0;
 
 void state_update(){
     switch(car_state){
         case normal:{
             if((((element_line_U > 0) + (element_line_L > 0) + (element_line_R > 0)) == 2)&&trend.slope>0.5){
-                if(fork_type[fork_num]==0){
-                    car_state = fork_straight;
+                if(count>2){
+                    if(fork_type[fork_num]==0){
+                        car_state = fork_straight;
+                    }else{
+                        car_state = fork_turn;
+                        current_angle = imu660rc_yaw;
+                    }
                 }else{
-                    car_state = fork_turn;
-                    current_angle = eulerAngle.yaw;
+                    count++;
                 }
             }
             break;
@@ -38,7 +43,7 @@ void state_update(){
             break;
         }
         case fork_turn:{
-            if(abs(eulerAngle.yaw-current_angle)>60){
+            if(calculateAngleDifference(imu660rc_yaw,current_angle)>60){
                 car_state = normal;
                 fork_num++;
             }
@@ -52,15 +57,15 @@ void state_update(){
 void show_state(){
     switch(car_state){
         case normal:{
-            ips200_show_string(0,140,"normal");
+            ips200_show_string(0,120,"normal");
             break;
         }
         case fork_turn:{
-            ips200_show_string(0,140,"fork_turn");
+            ips200_show_string(0,120,"fork_turn");
             break;
         }
         case fork_straight:{
-            ips200_show_string(0,140,"fork_straight");
+            ips200_show_string(0,120,"fork_straight");
             break;
         }
 

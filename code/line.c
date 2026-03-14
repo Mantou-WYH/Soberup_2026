@@ -14,7 +14,7 @@
 int error=0;
 
 Point target_L,target_R,target_M;
-int fork_seq[10] = {0,1,0,0,1,0,0,0,1,0};
+int fork_seq[10] = {1,0,0,1,0,0,0,0,0,0};
 int fork_num = 0;
 
 //-------------------------------------------------------------------------------------------------------------------
@@ -52,6 +52,17 @@ void show_line(){
 
 }
 
+void show_middle_line(){
+    for(int i=0;i<min(L_point,R_point);i++){
+        Point M;
+        M.x = (int)((Side_L[i].x+Side_R[i].x)/2);
+        M.y = (int)(    (Side_L[i].y+Side_R[i].y)/2);
+        if(M.x>0&&M.x<188&&M.y>0&&M.y<188){
+            show_point_yellow(M.x,M.y);
+        }
+    }
+}
+
 
 //-------------------------------------------------------------------------------------------------------------------
 //  函数简介      计算一组边界点的平均坐标
@@ -78,8 +89,20 @@ Point average_point(Point *Pointin,int min,int max){
     return sum;
 }
 
+void show_target_point(Point M,Point L,Point R){
+    if(car_state == normal){
+        show_point(M.x,M.y);
+    }else{
+        if(fork_seq[fork_num]==0){
+            show_point(L.x,L.y);
+        }else{
+            show_point(R.x,R.y);
+        }
+    }
+}
+
 void caculate_error(){
-    int front_point = 75;
+    int front_point = 85;
     int average_range = 5;
 
     Point R,L,M;
@@ -119,7 +142,8 @@ void caculate_error(){
             error = R_result;
         }
     }
-    show_point(M.x,M.y);
+    show_target_point(M,L,R);
+
 }
 
 int return_error(){

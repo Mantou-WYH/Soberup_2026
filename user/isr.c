@@ -35,6 +35,8 @@
 
 #include "isr_config.h"
 #include "isr.h"
+#include "menu.h"
+extern int basic_speed;
 
 // 对于TC系列默认是不支持中断嵌套的，希望支持中断嵌套需要在中断内使用 interrupt_global_enable(0); 来开启中断嵌套
 // 简单点说实际上进入中断后TC系列的硬件自动调用了 interrupt_global_disable(); 来拒绝响应任何的中断，因此需要我们自己手动调用 interrupt_global_enable(0); 来开启中断的响应。
@@ -44,8 +46,9 @@
 // **************************** PIT中断函数 ****************************
 IFX_INTERRUPT(cc60_pit_ch0_isr, 0, CCU6_0_CH0_ISR_PRIORITY)
 {
-    //combined_control(200,return_error());
-    Mahony_GetAngles();
+
+    combined_control(basic_speed,return_error());
+    //Mahony_GetAngles();
     interrupt_global_enable(0);                     // 开启中断嵌套
     pit_clear_flag(CCU60_CH0);
 
@@ -178,7 +181,8 @@ IFX_INTERRUPT(exti_ch3_ch7_isr, 0, EXTI_CH3_CH7_INT_PRIO)
 
     if(exti_flag_get(ERU_CH7_REQ16_P15_1))          // 通道7中断
     {
-        exti_flag_clear(ERU_CH7_REQ16_P15_1);
+        exti_flag_clear(ERU_CH7_REQ11_P20_9);
+        imu660rc_callback();
         // 注意: 该外部中断为摄像头场中断 若已使用摄像头 请不要再添加其他内容
         // 注意: 该外部中断为摄像头场中断 若已使用摄像头 请不要再添加其他内容
         // 注意: 该外部中断为摄像头场中断 若已使用摄像头 请不要再添加其他内容

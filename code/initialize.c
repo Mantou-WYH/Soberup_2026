@@ -22,7 +22,11 @@ void init_mian(void){
     Encoder_Init();
     voltage_detect_init();
     LED_init();
-    Mahony_Init(200);
+    imu660rc_init(IMU660RC_QUARTERNION_120HZ);
+    menu_init();
+    menu_display();
 
+    //negative_pressure_start();
+    system_delay_ms(200);
     pit_ms_init(CCU60_CH0,5);
 }

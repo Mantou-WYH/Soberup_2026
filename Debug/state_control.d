@@ -42,7 +42,5 @@ state_control.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_librari
 "E:\\smart_car 2026\\Soberup_2026\\libraries\\infineon_libraries\\iLLD\\TC26B\\Tricore\\Cpu\\Std\PLATFORM_TYPES.H" :
 state_control.o :	..\code\maze.h
 ..\code\maze.h :
-state_control.o :	..\code\MahonyAHRS.h
-..\code\MahonyAHRS.h :
-state_control.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\icm42688.h"
-"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\icm42688.h" :
+state_control.o :	"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rc.h"
+"E:\\smart_car 2026\\Soberup_2026\\libraries\\zf_device\zf_device_imu660rc.h" :

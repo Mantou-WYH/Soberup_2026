@@ -10,6 +10,7 @@
 #include "maze.h"
 #include "line.h"
 #include "zf_device_ips200.h"
+#include "motor.h"
 
 const int dir_front[4][2]= {{0,  -1},
                             {1,  0},
@@ -32,6 +33,7 @@ uint8_t L_visited[MT9V03X_1_H][MT9V03X_1_W],R_visited[MT9V03X_1_H][MT9V03X_1_W];
 int L_point,R_point;
 uint8_t touch = 0;
 DistTrend trend;
+int count_outside = 0;
 
 
 
@@ -355,6 +357,16 @@ int calc_side_distance_trend(int Lnum, int Rnum, DistTrend *result)
     return 0;
 }
 
+void outside_protect(void){
+    if(L_point<20&&R_point<20){
+        if(count_outside<50){
+            car_stop();
+            negative_pressure_stop();
+        }else{
+            count_outside++;
+        }
+    }
+}
 /*************************
  *
 
@@ -367,7 +379,13 @@ void search_line_main(void) {
 
     uint8_t start_found = First_Line_M(0, y);
     if (!start_found) {
-        return;
+        for(int i=MT9V03X_1_H-2;i>MT9V03X_1_H-22;i=i-2){
+            if(start_found==0){
+                start_found = First_Line_M(0,i);
+            }else{
+                break;
+            }
+        }
     }
 
 
@@ -402,18 +420,10 @@ void search_line_main(void) {
         }
     L_point = Lnum;
     R_point = Rnum;
-    show_line();
 
-    if (calc_side_distance_trend(L_point, R_point, &trend) == 0)
-    {
-        /*
-        ips200_show_float(0, 120, trend.slope,      3, 2); // 斜率
-        ips200_show_float(0, 140, trend.avg_dist,   3, 1); // 平均距离
-        ips200_show_float(0, 160, trend.first_dist, 3, 1); // 起点距离
-        ips200_show_float(0, 180, trend.last_dist,  3, 1); // 终点距离
-        ips200_show_int  (0, 200, trend.valid_pairs, 3);   // 有效点数
-    */
-    }
+    calc_side_distance_trend(L_point, R_point, &trend);
+    outside_protect();
+    show_line();
 }
 
 

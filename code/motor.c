@@ -6,11 +6,12 @@
 #include "motor.h"
 
 // 调试开关（0=关闭，1=开启）
-#define DEBUG_PRINT 1
+#define DEBUG_PRINT 0
 
 // 硬件参数宏定义（统一管理，方便调试）
 #define PWM_FREQ_HZ        17000    // PWM频率
-#define PWM_MAX            4000     // PWM输出上限
+#define PWM_MAX            3000     // PWM输出上限
+#define encoder_MAX        500     // PWM输出上限
 #define PWM_MIN            0        // PWM输出下限
 #define PID_OUTPUT_MAX     5000     // PID输出约束上限
 #define PID_OUTPUT_MIN     -5000    // PID输出约束下限
@@ -19,13 +20,29 @@
 #define RIGHT_STEER_FACTOR 0.85f    // 右转速度调整系数
 
 // 速度PID控制器（左/右电机）
-IncPID pid_left = {4, 0.15f, 0.0f, 0, 0, 0, 0};
-IncPID pid_right = {4.0f, 0.15f, 0.0f, 0, 0, 0, 0};
+IncPID pid_left = {6.0, 0.3f, 0.0f, 0, 0, 0, 0};
+IncPID pid_right = {6.0f, 0.3f, 0.0f, 0, 0, 0, 0};
 
 // 转向PD控制器（路径偏差控制）
-SteeringPID turnPID = {1.5f, 0.0f, 0.1f, 0.0f, 0.0f, 0.0f};
+SteeringPID turnPID = {1.5f, 0.0f, 0.05f, 0.0f, 0.0f, 0.0f};
 
 int dis_R = 0,dis_L = 0;
+int stop_flag = 0;
+
+void negative_pressure_init(){
+    gpio_init(P22_1,GPO , GPIO_LOW,GPO_PUSH_PULL);
+    gpio_init(P23_1,GPO , GPIO_LOW,GPO_PUSH_PULL);
+}
+
+void negative_pressure_start(){
+    gpio_set_level(P22_1, GPIO_LOW);
+    gpio_set_level(P23_1, GPIO_HIGH);
+}
+
+void negative_pressure_stop(){
+    gpio_set_level(P22_1, GPIO_LOW);
+    gpio_set_level(P23_1, GPIO_LOW);
+}
 
 /**************************************************************
  * 功能: 电机初始化（GPIO/PWM/控制器）
@@ -46,7 +63,14 @@ void Motor_Init(void)
 
     // 初始化转向PID控制器误差值
     turnPID.error = turnPID.last_error = turnPID.prev_error = 0.0f;
+
+
+    /////////负压初始化////////
+    negative_pressure_init();
+
 }
+
+
 
 /**************************************************************
  * 功能: 设置左电机PWM值
@@ -126,7 +150,7 @@ void speed_control_L(int target_speed_L)
     left_pwm = constrain(left_pwm, PID_OUTPUT_MIN, PID_OUTPUT_MAX);
 
     // 输出PWM到左电机
-    L_set_PWM(left_pwm);
+    //L_set_PWM(left_pwm);
 
     //ips200_show_int(0,120,dis_L,10);
 
@@ -160,7 +184,7 @@ void speed_control_R(int target_speed_R)
     right_pwm = constrain(right_pwm, PID_OUTPUT_MIN, PID_OUTPUT_MAX);
 
     // 输出PWM到右电机
-    R_set_PWM(right_pwm);
+    //R_set_PWM(right_pwm);
 
     //ips200_show_int(0,140,dis_R,10);
 
@@ -196,7 +220,9 @@ static float steering_control(float path_deviation)
 void combined_control(int base_speed, float path_deviation)
 {
     // 校验基础速度（避免异常值）
-    base_speed = constrain(base_speed, 0, PWM_MAX);
+    //printf("%d\n",base_speed);
+    base_speed = constrain(base_speed, 0, encoder_MAX);
+
 
     // 1. 计算转向补偿量（PD控制）
     float steer_pwm = steering_control(path_deviation);
@@ -224,11 +250,21 @@ void combined_control(int base_speed, float path_deviation)
     right_speed = constrain(right_speed, 0, PWM_MAX);
 
     // 5. 执行速度闭环控制
-    speed_control_L(left_speed);
-    speed_control_R(right_speed);
+    if(stop_flag == 0){
+        speed_control_L(left_speed);
+        speed_control_R(right_speed);
+    }else{
+        speed_control_L(0);
+        speed_control_R(0);
+    }
+
 
     // 调试输出（转向补偿、左右目标速度）
 
+}
+
+void car_stop(){
+    stop_flag = 1;
 }
 
 
